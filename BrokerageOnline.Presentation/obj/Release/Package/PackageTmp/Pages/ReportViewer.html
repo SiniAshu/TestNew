@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Brokerage Online Solution</title>
+
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+  
+</head>
+<body>
+    <iframe id="frame" ></iframe>
+    <script>
+
+        $(document).ready(function () {
+            //sessionStorage.reportURL = 'http://182.75.9.197:9080/pentaho/content/reporting/execute/DSP_BlackRock/Dist_BRRnull?solution=DSP_BlackRock&path=&name=Dist_BRR.prpt&Memonumber_P=2015-04-BRR-1054&output-target=pageable%2Fpdf&userid=joe&password=password';
+            var src = sessionStorage.reportURL;
+            $('#frame').attr('src', src);
+            var height = $(window).height();
+            $('iframe').css('height', height * 0.93 | 0);
+
+            var width = $(window).width();
+            $('iframe').css('width', width * 0.99 | 0);
+
+            
+        });
+
+        $(window).resize(function () {
+            var height = $(window).height();
+            $('iframe').css('height', height * 0.93 | 0);
+
+            var width = $(window).width();
+            $('iframe').css('width', width * 0.99 | 0);
+        });
+       
+    </script>
+</body>
+</html>

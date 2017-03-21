@@ -1,0 +1,48 @@
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\BrokerageOnline.Common.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\BrokerageOnline.Common.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\BrokerageOnline.TransferObjects.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Newtonsoft.Json.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\BrokerageOnline.TransferObjects.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\obj\Release\BrokerageOnline.Common.csprojResolveAssemblyReference.cache
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\obj\Release\BrokerageOnline.Common.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\obj\Release\BrokerageOnline.Common.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\BrokerageOnline.Common.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\BrokerageOnline.Common.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\BrokerageOnline.TransferObjects.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Newtonsoft.Json.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\BrokerageOnline.TransferObjects.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\obj\Release\BrokerageOnline.Common.csprojResolveAssemblyReference.cache
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\obj\Release\BrokerageOnline.Common.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Common\obj\Release\BrokerageOnline.Common.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Common\bin\Release\BrokerageOnline.Common.dll
+E:\DSP\Prod Copy\BrokerageOnline.Common\bin\Release\BrokerageOnline.Common.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Common\bin\Release\BrokerageOnline.TransferObjects.dll
+E:\DSP\Prod Copy\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\DSP\Prod Copy\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\DSP\Prod Copy\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+E:\DSP\Prod Copy\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\DSP\Prod Copy\BrokerageOnline.Common\bin\Release\Newtonsoft.Json.dll
+E:\DSP\Prod Copy\BrokerageOnline.Common\bin\Release\BrokerageOnline.TransferObjects.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\DSP\Prod Copy\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\DSP\Prod Copy\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+E:\DSP\Prod Copy\BrokerageOnline.Common\bin\Release\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml
+E:\DSP\Prod Copy\BrokerageOnline.Common\obj\Release\BrokerageOnline.Common.csprojResolveAssemblyReference.cache
+E:\DSP\Prod Copy\BrokerageOnline.Common\obj\Release\BrokerageOnline.Common.dll
+E:\DSP\Prod Copy\BrokerageOnline.Common\obj\Release\BrokerageOnline.Common.pdb

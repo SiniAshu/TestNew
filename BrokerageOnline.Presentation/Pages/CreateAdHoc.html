@@ -1,0 +1,546 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brokerage Online Solution</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/ChatStyle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link href="../css/ie9_fix.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/ui.jqgrid.min.css" rel="stylesheet" />
+    <link href="../css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../css/token-input-facebook.min.css" rel="stylesheet" />
+    <link href="../css/bootstrap-multiselect.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link href="../css/toastr.min.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+
+    <script>
+        $(window).scroll(function () {
+            var height = $(window).scrollTop();
+            if (height > 210) {
+                $('#fx-hdr').slideDown("slow");
+            }
+            else {
+                $('#fx-hdr').slideUp("slow");
+            }
+
+        });
+
+    </script>
+
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.ui.core.min.js"></script>
+    <script src="../js/jquery.ui.widget.min.js"></script>
+    <script src="../js/jquery.ui.mouse.min.js"></script>
+    <script src="../js/jquery.ui.draggable.min.js"></script>
+    <script src="../js/jquery.ui.resizable.min.js"></script>
+    <script src="../js/jquery.signalR-2.2.0.js"></script>
+    <script src="../signalr/hubs"></script>
+    <script src="../js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-multiselect.min.js"></script>
+    <script src="../js/toastr.min.js"></script>
+    <script src="../js/site.js"></script>
+    <script src="../js/jquery.jqGrid.min.js"></script>
+    <script src="../js/tinymce.min.js"></script>
+    <script src="../js/grid.locale-en.min.js"></script>
+    <script src="../js/jquery.tokeninput.min.js"></script>
+    <script src="../js/jquery.timer.min.js"></script>
+    <script src="../js/Navigation.js"></script>
+    <script src="../js/Menu.js"></script>
+    <script src="../js/Utility.js"></script>
+    <script src="../Scripts/AdHoc/AdhocScript.js"></script>
+    <!--<script src="../js/jquery.signalR-2.1.2.min.js"></script>
+    <script src="http://182.75.9.197/BrokerageOnlineService/signalr/hubs/" type="text/javascript"></script>-->
+    <style>
+        h4 {
+            color: #333;
+        }
+
+        h3 {
+            color: #333;
+        }
+    </style>
+    <!--<link rel="stylesheet" href="../css/jquery-ui.css">-->
+    <script>
+
+        $(document).ready(function () {
+            if ((sessionStorage.CurrentMenuselected == "" || sessionStorage.CurrentMenuselected == undefined) && sessionStorage.idtag != "") {
+                if (sessionStorage.UserName != "" && sessionStorage.UserName != undefined) {
+                    $("#spn_user_name").append(sessionStorage.UserName);
+                    $("#spn_role_name").append(sessionStorage.RoleName);
+                }
+            }
+        });
+
+        $(document).ready(function () {
+            if (sessionStorage.UserName != "" && sessionStorage.UserName != undefined) {
+                $("#spn_user_name").append(sessionStorage.UserName);
+                $("#spn_role_name").append(sessionStorage.RoleName);
+            }
+        });
+
+        function qs(search_for) {
+            var query = window.location.search.substring(1);
+            var parms = query.split('&');
+            for (var i = 0; i < parms.length; i++) {
+                var pos = parms[i].indexOf('=');
+                if (pos > 0 && search_for == parms[i].substring(0, pos)) {
+                    return parms[i].substring(pos + 1);
+                }
+            }
+            return "";
+        }
+        //var sessionId = qs("tokenkey");
+        //var userId = qs("user");
+        //sessionStorage.setItem("sessionId", sessionId);
+        //sessionStorage.setItem("userId", userId);
+    </script>
+
+</head>
+<body>
+    <div class="container-fluid">
+
+        <div class="row top-hdr-otr ">
+            <div class="col-md-2 col-sm-4 fst-itm">
+                <div> <img class="img-responsive mr-top-02 mr-top-sm-nill" src="../img/main_logo.png"> </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <h2 class="title-tag-style-a mr-top-03 mr-top-sm-nill">Brokerage Online Solution</h2>
+            </div>
+
+            <div class="col-md-6 col-sm-4 lst-itm">
+                <div class="">
+                    <div class="col-md-12 lst-itm">
+                        <div class="clear mr-top-0001"></div>
+                        <nav role="navigation">
+                            <ul class="top-nav-set-a">
+                                <li id="li_Dashboard">
+                                    <a href="Dashboard.html" class="top-nav-btns">
+                                        <img title="Home" src="../img/nav_btm_icon08.png">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="has-menu" id="li_module">
+                                    <a href="#" class="top-nav-btns">
+                                        <img src="../img/nav_btm_icon01.png">
+                                        <span>Modules</span>
+                                    </a>
+                                    <ul class="sub-menu" id="ul_menu_body"></ul>
+                                </li>
+                                <li id="li_master_queue">
+                                    <a href="MasterQueue.html" id="anch_master_queue" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon02.png">
+                                        <span>Master Q</span>
+                                    </a>
+                                </li>
+                                <li id="li_discarded_queue">
+                                    <a href="Overview.html" id="anch_discarded_queue" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon03.png">
+                                        <span>Discarded Q</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./SmartSearchScreen.html" id="anch_smart_search" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon04.png">
+                                        <span>Smart Search</span>
+                                    </a>
+                                </li>
+                                <li class="has-menu" id="li_administrator">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon05.png">
+                                        <span>Administrator</span>
+                                    </a>
+                                    <ul class="sub-menu" id="ul_admin_menu_body"></ul>
+                                </li>
+                                <li class="has-menu" id="li_reports">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon06.png">
+                                        <span>Reports</span>
+                                    </a>
+                                    <ul class="sub-menu fl-wd flt-r" id="ul_report_menu_body"></ul>
+                                </li>
+                                <li class="has-menu">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon07.png">
+                                        <span>User Profile</span>
+                                    </a>
+                                    <ul class="sub-menu flt-r">
+                                        <li><a href="#">User Details</a></li>
+                                        <li><a href="#">Settings</a></li>
+                                        <li><a href="#">Reminders</a></li>
+                                        <li><a href="#" onclick="CommonValidate.LogOut();">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="clear mr-top-0001"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bottom-bnr">
+            <h2 class="fl" id="spn_user_name"></h2>
+            <h2 class="fl">:  [ </h2>
+            <h2 class="fl" id="spn_role_name"></h2>
+            <h2 class="fl"> ] </h2>
+            <span class="fr"><span class="time-date-box" id="spn_date"></span></span>
+            <!--<span class="fr"><span class="time-date-box">11:14 am</span><span class="time-date-box"> | </span><span class="time-date-box" id="spn_date">0/0/2015</span></span>-->
+        </div>
+        <div style="background-image: url(../img/toptest_v3.png), url(../img/bottomtest_v3.png); background-position: top left, bottom right; background-repeat: no-repeat; ">
+            <div class="row inner-bdy-sect">
+                <div class="col-md-12 col-sm-12">
+                    <span class="sub-title-btm-c ">Payment Type</span>
+                    <div class="col-md-2 col-sm-2 ">
+                        <select class="select-bx-style c-round" id="dd_payment_type" onchange="AdHocScript.PaymentTypeOnChange();"></select>
+                    </div>
+                    <div class="txt-alg-rt mr-bottom-01 pd-left-00" id="div_btn">
+                        <button class="btn btn-warning sq-btn fr" id="btn_cancel_adhoc" onclick="AdHocScript.CancelAdHocDetails();">Cancel</button>
+                        <button class="btn btn-primary sq-btn fr" id="btn_save_adhoc" onclick="AdHocScript.SaveAdHocDetails();">Save</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mr-top-02">
+                <div class="col-md-3 col-sm-3 flt-left-a">
+                    <span class="sub-title-btm-c ">Payment Details</span>
+                </div>
+            </div>
+            <div id="div_Adhoc_Create">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 ">
+                        <div class="col-md-12 col-sm-12 pd-top-02 pd-bottom-02">
+                            <div class="col-md-4 col-sm-3 pd-left-00">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-5 pd-right-00"> <span class="sub-title-a mr-top-desk-title ">Branch</span> </div>
+                                    <div class="col-md-6 col-sm-7 pd-left-00">
+                                        <div class="styled-select">
+                                            <select class="select-bx-style c-round" id="dd_branch" onchange="AdHocScript.BranchOnChange();"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-3 pd-left-00">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5" style="width:35%"> <span class="sub-title-a mr-top-desk-title">ARN No</span> </div>
+                                    <div class="col-md-7 col-sm-7 pd-left-00" style="min-width: 50%" id="div_arn_no">
+                                        <input type="text" id="txt_arn_info" style="min-width:40px" class="input-text-bx-style c-round" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-5 pd-left-00">
+                                <div class="row">
+                                    <div class="col-md-3  col-sm-2"> <span class="sub-title-a mr-top-desk-title">ARN Name</span> </div>
+                                    <div class="col-md-9 col-sm-10 pd-left-00">
+                                        <input type="text" id="txt_arn_name_info" style="min-width:40px" class="input-text-bx-style c-round" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12 pd-top-02 pd-bottom-02">
+                            <div id="div_payment_details_row_Mobile1">
+                                <div class="col-md-4 col-sm-3 pd-left-00">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-5"> <span class="sub-title-a mr-top-desk-title ">Amount Basis</span> </div>
+                                        <div class="col-md-6 col-sm-7 pd-left-00">
+                                            <div class="styled-select">
+                                                <select class="select-bx-style c-round" id="dd_Amount_Basis" onchange="AdHocScript.AmountBasisOnChange();">
+                                                    <option>Select Amount Basis</option>
+                                                    <option>AUM</option>
+                                                    <option>Gross Sales</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-3 pd-left-00">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-5" style="width:35%"> <span class="sub-title-a mr-top-desk-title">Scheme Category</span> </div>
+                                        <div class="col-md-7 col-sm-7 pd-left-00">
+                                            <div class="styled-select">
+                                                <select class="select-bx-style c-round" id="dd_schemecategory" onchange="AdHocScript.SchemeCategoryOnChange();"></select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-3 pd-left-00">
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-5"> <span class="sub-title-a mr-top-desk-title">Scheme</span> </div>
+                                        <div class="col-md-10 col-sm-7 pd-left-00">
+                                            <div class="styled-select">
+                                                <select class="select-bx-style c-round" id="dd_scheme" onchange="AdHocScript.CheckDistributor_AUM_Gross_Sales();"></select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="div_payment_details_row_Future">
+                                <div class="col-md-4 col-sm-3 pd-left-00">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-5">
+                                            <span class="sub-title-a mr-top-desk-title">Payment Amount</span>
+                                        </div>
+                                        <div class="col-md-6 col-sm-7 pd-left-00">
+                                            <input type="text" id="txt_Payment_Amount_Future" class="input-text-bx-style c-round  f-size" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-3 pd-left-00">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-5" style="width:35%"> <span class="sub-title-a mr-top-desk-title">PAN No.</span> </div>
+                                        <div class="col-md-6 col-sm-7 pd-left-00">
+                                            <input type="text" id="txt_PAN_no" class="input-text-bx-style c-round f-size" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="div_payment_details_row_Mobile2" class="col-md-12 col-sm-12 pd-top-02 pd-bottom-02">
+                            <div class="col-md-4 col-sm-3 pd-left-00">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-5 pd-right-00"> <span class="sub-title-a mr-top-desk-title">Period From</span> </div>
+                                    <div class="col-md-4 col-sm-7 pd-left-00">
+                                        <div class="date-outer-div">
+                                            <!--<input type="text" id="dt_from" class="input-text-date-bx-style c-round" onkeyup="AdHocScript.RemoveToDatePicker();" />-->
+                                            <div class='input-group '>
+                                                <input type="text" id="dt_from" class="input-text-date-bx-style c-round" onselect="AdHocScript.RemoveToDatePicker();" />
+                                                <span class="input-group-addon">
+                                                    <img src="../img/cal-btn.png" id="imgdt_from">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-3 pd-left-00">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5 pd-right-00" style="width:35%"> <span class="sub-title-a mr-top-desk-title">Period To</span> </div>
+                                    <div class="col-md-4 col-sm-7 pd-left-00">
+                                        <div class="date-outer-div">
+                                            <!--<input type="text" id="dt_to" class="input-text-date-bx-style c-round" onselect="AdHocScript.CheckDistributor_AUM_Gross_Sales();" />-->
+
+                                            <div class='input-group '>
+                                                <input type="text" id="dt_to" class="input-text-date-bx-style c-round" onselect="AdHocScript.CheckDistributor_AUM_Gross_Sales();" />
+                                                <span class="input-group-addon">
+                                                    <img src="../img/cal-btn.png" id="imgdt_to">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12 pd-top-02 pd-bottom-02" id="div_Payment_Details_Hidden1">
+                            <div class="col-md-4 col-sm-4 pd-left-00">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-5">
+                                        <span class="sub-title-a mr-top-desk-title">AUM (Lakhs) / Gross Sales (Actual)</span>
+                                        <!--<span class="sub-title-a mr-top-desk-title ">(Lakhs)</span>-->
+                                    </div>
+                                    <div class="col-md-6 col-sm-7 pd-left-00">
+                                        <input type="text" id="txt_Mobilization_Amount" readonly="readonly" class="input-text-bx-style txt_Mobilization_Amount_keypress c-round f-size" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-md-4 col-sm-4 pd-left-00" id="div_Payment_Details_Hidden2">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5" style="width:35%"> <span class="sub-title-a mr-top-desk-title ">Rate (Bps)</span> </div>
+                                    <div class="col-md-4 col-sm-7 pd-left-00">
+                                        <input type="text" id="txt_Rate" class="input-text-bx-style numberonly txt_Rate_keypress c-round f-size" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 pd-left-00" id="div_Payment_Details_Hidden3">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-7">
+                                        <span class="sub-title-a mr-top-desk-title">Payment Amount </span>
+                                        <!--<span class="sub-title-a mr-top-desk-title ">(Lakhs)</span>-->
+                                    </div>
+                                    <div class="col-md-6 col-sm-7 pd-left-00">
+                                        <input type="text" id="txt_Payment_Amount_Mobile" readonly="readonly" class="input-text-bx-style c-round f-size" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12 pd-top-02 pd-bottom-02" id="div_free_text_box">
+                            <div class="col-md-4 col-sm-4 pd-left-00">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-5"> <span class="sub-title-a mr-top-desk-title">Actual Amount Payable (Round Off)</span> </div>
+                                    <div class="col-md-6 col-sm-7 pd-left-00">
+                                        <input type="text" id="txt_Free_Text_Field_01" maxlength="10" class="input-text-bx-style numberonly c-round f-size" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 pd-left-00" hidden="hidden">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-5" style="width:35%"> <span class="sub-title-a mr-top-desk-title">Free Text Field 02</span> </div>
+                                    <div class="col-md-6 col-sm-7 pd-left-00">
+                                        <input type="text" id="txt_Free_Text_Field_02" class="input-text-bx-style c-round f-size" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mr-top-01">
+                            <div class="col-md-12 col-sm-12 ">
+                                <h3 class="sub-title-btm-c">Remarks</h3>
+                            </div>
+                        </div>
+                        <div class="row mr-top-01">
+                            <div id="div_remarks" class="col-md-12 col-sm-12 ">
+                                <!--<div class="txt-area-style-outer">-->
+                                <textarea class="txt-area-style c-round" style="height:70px" id="txt_remarks"></textarea>
+                                <!--</div>-->
+                            </div>
+                        </div>
+
+                        <div class="row mr-top-01">
+
+                            <div class="col-md-4 col-sm-4 ">
+                                <div class="row">
+                                <h3 class="sub-title-btm-c">Payment List View</h3>
+
+                                    <!--<div class="col-md-4 col-sm-12">-->
+                                    <!--<button class="btn btn-primary sq-btn" onclick="AdHocScript.Old_AdvanceSearchClick();">Advance Search</button>-->
+                                        <!--<button class="btn btn-warning sq-btn" data-toggle="modal" onclick="Utility.AdvanceSearchClick(3, 'VIEW_ADHOC_PAYMENT_BY_MEMOID');">Advance Search &nbsp; <img src="../img/search-btn.png"></span></button>
+                                    </div>-->
+                                </div>
+                            </div>                         
+                            
+                            <div class="col-md-4 col-sm-4">
+                                <div class="row">
+                                        <span class="sub-title-a mr-top-desk-title">Total Count </span>                                        
+                                    <div class="col-md-3 col-sm-3">
+                                        <label id="lblTotalCount" class="sub-title-a mr-top-desk-title" />
+                                    </div>
+
+                                        <span class="sub-title-a mr-top-desk-title">Total Amount </span>                                           
+                                    <div class="col-md-3 col-sm-3 ">
+                                        <label class="sub-title-a mr-top-desk-title" id="lblTotalAmount" />
+                                    </div>
+                                    </div>                               
+                                </div>
+
+                            <div class="col-md-4 col-sm-4 txt-alg-rt">
+                                <button class="btn btn-warning sq-btn " onclick="AdHocScript.RefreshAdHocGridDetails(); "><img src="../img/repeat-btn.png"></button>
+                                <button class="btn btn-primary sq-btn " onclick="AdHocScript.DeleteAdHocPayment();">Delete</button>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 ">
+                                <table id="grid_search_result"></table>
+                                <!--<div id="pgrid_search_result"></div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modal_adhoc_payment_record" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+                    <div class="modal-dialog modal-lrg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="row mr-top-05">
+                                    <div class="col-md-12 col-sm-12 ">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h3 class="sub-title-btm-c">A payment is already in progress/active For the ARN's : </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row mr-top-01">
+                                    <div class="col-md-12 col-sm-12 ">
+                                        <div class="rrd-outer">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 ">
+                                                    <table id="grid_sub_processing"></table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modal_confirmation" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="ariaconfirmation" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="row mr-top-03">
+                                    <div class="col-md-12 col-sm-12 ">
+                                        <h3 class="sub-title-btm-c">Confirmation</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row mr-top-01">
+                                    <div class="col-md-12 col-sm-12 ">
+                                        <div class="rrd-outer">
+                                            <div class="row">
+                                                <div> <span class="sub-title-a mr-top-desk-title ">Would you like to include Child code as well?</span> </div>
+                                            </div>
+                                            <div class="row txt-alg-rt">
+                                                <div class="row">
+                                                    <button class="btn mr-right-01 btn-success" onclick="AdHocScript.ConfirmARNOk();" id="btn_modal_ok">Yes</button>
+                                                    <button class="btn mr-right-02 btn-warning " onclick="AdHocScript.ConfirmARNCancel();" id="btn_modal_cancel">No</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="alertsection" class="alert-sect-outer" style="right:-450px;">
+                <div class="alert-head">
+                    <img src="../img/alert_icon.png">
+                    <span class="notif-count"><span class="notif-count-inner">8</span></span>
+                </div>
+            </div>
+            </div>
+            <footer>
+                <div class="row footer-main-black">
+                    <div class="col-md-12 col-sm-12 ">
+                        <div class="col-md-12 col-sm-12 pd-top-02 pd-bottom-02">
+
+                            <div class="col-md-12 col-sm-12 pd-left-00">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4"></div>
+                                    <div class="col-md-8 col-sm-8 pd-left-00">
+                                        <label style="color: white;" class="mr-right-01">Copyright &copy 2014. All rights reserved in this software belong solely to <a style=" color:white;background:black;" href="http://www.hexagonglobal.in" target="_blank">Hexagon Global IT Services pvt ltd</a> </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--</div>-->
+        </div>
+    <div id="globalDiv"></div>
+    <div id="globalAdhocDiv"></div>
+</body>
+</html>

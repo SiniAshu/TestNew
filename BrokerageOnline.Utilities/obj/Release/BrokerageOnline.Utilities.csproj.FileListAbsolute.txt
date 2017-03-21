@@ -1,0 +1,5 @@
+E:\DSP\Prod Copy\BrokerageOnline.Utilities\bin\Release\BrokerageOnline.Utilities.dll
+E:\DSP\Prod Copy\BrokerageOnline.Utilities\bin\Release\BrokerageOnline.Utilities.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Utilities\obj\Release\BrokerageOnline.Utilities.csprojResolveAssemblyReference.cache
+E:\DSP\Prod Copy\BrokerageOnline.Utilities\obj\Release\BrokerageOnline.Utilities.dll
+E:\DSP\Prod Copy\BrokerageOnline.Utilities\obj\Release\BrokerageOnline.Utilities.pdb

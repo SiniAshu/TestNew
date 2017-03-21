@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33AC9F89-C864-4EAA-A0D2-AB60A462B91B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BrokerageOnline.TransferObjects</RootNamespace>
+    <AssemblyName>BrokerageOnline.TransferObjects</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessMatrix.cs" />
+    <Compile Include="AccessMenu.cs" />
+    <Compile Include="Address.cs" />
+    <Compile Include="AdhocPaymentDetails.cs" />
+    <Compile Include="AdHocSearchResults.cs" />
+    <Compile Include="AlertMessage.cs" />
+    <Compile Include="ApplicationLock.cs" />
+    <Compile Include="AssignToUser.cs" />
+    <Compile Include="AuditMasters.cs" />
+    <Compile Include="Branch.cs" />
+    <Compile Include="BranchMaster.cs" />
+    <Compile Include="BrokerageType.cs" />
+    <Compile Include="Channel.cs" />
+    <Compile Include="Channel_DistibutorCategory.cs" />
+    <Compile Include="ChatHistory.cs" />
+    <Compile Include="CodeMaster.cs" />
+    <Compile Include="Credentials.cs" />
+    <Compile Include="CRUDInfo.cs" />
+    <Compile Include="DashboardOverview.cs" />
+    <Compile Include="Department.cs" />
+    <Compile Include="Distributor.cs" />
+    <Compile Include="DistributorBranch.cs" />
+    <Compile Include="DistributorCategory.cs" />
+    <Compile Include="DistributorCategoryMaster.cs" />
+    <Compile Include="DistributorCategorySlab.cs" />
+    <Compile Include="DistributorCategoryType.cs" />
+    <Compile Include="DistributorMaster.cs" />
+    <Compile Include="DistributorPerformance.cs" />
+    <Compile Include="DistributorScheme.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="EmployeeLogs.cs" />
+    <Compile Include="Exit_Load.cs" />
+    <Compile Include="GetRoles.cs" />
+    <Compile Include="GetUsers.cs" />
+    <Compile Include="InitatedMemo.cs" />
+    <Compile Include="LinkedMemo.cs" />
+    <Compile Include="ListSearchColumns.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="LumpsumSIPType.cs" />
+    <Compile Include="MailingList.cs" />
+    <Compile Include="MemoFormatType.cs" />
+    <Compile Include="MemoParent.cs" />
+    <Compile Include="MemoType.cs" />
+    <Compile Include="MessageDetail.cs" />
+    <Compile Include="ModifiedRateHistory.cs" />
+    <Compile Include="ModifiedRateHistoryDetails.cs" />
+    <Compile Include="Notification.cs" />
+    <Compile Include="NotificationMailContent.cs" />
+    <Compile Include="PasswordPolicy.cs" />
+    <Compile Include="PaymentDetails.cs" />
+    <Compile Include="PaymentList.cs" />
+    <Compile Include="PaymentMemo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RackRateSearchResult.cs" />
+    <Compile Include="Region.cs" />
+    <Compile Include="RemarksHistory.cs" />
+    <Compile Include="Rights.cs" />
+    <Compile Include="BrokerageNotes.cs" />
+    <Compile Include="RightsMaster.cs" />
+    <Compile Include="RoleRights.cs" />
+    <Compile Include="Roles.cs" />
+    <Compile Include="SaveRole.cs" />
+    <Compile Include="Scheme.cs" />
+    <Compile Include="SchemeAndCategory.cs" />
+    <Compile Include="SchemeCategory.cs" />
+    <Compile Include="SchemeDropdown.cs" />
+    <Compile Include="SchemeMaster.cs" />
+    <Compile Include="SchemeModule.cs" />
+    <Compile Include="SIPRateHistoryDetails.cs" />
+    <Compile Include="Slab.cs" />
+    <Compile Include="SmartSearchBO.cs" />
+    <Compile Include="SubMenu.cs" />
+    <Compile Include="SubRegion.cs" />
+    <Compile Include="TransactionType.cs" />
+    <Compile Include="UnlockUsers.cs" />
+    <Compile Include="UserBranchZone.cs" />
+    <Compile Include="UserChannelRole.cs" />
+    <Compile Include="UserDetail.cs" />
+    <Compile Include="UserMaster.cs" />
+    <Compile Include="UserRole.cs" />
+    <Compile Include="UserRoleRights.cs" />
+    <Compile Include="Users.cs" />
+    <Compile Include="ViewAction.cs" />
+    <Compile Include="WorkFlowHierarchy.cs" />
+    <Compile Include="WorkFlowPayment.cs" />
+    <Compile Include="Zone.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

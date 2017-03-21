@@ -1,0 +1,42 @@
+D:\Projects\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.dll
+D:\Projects\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.pdb
+D:\Projects\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.dll
+D:\Projects\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.csprojResolveAssemblyReference.cache
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.csprojResolveAssemblyReference.cache
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.csprojResolveAssemblyReference.cache
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.csprojResolveAssemblyReference.cache
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.csprojResolveAssemblyReference.cache
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.dll
+E:\DSP\Prod Copy\BrokerageOnline.Utilities\bin\Debug\BrokerageOnline.Utilities.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.csprojResolveAssemblyReference.cache
+E:\DSP\Prod Copy\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.dll
+E:\DSP\Prod Copy\BrokerageOnline.Utilities\obj\Debug\BrokerageOnline.Utilities.pdb

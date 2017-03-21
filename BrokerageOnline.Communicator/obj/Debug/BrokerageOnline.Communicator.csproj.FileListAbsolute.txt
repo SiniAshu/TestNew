@@ -1,0 +1,40 @@
+D:\Projects\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.dll
+D:\Projects\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.pdb
+D:\Projects\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.dll
+D:\Projects\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.csprojResolveAssemblyReference.cache
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.csprojResolveAssemblyReference.cache
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.csprojResolveAssemblyReference.cache
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.csprojResolveAssemblyReference.cache
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.dll
+E:\DSP\Prod Copy\BrokerageOnline.Communicator\bin\Debug\BrokerageOnline.Communicator.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.dll
+E:\DSP\Prod Copy\BrokerageOnline.Communicator\obj\Debug\BrokerageOnline.Communicator.pdb

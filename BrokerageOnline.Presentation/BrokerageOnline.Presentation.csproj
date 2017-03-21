@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0805830B-9035-4F88-AF18-4C1DF5C12720}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BrokerageOnline.Presentation</RootNamespace>
+    <AssemblyName>BrokerageOnline.Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp.5.5.4\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.2.1\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=2.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.2.1\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-editable.css" />
+    <Content Include="css\bootstrap-multiselect.css" />
+    <Content Include="css\bootstrap-responsive.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\bootstrap2-toggle.css" />
+    <Content Include="css\ChatStyle.css" />
+    <Content Include="css\ChatStyle.min.css" />
+    <Content Include="css\datepicker.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\images\date_tr_icon.png" />
+    <Content Include="css\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jquery-ui.min.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style.min.css" />
+    <Content Include="css\toastr.min.css" />
+    <Content Include="css\toastr.css" />
+    <Content Include="css\token-input-facebook.min.css" />
+    <Content Include="css\token-input-facebook.css" />
+    <Content Include="css\ui.jqgrid.css" />
+    <Content Include="css\ui.jqgrid.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="images\ui-bg_flat_55_5c9ccc_40x100.png" />
+    <Content Include="images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="images\ui-bg_glass_85_eff5f9_1x400.png" />
+    <Content Include="images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="images\ui-bg_gloss-wave_55_006bb4_500x100.png" />
+    <Content Include="images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="images\ui-bg_inset-hard_100_006bb4_1x100.png" />
+    <Content Include="images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="images\ui-icons_217bc0_256x240.png" />
+    <Content Include="images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="images\ui-icons_469bdd_256x240.png" />
+    <Content Include="images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="img\add-btn.png" />
+    <Content Include="img\alert_icon.png" />
+    <Content Include="img\bottomtest_v3.png" />
+    <Content Include="img\cal-btn.png" />
+    <Content Include="img\close-btn1.png" />
+    <Content Include="img\cls-icon.png" />
+    <Content Include="img\comment-btn.png" />
+    <Content Include="img\copy-btn.png" />
+    <Content Include="img\delete.png" />
+    <Content Include="img\drp_dwn_arrow.png" />
+    <Content Include="img\drp_dwn_arrow_red.png" />
+    <Content Include="img\file-btn.png" />
+    <Content Include="img\glyphicons-halflings-white.png" />
+    <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="img\info-icon.png" />
+    <Content Include="img\main_logo.png" />
+    <Content Include="img\nav_btm_icon07.png" />
+    <Content Include="img\nav_btm_icon08.png" />
+    <Content Include="img\Notes.png" />
+    <Content Include="img\OfflineUser.gif" />
+    <Content Include="img\OnlineUser.gif" />
+    <Content Include="img\Remarks.png" />
+    <Content Include="img\repeat-btn.png" />
+    <Content Include="img\repeat-btn1.png" />
+    <Content Include="img\reset.png" />
+    <Content Include="img\rr_add_button.png" />
+    <Content Include="img\search-btn.png" />
+    <Content Include="img\search-btn1.png" />
+    <Content Include="img\Sticky.png" />
+    <Content Include="img\toptest_v3.png" />
+    <Content Include="img\trash-btn.png" />
+    <Content Include="img\up-arrow-btn.png" />
+    <Content Include="js\bootstrap-datepicker.js" />
+    <Content Include="js\bootstrap-editable.min.js" />
+    <Content Include="js\bootstrap-multiselect.js" />
+    <Content Include="js\bootstrap-multiselect.min.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\bootstrap2-toggle.js" />
+    <Content Include="js\grid.locale-en.min.js" />
+    <Content Include="js\jqGridExportToExcel.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery-migrate-1.2.1.js" />
+    <Content Include="js\jquery-migrate-1.2.1.min.js" />
+    <Content Include="js\jquery-ui.min.js" />
+    <Content Include="js\jquery.jqGrid.js" />
+    <Content Include="js\jquery.signalR-2.1.2.js" />
+    <Content Include="js\jquery.signalR-2.1.2.min.js" />
+    <Content Include="js\jquery.signalR-2.2.0.js" />
+    <Content Include="js\jquery.signalR-2.2.0.min.js" />
+    <Content Include="js\jquery.timer.js" />
+    <Content Include="js\jquery.timer.min.js" />
+    <Content Include="js\jquery.tokeninput.min.js" />
+    <Content Include="js\jquery.ui.core.js" />
+    <Content Include="js\jquery.ui.dialog.js" />
+    <Content Include="js\jquery.ui.dialog.min.js" />
+    <Content Include="js\jquery.ui.draggable.min.js" />
+    <Content Include="js\jquery.ui.draggable.js" />
+    <Content Include="js\jquery.ui.mouse.min.js" />
+    <Content Include="js\jquery.ui.mouse.js" />
+    <Content Include="js\jquery.ui.resizable.min.js" />
+    <Content Include="js\jquery.ui.resizable.js" />
+    <Content Include="js\jquery.ui.widget.min.js" />
+    <Content Include="js\jquery.ui.widget.js" />
+    <Content Include="js\LoadSignalRHub.js" />
+    <Content Include="js\MasterQueue.js" />
+    <Content Include="js\MasterQueue.min.js" />
+    <Content Include="js\Menu.min.js" />
+    <Content Include="js\tinymce.min.js" />
+    <Content Include="js\Menu.js" />
+    <Content Include="js\toastr.min.js" />
+    <Content Include="js\Utility.min.js" />
+    <Content Include="js\Validate.js" />
+    <Content Include="Pages\CAMSBrokerageFormatSummaryReport.html" />
+    <Content Include="Pages\DistributorMaster.html" />
+    <Content Include="Pages\DistributorWiseMemoReport.html" />
+    <Content Include="Pages\EmailLogs.html" />
+    <Content Include="Pages\MSQ.aspx" />
+    <Content Include="Pages\SchemeSequence.html" />
+    <Content Include="Pages\ReportViewer.html" />
+    <Content Include="Pages\ZoneBranchWiseReport.html" />
+    <Content Include="Pages\ApplicationLock.html" />
+    <Content Include="Pages\AdHocPaymentSummaryReport.html" />
+    <Content Include="Pages\ARNWiseBrokerageReport.html" />
+    <Content Include="Pages\AuditTrail.html" />
+    <Content Include="Pages\BranchMaster.html" />
+    <Content Include="Pages\BrokerageNotes.html" />
+    <Content Include="Pages\ChannelWiseSummary.html" />
+    <Content Include="Pages\CreateAdHoc.html" />
+    <Content Include="Pages\CreateSIP.html" />
+    <Content Include="Pages\CreateTieUp.html" />
+    <Content Include="Pages\Dashboard.html" />
+    <Content Include="Pages\DistributorCategoryMaster.html" />
+    <Content Include="Pages\ExitloadMaster.html" />
+    <Content Include="Pages\LoginAdministration.html" />
+    <Content Include="Pages\MailingListMaster.html" />
+    <Content Include="Pages\MasterQueue.html" />
+    <Content Include="Pages\Overview.html" />
+    <Content Include="Pages\Passwordpolicy.html" />
+    <Content Include="Pages\ProcessAdHoc.html" />
+    <Content Include="Pages\RackRateInformation.html" />
+    <Content Include="Pages\RackRateInitiate.html" />
+    <Content Include="Pages\RackRateReview.html" />
+    <Content Include="Pages\RoleMaster.html" />
+    <Content Include="Pages\SchemeCategorywiseSummary.html" />
+    <Content Include="Pages\SchemeToModuleMaster.html" />
+    <Content Include="Pages\SIPInformation.html" />
+    <Content Include="Pages\SmartSearchScreen.html" />
+    <Content Include="Pages\TieUpInformation.html" />
+    <Content Include="Pages\UnlockUsers.html" />
+    <Content Include="Pages\UserLog.html" />
+    <Content Include="Pages\UserMaster.html" />
+    <Content Include="Scripts\AdHoc\AdHocProcessScript.js" />
+    <Content Include="Scripts\AdHoc\AdhocScript.js" />
+    <Content Include="js\grid.locale-en.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\toastr.js" />
+    <Content Include="js\Utility.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Pages\CreateRackRate.html" />
+    <Content Include="Pages\ResetPassword.aspx" />
+    <Content Include="Scripts\BRR\CreateRackRate.js" />
+    <Content Include="Scripts\BRR\RackRateDetail.js" />
+    <Content Include="Scripts\BRR\RackRateInformation.js" />
+    <Content Include="Scripts\BRR\RackRateReview.js" />
+    <Content Include="Properties\DataSources\BrokerageOnline.TransferObjects.ChatHistory.datasource" />
+    <Content Include="Properties\DataSources\BrokerageOnline.TransferObjects.UserDetail.datasource" />
+    <Content Include="js\jquery.ui.core.min.js" />
+    <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.1.js" />
+    <Content Include="Scripts\jquery.signalR-2.2.1.min.js" />
+    <Content Include="Scripts\Master\ApplicationLock.js" />
+    <Content Include="Scripts\Master\AuditTrail.js" />
+    <Content Include="Scripts\Master\BranchMaster.js" />
+    <Content Include="Scripts\Master\DistributorMaster.js" />
+    <Content Include="Scripts\Master\EmailLogs.js" />
+    <Content Include="Scripts\Master\ExitloadMaster.js" />
+    <Content Include="Scripts\Master\DistributorCategoryMaster.js" />
+    <Content Include="Scripts\Master\Loginadministration.js" />
+    <Content Include="Scripts\Master\MailingListMaster.js" />
+    <Content Include="Scripts\Master\PasswordPolicy.js" />
+    <Content Include="Scripts\Master\BrokerageNotes.js" />
+    <Content Include="Scripts\Master\RoleMaster.js" />
+    <Content Include="Scripts\Master\SchemeSequence.js" />
+    <Content Include="Scripts\Master\SchemeToModule.js" />
+    <Content Include="Scripts\Master\Unlockusers.js" />
+    <Content Include="Scripts\Master\UserLogMaster.js" />
+    <Content Include="Scripts\Master\UserMaster.js" />
+    <Content Include="Scripts\Overview\Dashboard.js" />
+    <Content Include="Scripts\Overview\Overview.js" />
+    <Content Include="Scripts\Reports\CAMSBrokerageFormatSummaryReport.js" />
+    <Content Include="Scripts\Reports\DistributorWiseMemoReport.js" />
+    <Content Include="Scripts\Reports\ZoneBranchWiseReport.js" />
+    <Content Include="Scripts\Reports\AdHocPaymentSummaryReport.js" />
+    <Content Include="Scripts\Reports\ARNWiseBrokerageReport.js" />
+    <Content Include="Scripts\Reports\Channelwisesummary.js" />
+    <Content Include="Scripts\Reports\SchemeCategoryWiseSummary.js" />
+    <Content Include="Scripts\SIP\CreateSIP.js" />
+    <Content Include="Scripts\SIP\SIPInformation.js" />
+    <Content Include="Scripts\SmartSearch\SmartSearchScreen.min.js" />
+    <Content Include="Scripts\SmartSearch\SmartSearchScreen.js" />
+    <Content Include="Scripts\TieUp\CreateTieUp.js" />
+    <Content Include="Scripts\TieUp\Regenerate.js" />
+    <Content Include="Scripts\TieUp\TieUpInformation.js" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Handlers\ExportGridToExcel.ashx" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Dev.pubxml" />
+    <None Include="Properties\PublishProfiles\deve.pubxml" />
+    <None Include="Properties\PublishProfiles\NewTest.pubxml" />
+    <None Include="Properties\PublishProfiles\ProdDevUI.pubxml" />
+    <None Include="Properties\PublishProfiles\ServerDev.pubxml" />
+    <None Include="Properties\PublishProfiles\x86.pubxml" />
+    <Content Include="Service References\SecurityServiceRef\BrokerageOnline.Presentation.SecurityServiceRef.AuthenticateUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SecurityServiceRef\BrokerageOnline.Presentation.SecurityServiceRef.ForgetPasswordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SecurityServiceRef\BrokerageOnline.Presentation.SecurityServiceRef.InsertUpdateEmployeeLogsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SecurityServiceRef\BrokerageOnline.Presentation.SecurityServiceRef.ResetPasswordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\SecurityServiceRef\SecurityService.wsdl" />
+    <None Include="Service References\SecurityServiceRef\SecurityService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SecurityServiceRef\SecurityService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SecurityServiceRef\SecurityService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SessionServiceRef\SessionService.wsdl" />
+    <None Include="Service References\SessionServiceRef\SessionService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SessionServiceRef\SessionService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SessionServiceRef\SessionService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SessionServiceRef\SessionService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\ie9_fix.css" />
+    <Content Include="img\date_tr_icon.png" />
+    <Content Include="img\ie9_top_nav_bg.jpg" />
+    <Content Include="img\nav_btm_icon01.png" />
+    <Content Include="img\nav_btm_icon02.png" />
+    <Content Include="img\nav_btm_icon03.png" />
+    <Content Include="img\nav_btm_icon04.png" />
+    <Content Include="img\nav_btm_icon05.png" />
+    <Content Include="img\nav_btm_icon06.png" />
+    <Content Include="img\top_nav_icon01.png" />
+    <Content Include="img\top_nav_icon02.png" />
+    <Content Include="img\top_nav_icon03.png" />
+    <Content Include="img\top_nav_icon04.png" />
+    <Content Include="img\top_nav_icon05.png" />
+    <Content Include="img\top_nav_icon06.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\Navigation.js" />
+    <Content Include="js\jquery-1.11.1.min.js" />
+    <Content Include="js\jquery.jqGrid.min.js" />
+    <Content Include="js\jquery.tokeninput.js" />
+    <Content Include="js\site.js" />
+    <Content Include="Pages\Default.aspx" />
+    <None Include="Service References\SessionServiceRef\SessionService.disco" />
+    <None Include="Service References\SessionServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\SessionServiceRef\configuration.svcinfo" />
+    <None Include="Service References\SessionServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SecurityServiceRef\SecurityService.disco" />
+    <None Include="Service References\SecurityServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\SecurityServiceRef\configuration.svcinfo" />
+    <None Include="Service References\SecurityServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="UserControl\ForgetPassword.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\NotificationHub.cs" />
+    <Content Include="App_Code\Startup.cs" />
+    <Content Include="App_Code\User.cs" />
+    <Compile Include="BindingUtilities\LoginUtilities.cs" />
+    <Compile Include="Handlers\CreateExcelFile.cs" />
+    <Compile Include="Handlers\ExportGridToExcel.ashx.cs">
+      <DependentUpon>ExportGridToExcel.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MSQ.aspx.cs">
+      <DependentUpon>MSQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MSQ.aspx.designer.cs">
+      <DependentUpon>MSQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\SecurityServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SessionServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ForgetPassword.ascx.cs">
+      <DependentUpon>ForgetPassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ForgetPassword.ascx.designer.cs">
+      <DependentUpon>ForgetPassword.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BrokerageOnline.BusinessLogic\BrokerageOnline.BusinessLogic.csproj">
+      <Project>{be2eb58c-5888-4ddf-b44a-d832a29d413d}</Project>
+      <Name>BrokerageOnline.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrokerageOnline.Common\BrokerageOnline.Common.csproj">
+      <Project>{f1fcbc78-2067-4c32-baf0-7d9caca952ee}</Project>
+      <Name>BrokerageOnline.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrokerageOnline.DataAccess\BrokerageOnline.DataAccess.csproj">
+      <Project>{f7a0a943-63df-489e-a89d-679b25c8e76f}</Project>
+      <Name>BrokerageOnline.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrokerageOnline.TransferObjects\BrokerageOnline.TransferObjects.csproj">
+      <Project>{33ac9f89-c864-4eaa-a0d2-ab60a462b91b}</Project>
+      <Name>BrokerageOnline.TransferObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SecurityServiceRef\" />
+    <WCFMetadataStorage Include="Service References\SessionServiceRef\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50339</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50339/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

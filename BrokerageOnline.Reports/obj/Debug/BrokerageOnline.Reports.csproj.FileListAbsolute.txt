@@ -1,0 +1,38 @@
+D:\Projects\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.dll
+D:\Projects\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.pdb
+D:\Projects\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.dll
+D:\Projects\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.csprojResolveAssemblyReference.cache
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.csprojResolveAssemblyReference.cache
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.dll
+E:\DSP\Prod Copy\BrokerageOnline.Reports\bin\Debug\BrokerageOnline.Reports.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.dll
+E:\DSP\Prod Copy\BrokerageOnline.Reports\obj\Debug\BrokerageOnline.Reports.pdb

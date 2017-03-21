@@ -1,0 +1,2 @@
+AdHoc.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

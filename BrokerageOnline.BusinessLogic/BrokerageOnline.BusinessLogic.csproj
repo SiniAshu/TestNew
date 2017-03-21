@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE2EB58C-5888-4DDF-B44A-D832A29D413D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BrokerageOnline.BusinessLogic</RootNamespace>
+    <AssemblyName>BrokerageOnline.BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdHocBL.cs" />
+    <Compile Include="BaseRackRateBL.cs" />
+    <Compile Include="DistributorBL.cs" />
+    <Compile Include="EmailLog.cs" />
+    <Compile Include="LoginBL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MasterBL.cs" />
+    <Compile Include="OverviewBL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TieUpBL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BrokerageOnline.Common\BrokerageOnline.Common.csproj">
+      <Project>{f1fcbc78-2067-4c32-baf0-7d9caca952ee}</Project>
+      <Name>BrokerageOnline.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrokerageOnline.DataAccess\BrokerageOnline.DataAccess.csproj">
+      <Project>{f7a0a943-63df-489e-a89d-679b25c8e76f}</Project>
+      <Name>BrokerageOnline.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrokerageOnline.TransferObjects\BrokerageOnline.TransferObjects.csproj">
+      <Project>{33ac9f89-c864-4eaa-a0d2-ab60a462b91b}</Project>
+      <Name>BrokerageOnline.TransferObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrokerageOnline.Workflow\BrokerageOnline.Workflow.csproj">
+      <Project>{53d86fdb-df54-43a1-9d61-47881a77194a}</Project>
+      <Name>BrokerageOnline.Workflow</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

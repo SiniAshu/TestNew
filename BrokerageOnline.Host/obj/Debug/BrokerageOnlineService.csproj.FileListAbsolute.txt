@@ -1,0 +1,5 @@
+D:\Projects\BrokerageOnline\BrokerageOnlineService\bin\BrokerageOnlineService.dll.config
+D:\Projects\BrokerageOnline\BrokerageOnlineService\bin\BrokerageOnlineService.dll
+D:\Projects\BrokerageOnline\BrokerageOnlineService\bin\BrokerageOnlineService.pdb
+D:\Projects\BrokerageOnline\BrokerageOnlineService\obj\Debug\BrokerageOnlineService.dll
+D:\Projects\BrokerageOnline\BrokerageOnlineService\obj\Debug\BrokerageOnlineService.pdb

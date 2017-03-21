@@ -1,0 +1,1006 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Brokerage Online Solution</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/ChatStyle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link href="../css/ie9_fix.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/ui.jqgrid.min.css" rel="stylesheet" />
+    <link href="../css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../css/token-input-facebook.min.css" rel="stylesheet" />
+    <link href="../css/bootstrap-multiselect.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link href="../css/toastr.min.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+
+    <script>
+        $(window).scroll(function () {
+            var height = $(window).scrollTop();
+            if (height > 210) {
+                $('#fx-hdr').slideDown("slow");
+            }
+            else {
+                $('#fx-hdr').slideUp("slow");
+            }
+
+        });
+
+    </script>
+
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.ui.core.min.js"></script>
+    <script src="../js/jquery.ui.dialog.min.js"></script>
+    <script src="../js/jquery.ui.draggable.min.js"></script>
+    <script src="../js/jquery.ui.mouse.min.js"></script>
+    <script src="../js/jquery.ui.resizable.min.js"></script>
+    <script src="../js/jquery.ui.widget.min.js"></script>
+    <script src="../js/jquery.signalR-2.2.0.min.js"></script>
+    <script src="../signalr/hubs/" type="text/javascript"></script>
+    <script src="../js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-multiselect.min.js"></script>
+    <script src="../js/toastr.min.js"></script>
+    <script src="../js/site.js"></script>
+    <script src="../js/jquery.jqGrid.min.js"></script>
+    <script src="../js/tinymce.min.js"></script>
+    <script src="../js/grid.locale-en.min.js"></script>
+    <script src="../js/jquery.tokeninput.min.js"></script>
+    <script src="../js/jquery.timer.min.js"></script>
+    <script src="../js/Navigation.js"></script>
+    <script src="../js/Utility.js"></script>
+    <script src="../js/Menu.js"></script>
+    <script src="../Scripts/SIP/SIPInformation.js"></script>
+    <!--<script src="../js/jquery.signalR-2.1.2.min.js"></script>
+    <script src="http://182.75.9.197/BrokerageOnlineService/signalr/hubs/" type="text/javascript"></script>-->
+    <style>
+        h4 {
+            color: #333;
+        }
+
+        h3 {
+            color: #333;
+        }
+    </style>
+    <script>
+        if ((sessionStorage.CurrentMenuselected == "" || sessionStorage.CurrentMenuselected == undefined) && sessionStorage.idtag != "") {
+            $(document).ready(function () {
+                //$('#' + sessionStorage.idtag + '').trigger('click');
+                if (sessionStorage.UserName != "" && sessionStorage.UserName != undefined) {
+                    $("#spn_user_name").html("");
+                    $("#spn_role_name").html("");
+                    $("#spn_user_name").append(sessionStorage.UserName);
+                    $("#spn_role_name").append(sessionStorage.RoleName);
+                }
+            });
+        }
+        $(document).ready(function () {
+            if (sessionStorage.CurrentMenuselected == "nav_information") {
+                SIP.ViewSIPInformation();
+                SIP.masterqueueedit();
+            }
+            else if (sessionStorage.CurrentMenuselected == "nav_initiate") {
+                SIP.ViewInitiateSIP();
+                SIP.masterqueueedit();
+            }
+            else if (sessionStorage.CurrentMenuselected == "nav_review") {
+                SIP.ViewSIPReview();
+                SIP.masterqueueedit();
+            }
+            else if (sessionStorage.CurrentMenuselected == "nav_approval") {
+                SIP.ViewSIPApproval();
+                SIP.masterqueueedit();
+            }
+            else if (sessionStorage.CurrentMenuselected == "nav_freeze") {
+                SIP.ViewFreezeSIP();
+                SIP.masterqueueedit();
+            }
+            else if (sessionStorage.CurrentMenuselected == "nav_manage") {
+                SIP.ViewManageSIP();
+                SIP.masterqueueedit();
+            }
+            if (sessionStorage.UserName != "" && sessionStorage.UserName != undefined) {
+                $("#spn_user_name").html("");
+                $("#spn_role_name").html("");
+                $("#spn_user_name").append(sessionStorage.UserName);
+                $("#spn_role_name").append(sessionStorage.RoleName);
+            }
+
+            if (sessionStorage.ActiveMainMenu != undefined && sessionStorage.ActiveMainMenu != "") {
+                $("ul.secondary-nav-ul li").removeClass("active");
+                $('.secondary-nav-ul-li:eq(' + parseInt(sessionStorage.ActiveMainMenu) + ')').addClass("active");
+            }
+        });
+
+        function qs(search_for) {
+            var query = window.location.search.substring(1);
+            var parms = query.split('&');
+            for (var i = 0; i < parms.length; i++) {
+                var pos = parms[i].indexOf('=');
+                if (pos > 0 && search_for == parms[i].substring(0, pos)) {
+                    return parms[i].substring(pos + 1);
+                }
+            }
+            return "";
+        }
+    </script>
+</head>
+<body>
+    <div class="container-fluid c-bg">
+        <input type="hidden" id="hidden_payment_memo_id" />
+        <input type="hidden" id="hidden_copied_payment_memo_id" />
+        <div class="row top-hdr-otr ">
+            <div class="col-md-2 col-sm-4 fst-itm">
+                <div> <img class="img-responsive mr-top-02 mr-top-sm-nill" src="../img/main_logo.png"> </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <h2 class="title-tag-style-a mr-top-03 mr-top-sm-nill">Brokerage Online Solution</h2>
+            </div>
+
+            <div class="col-md-6 col-sm-4 lst-itm">
+                <div class="">
+                    <div class="col-md-12 lst-itm">
+                        <div class="clear mr-top-0001"></div>
+                        <nav role="navigation">
+                            <ul class="top-nav-set-a">
+                                <li id="li_Dashboard">
+                                    <a href="Dashboard.html" class="top-nav-btns">
+                                        <img title="Home" src="../img/nav_btm_icon08.png">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="has-menu" id="li_module">
+                                    <a href="#" class="top-nav-btns">
+                                        <img src="../img/nav_btm_icon01.png">
+                                        <span>Modules</span>
+                                    </a>
+                                    <ul class="sub-menu" id="ul_menu_body"></ul>
+                                </li>
+                                <li id="li_master_queue">
+                                    <a href="MasterQueue.html" id="anch_master_queue" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon02.png">
+                                        <span>Master Q</span>
+                                    </a>
+                                </li>
+                                <li id="li_discarded_queue">
+                                    <a href="Overview.html" id="anch_discarded_queue" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon03.png">
+                                        <span>Discarded Q</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./SmartSearchScreen.html" id="anch_smart_search" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon04.png">
+                                        <span>Smart Search</span>
+                                    </a>
+                                </li>
+                                <li class="has-menu" id="li_administrator">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon05.png">
+                                        <span>Administrator</span>
+                                    </a>
+                                    <ul class="sub-menu" id="ul_admin_menu_body"></ul>
+                                </li>
+                                <li class="has-menu" id="li_reports">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon06.png">
+                                        <span>Reports</span>
+                                    </a>
+                                    <ul class="sub-menu fl-wd flt-r" id="ul_report_menu_body"></ul>
+                                </li>
+                                <li class="has-menu">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon07.png">
+                                        <span>User Profile</span>
+                                    </a>
+                                    <ul class="sub-menu flt-r">
+                                        <li><a href="#">User Details</a></li>
+                                        <li><a href="#">Settings</a></li>
+                                        <li><a href="#">Reminders</a></li>
+                                        <li><a href="#" onclick="CommonValidate.LogOut();">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="clear mr-top-0001"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bottom-bnr">
+            <h2 class="fl" id="spn_user_name"></h2>
+            <h2 class="fl">:  [ </h2>
+            <h2 class="fl" id="spn_role_name"></h2>
+            <h2 class="fl"> ] </h2>
+            <span class="fr"><span class="time-date-box" id="spn_date"></span></span>
+            <!--<span class="fr"><span class="time-date-box">11:14 am</span><span class="time-date-box"> | </span><span class="time-date-box" id="spn_date">0/0/2015</span></span>-->
+        </div>
+        <div style="background-image: url(../img/toptest_v3.png), url(../img/bottomtest_v3.png); background-position: top left, bottom right; background-repeat: no-repeat; ">
+            <div class="row inner-bdy-sect">
+                <div class="col-md-6 col-sm-6">
+                    <h3 id="hdr_name" class="sub-title-btm-c">Create SIP</h3>
+                </div>
+                <div class="col-md-6 col-sm-6 txt-alg-rt mr-bottom-02" id="div_btn">
+                    <!--<button class="plus-btn mr-right-01">Save</button>
+                    <button class="minus-btn">Cancel</button>-->
+                </div>
+            </div>
+
+
+            <div id="div_sip_information">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 ">
+                        <div class="col-md-3 col-sm-3 pd-left-00">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5 pd-left-00"> <span class="sub-title-a mr-top-desk-title">Distributor Category</span> </div>
+                                <div class="col-md-7 col-sm-7 pd-left-00">
+                                    <select class="select-bx-style" id="dd_dist_category_info"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 pd-left-00">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5 pd-left-00"> <span class="sub-title-a mr-top-desk-title">ARN No</span> </div>
+                                <div class="col-md-7 col-sm-7 pd-left-00">
+                                    <input type="text" id="txt_arn_info" class="input-text-bx-style" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 pd-left-00">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5 pd-left-00"> <span class="sub-title-a mr-top-desk-title">ARN Name</span> </div>
+                                <div class="col-md-7 col-sm-7 pd-left-00">
+                                    <input type="text" id="txt_arn_name_info" class="input-text-bx-style" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 pd-left-00">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5 pd-left-00"> <span class="sub-title-a mr-top-desk-title">Date From</span> </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="date-outer-div">
+
+                                        <div class='input-group '>
+                                            <input type="text" id="dt_from" class="input-text-date-bx-style  c-round RemoveToDate" /> <!--onkeypress="SIP.RemoveToDatePicker(this);" />-->
+                                            <span class="input-group-addon">
+                                                <img src="../img/cal-btn.png" id="imgdt_from">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2  pd-left-00">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5 pd-left-00"> <span class="sub-title-a mr-top-desk-title">Date To</span> </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="date-outer-div">
+                                        <div class='input-group '>
+                                            <input type="text" id="dt_to" class="input-text-date-bx-style  c-round" />
+                                            <span class="input-group-addon">
+                                                <img src="../img/cal-btn.png" id="imgdt_to">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mr-top-01">
+                    <div id="div_sip_Controls">
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 pd-top-02 pd-bottom-02">
+                        <div class="col-md-5 col-sm-5 pd-left-00">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-3 pd-left-00" style="width:23%"> <span class="sub-title-a mr-top-desk-title">Target </span></div>
+                                <div class="col-md-9 col-sm-9 pd-left-00">
+                                    <div class="row">
+                                        <div class="col-md-8 col-sm-8 pd-left-00">
+                                            <div class="styled-select">
+                                                <select class="select-bx-style  c-round" id="dd_sip_target">
+                                                    <option value="0">Target based</option>
+                                                    <option value="1">Not applicable</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 input-group">
+                                            <input type="text" id="txt_sip" maxlength="3" style="min-width:50px" class="input-text-bx-style c-round f-size" />
+                                            <span class="input-group-addon">SIP's</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-2 pd-left-00">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5 pd-left-00"> <span class="sub-title-a mr-top-desk-title">Months</span> </div>
+                                <div class="col-md-7 col-sm-7 pd-left-00">
+                                    <input type="text" id="txt_sip_month" maxlength="3" class="input-text-bx-style c-round f-size" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-5 pd-left-00">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 pd-left-00"> <span class="sub-title-a mr-top-desk-title">Transaction Type</span> </div>
+                                <div class="col-md-8 col-sm-8 pd-left-00">
+                                    <div class="col-md-1 col-sm-1">
+                                        <input type="checkbox" class="flt-right-a mr-top-desk-title-01 inpt-chkbx" checked id="chk_sip" />
+                                    </div>
+                                    <div class="col-md-2 col-sm-2 pd-left-00">
+                                        <label class="tt-chk-bx-label mr-top-desk-title-02" for="chk_sip">SIP</label>
+                                    </div>
+                                    <div class="col-md-1 col-sm-1 ">
+                                        <input type="checkbox" class="flt-right-a mr-top-desk-title-01 inpt-chkbx" checked id="chk_stp" />
+                                    </div>
+                                    <div class="col-md-2 col-sm-2 pd-left-00">
+                                        <label class="tt-chk-bx-label mr-top-desk-title-02" for="chk_stp">STP</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div id="div_sip_detail_hdr" class="row mr-top-02">
+                    <div class="col-md-12 col-sm-12 ">
+                        <h3 class="sub-title-btm-b">SIP Details</h3>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <br />
+                    <table border="1" id="tblSIPData" class="table ">
+                        <thead>
+                            <tr class="rrd-tbl-hdr" style="text-transform: uppercase;">
+                                <th class="bt bl">Scheme Category</th>
+                                <th class="bt wbl">Scheme</th>
+                                <th class="bt wbl">Installment Amount</th>
+                                <th class="bt wbl">Tenure (in months)</th>
+                                <th class="bt wbl">Upfront</th>
+                                <th class="bt wbl">Amount/ Rate(%)</th>
+                                <th class="bt wbl">Calculation</th>
+                                <th class="bt wbl">Payment Type</th>
+                                <th class="bt wbl">Clawback</th>
+                                <th class="bt wbl">SIP Incentive Remarks</th>
+                                <th class="bt wbl">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="sip-row" id="tr_sip_row_0">
+                                <td class="pad-top-b pad-btm-b bt bl">
+                                    <select class="select-bx-style dd_scheme_category" id="dd_scheme_category_0" style="max-width:100px"></select>
+                                    <input type="hidden" name="SIPRowId" value="0" id="txt_sip_row_id" />
+                                </td>
+                                <td class="pad-top-b pad-btm-b bt bl"><select class="select-bx-style dd_Scheme" id="dd_scheme_0" style="max-width:100px"></select></td>
+                                <td class="pad-top-b pad-btm-b bt bl">
+                                    <div style="width:100%">
+                                        <input type="text" class="input-text-bx-style c-round" name="installment-amount-from" id="txt_installment_amount_from_0" onkeyup="SIP.SIPCalculationByRowID(0);" maxlength="10" style="float: left; width: 35%; font-size:14px">
+                                        <div class="styled-select" style="float:left;width:30%">
+                                            <select class="select-bx-style c-round" name="installment-expression" id="dd_installment_expression_0">
+                                                <option value="<"><</option>
+                                                <option value="≤">≤</option>
+                                                <option value=">">></option>
+                                                <option value="≥">≥</option>
+                                                <option value="=">=</option>
+                                            </select>
+                                        </div>
+                                        <input type="text" class="input-text-bx-style c-round" name="installment-amount-to" id="txt_installment_amount_to_0" onkeyup="SIP.SIPCalculationByRowID(0);" maxlength="10" style="float: left; width: 35%; font-size: 14px">
+                                    </div>
+
+                                </td>
+                                <td class="pad-top-b pad-btm-b bt bl">
+                                    <div style="width:100%">
+                                        <div class="styled-select" style="float:left;width:50%">
+                                            <select class="select-bx-style c-round" name="tenure-expression" id="dd_tenure_expression_0" onchange="SIP.TenureDropdownOnChange(0);">
+                                                <option value="Select">Select</option>
+                                                <option value="Any">Any</option>
+                                                <option value="<"><</option>
+                                                <option value="≤">≤</option>
+                                                <option value=">">></option>
+                                                <option value="≥">≥</option>
+                                                <option value="=">=</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input type="text" class="input-text-bx-style c-round" name="tenure-month" onkeyup="SIP.SIPCalculationByRowID(0);" id="txt_tenure_month_0" maxlength="3" style="float: left; width: 50%; font-size:14px">
+                                    </div>
+                                </td>
+                                <td class="pad-top-b pad-btm-b bt bl">
+                                    <div class="styled-select">
+                                        <select class="select-bx-style c-round" name="upfront-expression" id="dd_upfront_expression_0" style="font-size:14px" onchange="SIP.UpfrontDropdownOnChange(0);">
+                                            <option value="Application based">Application based</option>
+                                            <option value="Installment based">Installment based</option>
+                                            <option value="Tenure based">Tenure based</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <input type="text" class="input-text-bx-style c-round" maxlength="5" id="txt_upfront_value_0" onkeyup="SIP.SIPCalculationByRowID(0);" name="upfront-value" style="min-width: 50px; font-size: 14px">
+                                </td>
+                                <td class="pad-top-b pad-btm-b bt bl">
+                                    <input type="text" class="input-text-bx-style c-round" name="calculated-value" id="txt_calculated_value_0" style="width: 100%; font-size: 14px" readonly>
+                                </td>
+                                <td class="pad-top-b pad-btm-b bt bl">
+                                    <input type="text" name="payment-value" class="input-text-bx-style c-round" id="txt_payment_type_0" style="min-width: 50px; font-size: 14px">
+                                </td>
+                                <td class="pad-top-b pad-btm-b bt bl">
+                                    <!--<textarea class="input-text-bx-style c-round input-large" id="txt_clawback_0" rows="3" cols="30"></textarea>-->
+                                    <input type="text" name="clawback-value" class="input-text-bx-style c-round" id="txt_clawback_0" style="min-width: 50px; font-size: 14px">
+                                </td>
+                                <td class="pad-top-b pad-btm-b bt bl">
+                                    <!--<textarea class="input-text-bx-style c-round input-large" id="txt_sip_incentive_remarks_0" rows=" 3" cols="30"></textarea>-->
+                                    <input type="text" name="sipincentiveremarks-value" class="input-text-bx-style c-round" id="txt_sip_incentive_remarks_0" style="min-width: 50px; font-size: 14px">
+                                </td>
+                                <td class="pad-top-b pad-btm-b bt bl">_</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <hr>
+                <!--<button class='btn btn-lg btn-primary viewtrial pull-right'>View Trial <span class="glyphicon glyphicon-plus"></span></button>&nbsp;&nbsp;-->
+                <a id="btn_add_new_rack" href="javascript:void(0)" class="flt-right-a addnewrow mr-right-01"><img src="../img/rr_add_button.png"></a>
+                <!--<button class='btn btn-lg btn-primary addnewrow pull-right'>Add New <span class="glyphicon glyphicon-plus"></span></button>-->
+                <div id="div_tie_up_detail">
+
+                </div>
+                <div class="row mr-top-05 mr-right-01">
+                    <div id="div_view_rate_trail"></div>
+                </div>
+                <div class="row mr-top-01">
+                    <div class="col-md-12 col-sm-12 ">
+                        <h3 class="sub-title-btm-b">SIP Notes</h3>
+                    </div>
+                </div>
+
+                <div class="row mr-bottom-02">
+                    <div class="col-md-9">
+                        <input type="text" class="input-text-bx-style  c-round f-size" id="txt_sip_notes" maxlength="200" />
+                    </div>
+                </div>
+
+                <!--<div class="row mr-top-01">
+                    <div class="col-md-12 col-sm-12 ">
+                        <h3 class="sub-title-btm-b">Remarks</h3>
+                    </div>
+                </div>-->
+                <!--<div class="row mr-top-01">
+                    <div id="div_remarks" class="col-md-12 col-sm-12 ">
+                        <div class="txt-area-style-outer">
+                            <textarea class="txt-area-style c-round" id="txt_remarks"></textarea>
+
+                        </div>
+
+                    </div>
+                </div>-->
+                <!--<div class="row mr-top-05">
+                    <div class="col-md-12 col-sm-12 ">
+                        <h3 class="sub-title-btm-b">Additional Notes</h3>
+                    </div>
+                </div>
+                <div class="row mr-top-01 mr-bottom-50">
+                    <div class="col-md-12 col-sm-12 ">
+                        <div class="txt-area-style-outer">
+                            <textarea class="txt-area-style scroll-style c-round" id="txt_additional_notes"></textarea>
+                        </div>
+
+                    </div>
+                </div>-->
+            </div>
+
+            <div id="div_landing_grid">
+                <div id="div_create_tie_up">
+                    <div class="row ">
+                        <div class="col-md-7 col-sm-7 ">
+
+                        </div>
+                        <!--<div class="col-md-5 col-sm-5 txt-alg-rt mr-bottom-02">
+                            <button class="btn btn-primary mr-right-01" onclick="SIP.clearFields(); ">Reset</button>
+
+                        </div>-->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 ">
+                            <div class="col-md-12 col-sm-12 pd-top-02 pd-bottom-02">
+                                <div class="col-md-3 col-sm-3">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4"> <span class="sub-title-a mr-top-desk-title ">Channel</span> </div>
+                                        <div class="col-md-8 col-sm-8 pd-left-00">
+                                            <select class="multiselect select-bx-style" id="dd_channel"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 pd-left-00">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6"> <span class="sub-title-a mr-top-desk-title flt-right-a">Distributor Category</span> </div>
+                                        <div class="col-md-6 col-sm-6 pd-left-00">
+                                            <select class="multiselect select-bx-style" id="dd_dist_category" multiple="multiple"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 pd-left-00">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4"> <span class="sub-title-a mr-top-desk-title flt-right-a">ARN No</span> </div>
+                                        <div class="col-md-8 col-sm-8 pd-left-00">
+                                            <input type="text" id="txt_arn" class="input-text-bx-style c-round" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-3 pd-left-00">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4"> <span class="sub-title-a mr-top-desk-title flt-right-a">ARN Name</span> </div>
+                                        <div class="col-md-8 col-sm-8 pd-left-00">
+                                            <input type="text" id="txt_arn_name" class="input-text-bx-style c-round" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="col-md-12 col-sm-12 bg-cl-a pd-top-02 pd-bottom-02" id="div_scheme">
+                                <div class="col-md-3 col-sm-3">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4"> <span class="sub-title-a mr-top-desk-title ">Scheme Category</span> </div>
+                                        <div class="col-md-8 col-sm-8 pd-left-00">
+                                            <select class="select-bx-style" id="dd_Scheme_category_search"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 pd-left-00">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6"> <span class="sub-title-a mr-top-desk-title flt-right-a">Scheme</span> </div>
+                                        <div class="col-md-6 col-sm-6 pd-left-00">
+                                            <select class="select-bx-style" id="dd_Scheme_search"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+
+
+                    <div class="row mr-top-01">
+                        <div class="col-md-3 col-sm-7 ">
+                            <h3 class="sub-title-btm-c">Search Results</h3>
+
+                            <!--<div class="row col-md-4 col-sm-7">
+                                <button class="btn btn-warning sq-btn" data-toggle="modal" onclick="Utility.AdvanceSearchClick(4, 'GET_CREATE_SIP');">Advance Search &nbsp; <img src="../img/search-btn.png"></button>
+                            </div>-->
+                        </div>
+
+                        <!--<div class="col-md-9 col-sm-5 txt-alg-rt mr-bottom-02" id="div_btn">
+                            <button class="btn btn-warning sq-btn " onclick="SIP.clearFields(); "><img src="../img/repeat-btn.png"></button>
+                        </div>-->
+                    </div>
+
+
+                    <!--<div class="row mr-top-01">
+                        <div class="col-md-7 col-sm-7 ">
+                            <h3 class="sub-title-btm-d">Search Results</h3>
+                            <div class="row">
+                                <button class="btn btn-warning sq-btn" data-toggle="modal" onclick="Utility.AdvanceSearchClick(4, 'GET_CREATE_SIP');">Advance Search &nbsp; <img src="../img/search-btn.png"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5 txt-alg-rt mr-bottom-02" id="div_btn">
+                            <button class="btn btn-warning sq-btn fr" onclick="SIP.clearFields(); ">
+                                <img src="../img/repeat-btn.png">
+                            </button>
+                        </div>
+                    </div>-->
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 ">
+                            <table id="grid_search_result"></table>
+                        </div>
+                    </div>
+
+                    <div class="row mr-top-50">
+                        <div class="col-md-12 col-sm-12 ">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="div_freeze">
+                <table id="tbl_freeze"></table>
+                <div class="row mr-top-100"></div>
+            </div>
+
+            <div id="div_manage">
+                <table id="tbl_manage"></table>
+                <div class="row mr-top-100"></div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade c-modal-center" id="modal_Advance_Search" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color:#0c70be; color:#FFF; ">
+                            <button type="button" class="close" onclick="Utility.AdvanceSearch_Close();" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Filter Search</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <!--<div class="col-xs-10">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control " placeholder="Search for...">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button"><img src="../img/search-btn1.png"></button>
+                                            </span>
+
+                                        </div>
+                                    </div>-->
+                                </div><!-- mrow-->
+                                <div class="row c-pt1">
+                                    <div class="col-xs-6">
+                                        <select class="form-control" id="dd_column_names" onchange="Utility.AdvanceSearch_ColumnChange();"></select>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <select class="form-control" id="dd_operations"></select>
+                                    </div>
+                                </div>
+                                <div class="row c-pt1">
+                                    <div class="col-xs-10">
+                                        <input class="form-control " type="text" id="txt_Adv_input">
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <button class="btn btn-primary sq-btn fr" onclick="Utility.Add_AdvanceSearch();">Add</button>
+                                    </div>
+                                </div>
+                                <div class="row c-pt1">
+                                    <div class="col-xs-12">
+                                        <textarea class="form-control" rows="3" id="txt_Query_Text"></textarea>
+                                    </div>
+
+                                </div>
+                            </div><!-- modal body-->
+                        </div>
+                        <div class="modal-footer c-pt1">
+                            <button type="button" class="btn btn-primary sq-btn" onclick="SIP.Search_AdvanceSearchClick();">Search</button>
+                            <button type="button" class="btn btn-warning sq-btn" onclick="Utility.ClearAdvanceSearchClick();">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL END -->
+
+            <div class="modal fade" id="mdl_view_remark_review" tabindex="-1" role="dialog" aria-labelledby="lblmdl_view_remark_review" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Remarks History</h4>
+                        </div>
+                        <div class="modal-body">
+                            <!-- <table id="tbl_remarks"></table>-->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="mdl_view_trail_review" tabindex="-1" role="dialog" aria-labelledby="lblmdl_view_trail_review" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Modified Rate History</h4>
+                        </div>
+                        <div class="modal-body">
+                            <table id="tbl_modified_rate_history"></table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="mdl_remarks_entry" tabindex="-1" role="dialog" aria-labelledby="lblmdl_remarks_entry" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Remarks</h4>
+                        </div>
+                        <div class="modal-body">
+                            <!--<div id="div_remarks" class="col-md-12 col-sm-12 ">-->
+                            <!--<div class="txt-area-style-outer">-->
+                            <textarea class="txt-area-style" id="txt_remarks_entry"></textarea>
+                            <div class="row txt-alg-rt mr-top-02 mr-right-01">
+                                <button class="btn btn-warning " onclick="SIP.rejectdiscard();" id="btn_remarks"></button>
+                            </div>
+                            <input type="hidden" id="txt_selected_memos" />
+                            <input type="hidden" id="txt_updated_status" />
+                            <input type="hidden" id="txt_click_from" />
+                            <!--</div>-->
+                            <!--</div>-->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="mdl_view_brokerage_detail" tabindex="-1" role="dialog" aria-labelledby="lblmdl_view_brokerage_detail" aria-hidden="true">
+                <div class="modal-dialog modal-lrg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Modified Rate History</h4>
+                        </div>
+                        <div class="modal-body">
+                            <table id="tbl_view_brokerage_history"></table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="mdl_view_forward_to" tabindex="-1" role="dialog" aria-labelledby="lblmdl_view_forward_to" aria-hidden="true">
+                <div class="modal-dialog modal-title">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Assign to Role</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 ">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-6">
+                                            <label class="tt-chk-bx-label mr-top-desk-title-02">Assign to</label>
+                                        </div>
+                                        <div class="col-md-8 col-sm-6 pd-left-00">
+                                            <div class="styled-select">
+                                                <select class="select-bx-style" id="dd_assign_to" onchange="SIP.AssignToChange(this);">
+                                                    <option value="6">Business Head</option>
+                                                    <option value="7">Head Of Sales</option>
+                                                    <option value="8">President</option>
+                                                    <option value="9">CAO</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="div_bh" class="row mr-top-02">
+                                        <div class="col-md-4 col-sm-6">
+                                            <label class="tt-chk-bx-label mr-top-desk-title-02">Business Head</label>
+                                        </div>
+                                        <div class="col-md-8 col-sm-6 pd-left-00">
+
+                                            <select class="select-bx-style" id="dd_business_head"></select>
+
+                                        </div>
+                                    </div>
+                                    <div class="row txt-alg-rt mr-top-02 mr-right-01">
+                                        <button class="btn btn-success " onclick="SIP.AssignAndForward();" id="btn_assign_to">Forward</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade c-modal-center" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color:#0c70be; color:#FFF; ">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Additional Notes</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <textarea class="txt-area-style scroll-style c-round" id="txt_additional_notes"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning sq-btn" data-dismiss="modal">CLOSE</button>
+                            <button type="button" class="btn btn-success sq-btn" data-dismiss="modal">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="modal fade c-modal-center" id="myModal123" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color:#0c70be; color:#FFF; ">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Remarks</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+
+                                <div class="row">
+                                    <div class="col-xs-12" style="border-color:#999; border-style:solid; border-width:thin; padding-top:10px; padding-bottom:10px;">
+                                        <textarea class="txt-area-style c-round" id="txt_remarks"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row c-pt1">
+                                    <div class="col-xs-3 fr">
+                                        <button type="button" id="btn_mdl6_remarks" class="btn btn-success sq-btn fr" data-dismiss="modal">Ok</button>
+                                    </div>
+                                </div>
+                                <div class="row c-pt1">
+                                    <div class="col-xs-4">
+                                        <h4>Remarks</h4>
+                                    </div>
+                                </div>
+                                <div class="row c-pt1">
+
+                                    <!--<table class="table table-condensed table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th style="color:#000; font-weight:700;">Remarks by</th>
+                                                <th style="color:#000; font-weight:700;">Date</th>
+                                                <th style="color:#000; font-weight:700;">Time</th>
+                                                <th style="color:#000; font-weight:700;">Remarks</th>
+                                                <th style="color:#000; font-weight:700;">Stage</th>
+                                            <tr>
+                                        </thead>
+                                    </table>-->
+                                    <table id="tbl_remarks"></table>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--</div>-->
+        <footer>
+            <div class="row footer-main-black">
+                <div class="col-md-12 col-sm-12 ">
+                    <div class="col-md-12 col-sm-12 pd-top-02 pd-bottom-02">
+
+                        <div class="col-md-12 col-sm-12 pd-left-00">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4"></div>
+                                <div class="col-md-8 col-sm-8 pd-left-00">
+                                    <label style="color: white;" class="mr-right-01">Copyright &copy 2014. All rights reserved in this software belong solely to <a style=" color:white;background:black;" href="http://www.hexagonglobal.in" target="_blank">Hexagon Global IT Services pvt ltd</a> </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="modal_confirmation" tabindex="-1" role="dialog" aria-labelledby="ariaconfirmation" aria-hidden="true">
+
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row mr-top-05">
+                        <div class="col-md-12 col-sm-12 ">
+                            <h3 class="sub-title-btm-c">Confirmation</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mr-top-01">
+                        <div class="col-md-12 col-sm-12 ">
+                            <div class="rrd-outer">
+                                <div class="row">
+                                    <div> <span class="sub-title-a mr-top-desk-title ">Would you like to include Parent code as well?</span> </div>
+                                </div>
+                                <div class="row txt-alg-rt">
+                                    <div class="row">
+                                        <button class="btn mr-right-01 btn-success" onclick="SIP.ConfirmARNOk();" id="btn_modal_ok">Yes</button>
+                                        <button class="btn mr-right-02 btn-warning " onclick="SIP.ConfirmARNCancel();" id="btn_modal_cancel">No</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="alertsection" class="alert-sect-outer" style="right:-450px;">
+        <div class="alert-head">
+            <img src="../img/alert_icon.png">
+            <span class="notif-count"><span class="notif-count-inner">8</span></span>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_select_to_cc" tabindex="-1" role="dialog" aria-labelledby="selecttocc" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row mr-top-05">
+                        <div class="col-md-12 col-sm-12 ">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h3 class="sub-title-btm-c">Select TO / CC Users</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mr-top-01">
+                        <div class="col-md-12 col-sm-12 ">
+                            <div class="rrd-outer">
+                                <div class="row" id="div_mailing_list">
+                                    <div class="col-md-3 col-sm-3"> <span class="sub-title-a mr-top-desk-title ">List Name</span> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <div class="styled-select">
+                                            <select class="select-bx-style" id="dd_mailing_list" onchange="SIP.mailingListOnchange(this);"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br /><br />
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3"> <span class="sub-title-a mr-top-desk-title ">TO Users</span> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <!--<select class="multiselect select-bx-style" id="dd_To"></select>-->
+                                        <input type="text" id="txt_to" class="input-text-bx-style" />
+                                    </div>
+
+                                </div>
+                                <br /><br />
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3"> <span class="sub-title-a mr-top-desk-title ">CC Users</span> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <!--<select class="multiselect select-bx-style" id="dd_CC" multiple="multiple"></select>-->
+                                        <input type="text" id="txt_cc" class="input-text-bx-style" />
+                                    </div>
+
+                                </div>
+                                <br /><br />
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3"> <span class="sub-title-a mr-top-desk-title ">BCC Users</span> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <!--<select class="multiselect select-bx-style" id="dd_CC" multiple="multiple"></select>-->
+                                        <input type="text" id="txt_bcc" class="input-text-bx-style" />
+                                    </div>
+
+                                </div>
+
+                                <div class="row mr-top-05 pos-rel-common">
+
+                                </div>
+
+                                <div class="row mr-top-05">
+
+                                    <div>
+                                        <button class="btn mr-right-01 btn-success flt-right-a" id="btn_send_email">Send Email</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="globalDiv"></div>
+    <div id="globalAdhocDiv"></div>
+</body>
+</html>
+

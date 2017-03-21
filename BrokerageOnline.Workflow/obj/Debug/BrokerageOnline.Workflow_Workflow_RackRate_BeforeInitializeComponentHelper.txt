@@ -1,0 +1,2 @@
+Workflow_RackRate.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

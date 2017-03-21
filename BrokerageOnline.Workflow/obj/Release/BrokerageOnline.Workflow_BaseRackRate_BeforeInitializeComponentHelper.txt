@@ -1,0 +1,2 @@
+BaseRackRate.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

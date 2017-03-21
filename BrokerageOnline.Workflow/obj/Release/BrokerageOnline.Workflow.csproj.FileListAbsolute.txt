@@ -1,0 +1,204 @@
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.Workflow.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.Workflow.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.DataAccess.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.TransferObjects.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.DataAccess.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.TransferObjects.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.csprojResolveAssemblyReference.cache
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BaseRackRateView.g.xaml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\RackRateStatus.g.xaml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\Rules_CreateRackRate.g.xaml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\Workflow_RackRate.g.xaml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\AdHoc.g.xaml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\RackRateValidation.g.xaml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BaseRackRate.g.xaml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRateView_BeforeInitializeComponentHelper.txt
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows_RackRateStatus_BeforeInitializeComponentHelper.txt
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Rules_CreateRackRate_BeforeInitializeComponentHelper.txt
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Workflow_RackRate_BeforeInitializeComponentHelper.txt
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows.AdHoc_AdHoc_BeforeInitializeComponentHelper.txt
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_RackRateValidation_BeforeInitializeComponentHelper.txt
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRate_BeforeInitializeComponentHelper.txt
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\_BrokerageOnline.Workflow.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BaseRackRateView.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\RackRateStatus.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\Rules_CreateRackRate.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\Workflow_RackRate.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\AdHoc.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\RackRateValidation.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BaseRackRate.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRateView_BeforeInitializeComponentHelper.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows_RackRateStatus_BeforeInitializeComponentHelper.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Rules_CreateRackRate_BeforeInitializeComponentHelper.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Workflow_RackRate_BeforeInitializeComponentHelper.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows.AdHoc_AdHoc_BeforeInitializeComponentHelper.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_RackRateValidation_BeforeInitializeComponentHelper.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRate_BeforeInitializeComponentHelper.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.csproj.XamlGeneratedCodeFileListAbsolute.txt
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.csproj.XamlGeneratedXamlFileListAbsolute.txt
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\HelperClass\ExternalizedPolicyDesigner.baml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\HelperClass\ExternalizedPolicyDesigner.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_MarkupCompile.cache
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRateView_CompiledExpressionRoot.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows_RackRateStatus_CompiledExpressionRoot.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Rules_CreateRackRate_CompiledExpressionRoot.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows.AdHoc_AdHoc_CompiledExpressionRoot.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_RackRateValidation_CompiledExpressionRoot.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRate_CompiledExpressionRoot.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.g.resources
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\AdHoc.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\AdHoc.g.xaml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\BaseRackRate.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\BaseRackRate.g.xaml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\BaseRackRateView.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\BaseRackRateView.g.xaml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\RackRateStatus.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\RackRateStatus.g.xaml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\RackRateValidation.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\RackRateValidation.g.xaml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\Rules_CreateRackRate.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\Rules_CreateRackRate.g.xaml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\Workflow_RackRate.g.cs
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\Workflow_RackRate.g.xaml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\_BrokerageOnline.Workflow.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.Workflow.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.Workflow.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.DataAccess.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.TransferObjects.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.DataAccess.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.TransferObjects.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.csprojResolveAssemblyReference.cache
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BaseRackRateView.g.xaml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\RackRateStatus.g.xaml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\Rules_CreateRackRate.g.xaml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\Workflow_RackRate.g.xaml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\AdHoc.g.xaml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\RackRateValidation.g.xaml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BaseRackRate.g.xaml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRateView_BeforeInitializeComponentHelper.txt
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows_RackRateStatus_BeforeInitializeComponentHelper.txt
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Rules_CreateRackRate_BeforeInitializeComponentHelper.txt
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Workflow_RackRate_BeforeInitializeComponentHelper.txt
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows.AdHoc_AdHoc_BeforeInitializeComponentHelper.txt
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_RackRateValidation_BeforeInitializeComponentHelper.txt
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRate_BeforeInitializeComponentHelper.txt
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\_BrokerageOnline.Workflow.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BaseRackRateView.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\RackRateStatus.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\Rules_CreateRackRate.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\Workflow_RackRate.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\AdHoc.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\RackRateValidation.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BaseRackRate.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRateView_BeforeInitializeComponentHelper.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows_RackRateStatus_BeforeInitializeComponentHelper.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Rules_CreateRackRate_BeforeInitializeComponentHelper.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Workflow_RackRate_BeforeInitializeComponentHelper.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows.AdHoc_AdHoc_BeforeInitializeComponentHelper.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_RackRateValidation_BeforeInitializeComponentHelper.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRate_BeforeInitializeComponentHelper.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.csproj.XamlGeneratedCodeFileListAbsolute.txt
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.csproj.XamlGeneratedXamlFileListAbsolute.txt
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\HelperClass\ExternalizedPolicyDesigner.baml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\HelperClass\ExternalizedPolicyDesigner.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_MarkupCompile.cache
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.g.resources
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows.AdHoc_AdHoc_CompiledExpressionRoot.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows_RackRateStatus_CompiledExpressionRoot.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRateView_CompiledExpressionRoot.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Rules_CreateRackRate_CompiledExpressionRoot.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_RackRateValidation_CompiledExpressionRoot.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRate_CompiledExpressionRoot.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\AdHoc.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\AdHoc.g.xaml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\BaseRackRate.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\BaseRackRate.g.xaml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\BaseRackRateView.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\BaseRackRateView.g.xaml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\RackRateStatus.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\RackRateStatus.g.xaml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\RackRateValidation.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\RackRateValidation.g.xaml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\Rules_CreateRackRate.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\Rules_CreateRackRate.g.xaml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\Workflow_RackRate.g.cs
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\Workflow_RackRate.g.xaml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\_BrokerageOnline.Workflow.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.Workflow.dll
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.Workflow.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.DataAccess.dll
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.TransferObjects.dll
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.DataAccess.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\bin\Release\BrokerageOnline.TransferObjects.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.csprojResolveAssemblyReference.cache
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BaseRackRateView.g.xaml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\RackRateStatus.g.xaml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\Rules_CreateRackRate.g.xaml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\Workflow_RackRate.g.xaml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\AdHoc.g.xaml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\RackRateValidation.g.xaml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BaseRackRate.g.xaml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRateView_BeforeInitializeComponentHelper.txt
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows_RackRateStatus_BeforeInitializeComponentHelper.txt
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Rules_CreateRackRate_BeforeInitializeComponentHelper.txt
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Workflow_RackRate_BeforeInitializeComponentHelper.txt
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows.AdHoc_AdHoc_BeforeInitializeComponentHelper.txt
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_RackRateValidation_BeforeInitializeComponentHelper.txt
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRate_BeforeInitializeComponentHelper.txt
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\_BrokerageOnline.Workflow.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BaseRackRateView.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\RackRateStatus.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\Rules_CreateRackRate.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\Workflow_RackRate.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\AdHoc.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\RackRateValidation.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BaseRackRate.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRateView_BeforeInitializeComponentHelper.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows_RackRateStatus_BeforeInitializeComponentHelper.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Rules_CreateRackRate_BeforeInitializeComponentHelper.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Workflow_RackRate_BeforeInitializeComponentHelper.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows.AdHoc_AdHoc_BeforeInitializeComponentHelper.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_RackRateValidation_BeforeInitializeComponentHelper.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRate_BeforeInitializeComponentHelper.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.csproj.XamlGeneratedCodeFileListAbsolute.txt
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.csproj.XamlGeneratedXamlFileListAbsolute.txt
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\HelperClass\ExternalizedPolicyDesigner.baml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\HelperClass\ExternalizedPolicyDesigner.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_MarkupCompile.cache
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.dll
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.g.resources
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows.AdHoc_AdHoc_CompiledExpressionRoot.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows_RackRateStatus_CompiledExpressionRoot.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRateView_CompiledExpressionRoot.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Rules_CreateRackRate_CompiledExpressionRoot.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_RackRateValidation_CompiledExpressionRoot.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRate_CompiledExpressionRoot.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\AdHoc.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\AdHoc.g.xaml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\BaseRackRate.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\BaseRackRate.g.xaml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\BaseRackRateView.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\BaseRackRateView.g.xaml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\RackRateStatus.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\RackRateStatus.g.xaml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\RackRateValidation.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\RackRateValidation.g.xaml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\Rules_CreateRackRate.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\Rules_CreateRackRate.g.xaml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\Workflow_RackRate.g.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\Workflow_RackRate.g.xaml
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\InProcessTempFiles\_BrokerageOnline.Workflow.g.cs

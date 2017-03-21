@@ -1,0 +1,139 @@
+﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="BrokerageOnline.Workflow.Workflows.RackRateStatus" this:RackRateStatus.MemoTypeID="1"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:bt="clr-namespace:BrokerageOnline.TransferObjects;assembly=BrokerageOnline.TransferObjects"
+ xmlns:local="clr-namespace:BrokerageOnline.Workflow.HelperClass"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:this="clr-namespace:BrokerageOnline.Workflow.Workflows"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="PaymentMemoID" Type="InArgument(x:Int32)" />
+    <x:Property Name="UserID" Type="InArgument(x:Int32)" />
+    <x:Property Name="MemoDetail" Type="OutArgument(bt:ViewAction)" />
+    <x:Property Name="WorkFlowHierarchyList" Type="OutArgument(bt:WorkFlowHierarchy)" />
+    <x:Property Name="MemoTypeID" Type="InArgument(x:Int32)" />
+    <x:Property Name="Status" Type="OutArgument(x:String)" />
+    <x:Property Name="IncomingStatus" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap2010:WorkflowViewState.IdRef>BrokerageOnline.Workflow.Workflows.RackRateStatus_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>BrokerageOnline.TransferObjects</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Activities.Presentation</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Runtime.DurableInstancing</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Windows.Forms</AssemblyReference>
+      <AssemblyReference>System.Workflow.Activities</AssemblyReference>
+      <AssemblyReference>System.Workflow.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.WorkflowServices</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>BrokerageOnline.TransferObjects</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>BrokerageOnline.DataAccess</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>BrokerageOnline.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <InvokeMethod DisplayName="Get View Action" sap2010:WorkflowViewState.IdRef="InvokeMethod_4" MethodName="GetViewAction">
+      <InvokeMethod.Result>
+        <OutArgument x:TypeArguments="bt:ViewAction">
+          <mca:CSharpReference x:TypeArguments="bt:ViewAction">MemoDetail</mca:CSharpReference>
+        </OutArgument>
+      </InvokeMethod.Result>
+      <InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="local:RackRate">
+          <mca:CSharpValue x:TypeArguments="local:RackRate">new HelperClass.RackRate()</mca:CSharpValue>
+        </InArgument>
+      </InvokeMethod.TargetObject>
+      <InArgument x:TypeArguments="x:Int32">
+        <mca:CSharpValue x:TypeArguments="x:Int32">PaymentMemoID</mca:CSharpValue>
+      </InArgument>
+      <InArgument x:TypeArguments="x:Int32">
+        <mca:CSharpValue x:TypeArguments="x:Int32">UserID</mca:CSharpValue>
+      </InArgument>
+    </InvokeMethod>
+    <Switch x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+      <Switch.Expression>
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String">IncomingStatus</mca:CSharpValue>
+        </InArgument>
+      </Switch.Expression>
+      <Assign x:Key="&quot;Saved&quot;" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">
+            <mca:CSharpReference x:TypeArguments="x:String">Status</mca:CSharpReference>
+          </OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">Saved</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign x:Key="&quot;Intitated&quot;" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">
+            <mca:CSharpReference x:TypeArguments="x:String">Status</mca:CSharpReference>
+          </OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">Initiated</InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign x:Key="&quot;Reviewed&quot;" sap2010:WorkflowViewState.IdRef="Assign_3">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">
+            <mca:CSharpReference x:TypeArguments="x:String">Status</mca:CSharpReference>
+          </OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">Reviewed</InArgument>
+        </Assign.Value>
+      </Assign>
+    </Switch>
+    <sads:DebugSymbol.Symbol>d1tEOlxQcm9qZWN0c1xEU1AtUm9ja1xCcm9rZXJhZ2VPbmxpbmVcQnJva2VyYWdlT25saW5lLldvcmtmbG93XFdvcmtmbG93c1xSYWNrUmF0ZVN0YXR1cy54YW1sEgGGAQGIAQECQAN5DgIBAUEFUhQCASlTBXcOAgECUAlQTAIBQkQLRGACATpJC0lpAgEyTQlNUwIBKlYLVlcCAQNZB2IQAgEfYwdsEAIBFW0HdhACAQtgMmA3AgEoXA1cWQIBIGoyajsCAR5mDWZZAgEWdDJ0OgIBFHANcFkCAQw=</sads:DebugSymbol.Symbol>
+  </Sequence>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="InvokeMethod_4" sap:VirtualizedContainerService.HintSize="476,134" />
+      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="242,62" />
+      <sap2010:ViewStateData Id="Assign_2" sap:VirtualizedContainerService.HintSize="242,62" />
+      <sap2010:ViewStateData Id="Assign_3" sap:VirtualizedContainerService.HintSize="242,62" />
+      <sap2010:ViewStateData Id="Switch`1_1" sap:VirtualizedContainerService.HintSize="476,184" />
+      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="498,482">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="BrokerageOnline.Workflow.Workflows.RackRateStatus_1" sap:VirtualizedContainerService.HintSize="538,562" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</Activity>

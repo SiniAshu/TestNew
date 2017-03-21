@@ -1,0 +1,126 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerageOnline.BusinessLogic", "BrokerageOnline.BusinessLogic\BrokerageOnline.BusinessLogic.csproj", "{BE2EB58C-5888-4DDF-B44A-D832A29D413D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{33AC9F89-C864-4EAA-A0D2-AB60A462B91B} = {33AC9F89-C864-4EAA-A0D2-AB60A462B91B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerageOnline.DataAccess", "BrokerageOnline.DataAccess\BrokerageOnline.DataAccess.csproj", "{F7A0A943-63DF-489E-A89D-679B25C8E76F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerageOnline.TransferObjects", "BrokerageOnline.TransferObjects\BrokerageOnline.TransferObjects.csproj", "{33AC9F89-C864-4EAA-A0D2-AB60A462B91B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerageOnline.Services", "BrokerageOnline.Services\BrokerageOnline.Services.csproj", "{3AFA1097-233A-41C6-9FB0-723C240A9F7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerageOnline.Presentation", "BrokerageOnline.Presentation\BrokerageOnline.Presentation.csproj", "{0805830B-9035-4F88-AF18-4C1DF5C12720}"
+	ProjectSection(ProjectDependencies) = postProject
+		{30618196-2244-44B1-923C-630BE10BCE81} = {30618196-2244-44B1-923C-630BE10BCE81}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{397A8D33-6EA8-4A6A-927D-90F4C99346EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{6E92A19C-1EC6-4088-B0B3-4B61CAC319A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TransferObjects", "TransferObjects", "{184C3013-C8E7-4531-B327-C5FD98F14B62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{22C46895-D360-47FE-B3FE-A1091A394D00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{281DAC3F-6C83-4222-AFBF-E339970CE344}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{0F0D74CB-4DD3-448E-B390-902F7A0DBCCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkFlow", "WorkFlow", "{F2E2724E-EA4C-4451-8126-79D26ADE81B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerageOnline.Workflow", "BrokerageOnline.Workflow\BrokerageOnline.Workflow.csproj", "{53D86FDB-DF54-43A1-9D61-47881A77194A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reports", "Reports", "{CE22A04B-5789-44DF-9022-99321AEFA23D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerageOnline.Reports", "BrokerageOnline.Reports\BrokerageOnline.Reports.csproj", "{F173C6C7-B4B6-473A-BF67-051FA555686D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6AA34F6A-FDD0-4828-9033-1687AA506E93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerageOnline.Common", "BrokerageOnline.Common\BrokerageOnline.Common.csproj", "{F1FCBC78-2067-4C32-BAF0-7D9CACA952EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{0097D892-83FE-4131-952B-5D799D480852}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerageOnline.Utilities", "BrokerageOnline.Utilities\BrokerageOnline.Utilities.csproj", "{56244D51-CC41-4D4B-872C-F4913EB7B9C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BrokerageCommunicator", "BrokerageCommunicator", "{D45CF9A4-0400-45A6-AECA-6521DC6887C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerageOnline.Communicator", "BrokerageOnline.Communicator\BrokerageOnline.Communicator.csproj", "{26CF135E-6507-47B3-8F7D-F251A513097B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerageOnline.Host", "BrokerageOnline.Host\BrokerageOnline.Host.csproj", "{30618196-2244-44B1-923C-630BE10BCE81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE2EB58C-5888-4DDF-B44A-D832A29D413D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE2EB58C-5888-4DDF-B44A-D832A29D413D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE2EB58C-5888-4DDF-B44A-D832A29D413D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE2EB58C-5888-4DDF-B44A-D832A29D413D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7A0A943-63DF-489E-A89D-679B25C8E76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7A0A943-63DF-489E-A89D-679B25C8E76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7A0A943-63DF-489E-A89D-679B25C8E76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7A0A943-63DF-489E-A89D-679B25C8E76F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33AC9F89-C864-4EAA-A0D2-AB60A462B91B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33AC9F89-C864-4EAA-A0D2-AB60A462B91B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33AC9F89-C864-4EAA-A0D2-AB60A462B91B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33AC9F89-C864-4EAA-A0D2-AB60A462B91B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AFA1097-233A-41C6-9FB0-723C240A9F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AFA1097-233A-41C6-9FB0-723C240A9F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AFA1097-233A-41C6-9FB0-723C240A9F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AFA1097-233A-41C6-9FB0-723C240A9F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0805830B-9035-4F88-AF18-4C1DF5C12720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0805830B-9035-4F88-AF18-4C1DF5C12720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0805830B-9035-4F88-AF18-4C1DF5C12720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0805830B-9035-4F88-AF18-4C1DF5C12720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D86FDB-DF54-43A1-9D61-47881A77194A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D86FDB-DF54-43A1-9D61-47881A77194A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D86FDB-DF54-43A1-9D61-47881A77194A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D86FDB-DF54-43A1-9D61-47881A77194A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F173C6C7-B4B6-473A-BF67-051FA555686D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F173C6C7-B4B6-473A-BF67-051FA555686D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F173C6C7-B4B6-473A-BF67-051FA555686D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F173C6C7-B4B6-473A-BF67-051FA555686D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1FCBC78-2067-4C32-BAF0-7D9CACA952EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1FCBC78-2067-4C32-BAF0-7D9CACA952EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1FCBC78-2067-4C32-BAF0-7D9CACA952EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1FCBC78-2067-4C32-BAF0-7D9CACA952EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56244D51-CC41-4D4B-872C-F4913EB7B9C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56244D51-CC41-4D4B-872C-F4913EB7B9C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56244D51-CC41-4D4B-872C-F4913EB7B9C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56244D51-CC41-4D4B-872C-F4913EB7B9C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26CF135E-6507-47B3-8F7D-F251A513097B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26CF135E-6507-47B3-8F7D-F251A513097B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26CF135E-6507-47B3-8F7D-F251A513097B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26CF135E-6507-47B3-8F7D-F251A513097B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30618196-2244-44B1-923C-630BE10BCE81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30618196-2244-44B1-923C-630BE10BCE81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30618196-2244-44B1-923C-630BE10BCE81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30618196-2244-44B1-923C-630BE10BCE81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE2EB58C-5888-4DDF-B44A-D832A29D413D} = {397A8D33-6EA8-4A6A-927D-90F4C99346EE}
+		{F7A0A943-63DF-489E-A89D-679B25C8E76F} = {6E92A19C-1EC6-4088-B0B3-4B61CAC319A7}
+		{33AC9F89-C864-4EAA-A0D2-AB60A462B91B} = {184C3013-C8E7-4531-B327-C5FD98F14B62}
+		{3AFA1097-233A-41C6-9FB0-723C240A9F7F} = {22C46895-D360-47FE-B3FE-A1091A394D00}
+		{0805830B-9035-4F88-AF18-4C1DF5C12720} = {281DAC3F-6C83-4222-AFBF-E339970CE344}
+		{30618196-2244-44B1-923C-630BE10BCE81} = {0F0D74CB-4DD3-448E-B390-902F7A0DBCCD}
+		{53D86FDB-DF54-43A1-9D61-47881A77194A} = {F2E2724E-EA4C-4451-8126-79D26ADE81B5}
+		{F173C6C7-B4B6-473A-BF67-051FA555686D} = {CE22A04B-5789-44DF-9022-99321AEFA23D}
+		{F1FCBC78-2067-4C32-BAF0-7D9CACA952EE} = {6AA34F6A-FDD0-4828-9033-1687AA506E93}
+		{56244D51-CC41-4D4B-872C-F4913EB7B9C0} = {0097D892-83FE-4131-952B-5D799D480852}
+		{26CF135E-6507-47B3-8F7D-F251A513097B} = {D45CF9A4-0400-45A6-AECA-6521DC6887C6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.Database.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

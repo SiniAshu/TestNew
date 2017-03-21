@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53D86FDB-DF54-43A1-9D61-47881A77194A}</ProjectGuid>
+    <ProjectTypeGuids>{32f31d43-81cc-4c15-9de6-3fc5453562b6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BrokerageOnline.Workflow</RootNamespace>
+    <AssemblyName>BrokerageOnline.Workflow</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.DurableInstancing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.WorkflowServices" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HelperClass\ExternalizedPolicy.cs" />
+    <Compile Include="HelperClass\ExternalizedPolicyDesigner.xaml.cs">
+      <DependentUpon>ExternalizedPolicyDesigner.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HelperClass\IOHelper.cs" />
+    <Compile Include="HelperClass\RackRate.cs" />
+    <Compile Include="HelperClass\RackRateRule.cs" />
+    <Compile Include="HelperClass\RackRateRepository.cs" />
+    <Compile Include="HelperClass\TrackingParticipant.cs" />
+    <Compile Include="HostLibrary\AsyncResult.cs" />
+    <Compile Include="HostLibrary\IRackRateHost.cs" />
+    <Compile Include="HostLibrary\RackRateHost.cs" />
+    <Compile Include="HelperClass\XmlPersistenceParticipant.cs" />
+    <Compile Include="HelperClass\XmlWorkflowInstanceStore.cs" />
+    <Compile Include="HostLibrary\WaitForInput.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HostLibrary\CompletedAsyncResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppDef Include="Workflows\BaseRackRateView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </XamlAppDef>
+    <XamlAppDef Include="Workflows\RackRateStatus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </XamlAppDef>
+    <XamlAppDef Include="Workflows\Rules_CreateRackRate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+  </ItemGroup>
+  <ItemGroup>
+    <XamlAppDef Include="Workflows\Workflow_RackRate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="HelperClass\ExternalizedPolicyDesigner.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <XamlAppDef Include="Workflows\AdHoc\AdHoc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+    <XamlAppDef Include="Workflows\RackRateValidation.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+    <XamlAppDef Include="Workflows\BaseRackRate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </XamlAppDef>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BusinessRules\RackRateRules.rules" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BrokerageOnline.DataAccess\BrokerageOnline.DataAccess.csproj">
+      <Project>{f7a0a943-63df-489e-a89d-679b25c8e76f}</Project>
+      <Name>BrokerageOnline.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BrokerageOnline.TransferObjects\BrokerageOnline.TransferObjects.csproj">
+      <Project>{33ac9f89-c864-4eaa-a0d2-ab60a462b91b}</Project>
+      <Name>BrokerageOnline.TransferObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

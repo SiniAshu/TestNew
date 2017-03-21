@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brokerage Online Solution</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/ChatStyle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link href="../css/ie9_fix.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/ui.jqgrid.min.css" rel="stylesheet" />
+    <link href="../css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../css/token-input-facebook.min.css" rel="stylesheet" />
+    <link href="../css/bootstrap-multiselect.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">-->
+    <link href="../css/toastr.min.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+
+    <script>
+        $(window).scroll(function () {
+            var height = $(window).scrollTop();
+            if (height > 210) {
+                $('#fx-hdr').slideDown("slow");
+            }
+            else {
+                $('#fx-hdr').slideUp("slow");
+            }
+
+        });
+
+    </script>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.ui.core.min.js"></script>
+    <script src="../js/jquery.ui.widget.min.js"></script>
+    <script src="../js/jquery.ui.mouse.min.js"></script>
+    <script src="../js/jquery.ui.draggable.min.js"></script>
+    <script src="../js/jquery.ui.resizable.min.js"></script>
+    <script src="../js/jquery.signalR-2.2.0.min.js"></script>
+    <script src="../signalr/hubs"></script>
+    <script src="../js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-multiselect.min.js"></script>
+    <script src="../js/toastr.min.js"></script>
+    <script src="../js/site.js"></script>
+    <script src="../js/jquery.jqGrid.min.js"></script>
+    <script src="../js/tinymce.min.js"></script>
+    <script src="../js/grid.locale-en.min.js"></script>
+    <script src="../js/jquery.tokeninput.min.js"></script>
+    <script src="../js/jquery.timer.min.js"></script>
+    <script src="../js/Navigation.js"></script>
+    <script src="../js/Menu.js"></script>
+    <script src="../js/Utility.js"></script>
+    <script src="../Scripts/Master/DistributorMaster.js"></script>
+    <!--<script src="../js/jquery.signalR-2.1.2.min.js"></script>
+    <script src="http://182.75.9.197/BrokerageOnlineService/signalr/hubs/" type="text/javascript"></script>-->
+    <script>
+        $(document).ready(function () {
+            if ((sessionStorage.CurrentMenuselected == "" || sessionStorage.CurrentMenuselected == undefined) && sessionStorage.idtag != "") {
+                //$('#' + sessionStorage.idtag + '').trigger('click');
+                if (sessionStorage.UserName != "" && sessionStorage.UserName != undefined) {
+                    $("#spn_user_name").append(sessionStorage.UserName);
+                    $("#spn_role_name").append(sessionStorage.RoleName);
+                }
+            }
+        });
+
+        $(document).ready(function () {
+            if (sessionStorage.CurrentMenuselected == "nav_create")
+                CreateRackRate.ViewCreateRackRate();
+            if (sessionStorage.UserName != "" && sessionStorage.UserName != undefined) {
+                $("#spn_user_name").append(sessionStorage.UserName);
+                $("#spn_role_name").append(sessionStorage.RoleName);
+
+                if (sessionStorage.ActiveMainMenu != undefined && sessionStorage.ActiveMainMenu != "") {
+                    $("ul.secondary-nav-ul li").removeClass("active");
+                    $('.secondary-nav-ul-li:eq(' + parseInt(sessionStorage.ActiveMainMenu) + ')').addClass("active");
+                }
+            }
+        });
+    </script>
+    <style>
+        h4 {
+            color: #333;
+        }
+
+        h3 {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <input type="hidden" id="hidden_payment_memo_id" />
+
+        <div class="row top-hdr-otr ">
+            <div class="col-md-2 col-sm-4 fst-itm">
+                <div> <img class="img-responsive mr-top-02 mr-top-sm-nill" src="../img/main_logo.png"> </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <h2 class="title-tag-style-a mr-top-03 mr-top-sm-nill">Brokerage Online Solution</h2>
+            </div>
+
+            <div class="col-md-6 col-sm-4 lst-itm">
+                <div class="">
+                    <div class="col-md-12 lst-itm">
+                        <div class="clear mr-top-0001"></div>
+                        <nav role="navigation">
+                            <ul class="top-nav-set-a">
+                                <li id="li_Dashboard">
+                                    <a href="Dashboard.html" class="top-nav-btns">
+                                        <img title="Home" src="../img/nav_btm_icon08.png">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="has-menu" id="li_module">
+                                    <a href="#" class="top-nav-btns">
+                                        <img src="../img/nav_btm_icon01.png">
+                                        <span>Modules</span>
+                                    </a>
+                                    <ul class="sub-menu" id="ul_menu_body"></ul>
+                                </li>
+                                <li id="li_master_queue">
+                                    <a href="MasterQueue.html" id="anch_master_queue" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon02.png">
+                                        <span>Master Q</span>
+                                    </a>
+                                </li>
+                                <li id="li_discarded_queue">
+                                    <a href="Overview.html" id="anch_discarded_queue" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon03.png">
+                                        <span>Discarded Q</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./SmartSearchScreen.html" id="anch_smart_search" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon04.png">
+                                        <span>Smart Search</span>
+                                    </a>
+                                </li>
+                                <li class="has-menu" id="li_administrator">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon05.png">
+                                        <span>Administrator</span>
+                                    </a>
+                                    <ul class="sub-menu" id="ul_admin_menu_body"></ul>
+                                </li>
+                                <li class="has-menu" id="li_reports">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon06.png">
+                                        <span>Reports</span>
+                                    </a>
+                                    <ul class="sub-menu fl-wd flt-r" id="ul_report_menu_body"></ul>
+                                </li>
+                                <li class="has-menu">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon07.png">
+                                        <span>User Profile</span>
+                                    </a>
+                                    <ul class="sub-menu flt-r">
+                                        <li><a href="#">User Details</a></li>
+                                        <li><a href="#">Settings</a></li>
+                                        <li><a href="#">Reminders</a></li>
+                                        <li><a href="#" onclick="CommonValidate.LogOut();">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="clear mr-top-0001"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bottom-bnr">
+            <h2 class="fl" id="spn_user_name"></h2>
+            <h2 class="fl">:  [ </h2>
+            <h2 class="fl" id="spn_role_name"></h2>
+            <h2 class="fl"> ] </h2>
+            <span class="fr"><span class="time-date-box" id="spn_date"></span></span>
+            <!--<span class="fr"><span class="time-date-box">11:14 am</span><span class="time-date-box"> | </span><span class="time-date-box" id="spn_date">0/0/2015</span></span>-->
+        </div>
+        <div style="background-image: url(../img/toptest_v3.png), url(../img/bottomtest_v3.png); background-position: top left, bottom right; background-repeat: no-repeat; ">
+            <div class="row inner-bdy-sect">
+                <div class="col-md-6 col-sm-6">
+                    <h3 id="hdr_name" class="sub-title-btm-c">Distributor Master </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-offset-11 col-lg-1">
+                    <button id="btn_add" class="btn btn-success span10">Add New</button>
+                </div>
+            </div>
+
+
+
+            <div class="row mr-top-50">
+                <div class="col-md-12 col-sm-12">
+                    <div id="div_masterqueue">
+                        <table id="tbl_distributor_master"></table>
+                        <div id="pager_distributor_master"></div>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" id="hidden_rowid" class="input-text-bx-style" />
+            <!--<div class="modal fade" data-backdrop="static" tabindex="-1" aria-hidden="true" id="distributor_add_edit_modal" style="top: 5%; left: 1%; right: 1%; overflow: hidden; display: block;">-->
+            <div class="modal fade" id="distributor_add_edit_modal" data-keyboard="true" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="ariaconfirmation" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-lrg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" onclick="$('form[name=distributorForm]')[0].reset();$('#distributor_add_edit_modal').modal('hide')" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Add/Edit Distributor</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row-fluid container-fluid pd-top-02 pd-bottom-02 bg-cl-a">
+                                <!--<button class="btn btn-warning sq-btn" data-toggle="modal" onclick="Utility.AdvanceSearchClick(1, 'GET_CREATE_BASE_RACK_RATE_MQ');">Advance Search &nbsp; <img src="../img/search-btn.png"></span></button>-->
+                                <form name="distributorForm" class="form-horizontal">
+                                    <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                                        <span class="col-lg-6 col-md-6 col-sm-3 sub-title-a mr-top-desk-title text-right">ARN No</span>
+                                        <div class="col-lg-6 col-md-6 col-sm-7">
+                                            <input type="text" class="form-control" name="ARN" id="txt_ARNNo" required="required" placeholder="Enter ARN No">
+                                        </div>
+                                    </div>
+                                    <!--<div class="clearfix visible-sm"></div>-->
+                                    <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                                        <span class="col-lg-6 col-md-6 col-sm-3 sub-title-a mr-top-desk-title text-right">Distributor Name</span>
+                                        <div class="col-lg-6 col-md-6 col-sm-7">
+                                            <input type="text" class="form-control" name="DistributorName" id="txt_distributor_name" required="required" placeholder="Enter Distributor Name">
+                                        </div>
+                                    </div>
+                                    <!--<div class="clearfix visible-sm"></div>-->
+                                    <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                                        <span class="col-lg-6 col-md-6 col-sm-3 sub-title-a mr-top-desk-title text-right">Distributor Category</span>
+                                        <div class="col-lg-6 col-md-6 col-sm-7">
+                                            <select id="sel_distributor_category" name="DistributorCategoryId" class="form-control"></select>
+                                        </div>
+                                    </div>
+                                    <!--<div class="clearfix visible-sm"></div>-->
+                                    <!--<div class="clearfix visible-md"></div>-->
+                                    <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                                        <span class="col-lg-6 col-md-6 col-sm-3 sub-title-a mr-top-desk-title text-right">Merge Code</span>
+                                        <div class="col-lg-6 col-md-6 col-sm-7">
+                                            <input type="text" class="form-control" name="MergCode" id="txt_merge_code" required="required" placeholder="Enter Merge Code">
+                                        </div>
+                                    </div>
+                                    <!--<div class="clearfix visible-sm"></div>
+                                    <div class="clearfix visible-md"></div>-->
+                                    <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                                        <span class="col-lg-6 col-md-6 col-sm-3 sub-title-a mr-top-desk-title text-right">Branch</span>
+                                        <div class="col-lg-6 col-md-6 col-sm-7">
+                                            <select id="sel_sub_Region" name="SubRegionId" class="form-control"></select>
+                                        </div>
+                                    </div>
+                                    <!--<div class="clearfix visible-lg"></div>-->
+                                    <!--<div class="clearfix visible-sm"></div>-->
+                                    <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                                        <span class="col-lg-6 col-md-6 col-sm-3 sub-title-a mr-top-desk-title text-right">Is Active</span>
+                                        <div class="col-lg-6 col-md-6 col-sm-7">
+                                            <select id="sel_active" name="DistributorStatus" class="form-control">
+                                                <option selected value="1">Active</option>
+                                                <option value="0">Inactive</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!--<div class="form-group col-sm-12 col-md-6 col-lg-4">
+                                        <span class="col-lg-6 col-md-6 col-sm-3 sub-title-a mr-top-desk-title text-right">Distributor ParentID</span>
+                                        <div class="col-lg-6 col-md-6 col-sm-7">
+                                            <input type="text" class="form-control" name="DistributorParentId" id="txt_distributor_parent" required="required" placeholder="Enter Distributor Parent Id">
+                                        </div>
+                                    </div>-->
+                                    <!--<div class="clearfix visible-sm"></div>
+                                    <div class="clearfix visible-md"></div>-->
+                                    
+                                    <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                                        <span class="col-lg-6 col-md-6 col-sm-3 sub-title-a mr-top-desk-title text-right">Tax No</span>
+                                        <div class="col-lg-6 col-md-6 col-sm-7">
+                                            <input type="text" class="form-control" name="TaxNo" id="txt_tax_no" placeholder="Enter Tax No">
+                                        </div>
+                                    </div>
+                                    <!--<div class="clearfix visible-sm"></div>
+                                    <div class="clearfix visible-md"></div>
+                                    <div class="clearfix visible-lg"></div>-->
+                                    
+                                    
+                                    <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                                        <div class="col-lg-6 col-md-6 col-sm-7">
+                                            <input type="text" name="DistributorId" value="0" hidden id="txt_distributor_parent">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-4 col-lg-3 col-sm-offset-6 col-md-offset-8 col-lg-offset-9">
+                                            <div>
+                                                <button id="btn_save" class="btn btn-success" type="button">Save</button>
+                                                <button id="btn_clear" class="btn btn-danger" type="reset">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="conf_del_modal" data-keyboard="true" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="ariaconfirmation" aria-hidden="true">
+
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="row mr-top-05">
+                                <div class="col-md-12 col-sm-12 ">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h3 class="sub-title-btm-c">Confirmation</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row mr-top-01">
+                                <div class="col-md-12 col-sm-12 ">
+                                    <div class="rrd-outer">
+                                        <div class="row">
+                                            <div> <span class="sub-title-a mr-top-desk-title ">Are you sure you want to delete?</span> </div>
+                                        </div>
+                                        <div class="row txt-alg-rt">
+                                            <div class="row" id="confirmBtn">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="alertsection" class="alert-sect-outer" style="right:-450px;">
+                <div class="alert-head">
+                    <img src="../img/alert_icon.png">
+                    <span class="notif-count"><span class="notif-count-inner">8</span></span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="row footer-main-black">
+                <div class="col-md-12 col-sm-12 ">
+                    <div class="col-md-12 col-sm-12 pd-top-02 pd-bottom-02">
+
+                        <div class="col-md-12 col-sm-12 pd-left-00">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4"></div>
+                                <div class="col-md-8 col-sm-8 pd-left-00">
+                                    <label style="color: white;" class="mr-right-01">Copyright &copy 2014. All rights reserved in this software belong solely to <a style=" color:white;background:black;" href="http://www.hexagonglobal.in" target="_blank">Hexagon Global IT Services pvt ltd</a> </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="pleaseWaitDialog">
+    </div>
+    <div id="globalDiv"></div>
+    <div id="globalAdhocDiv"></div>
+</body>
+</html>

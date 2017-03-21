@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\DSP publish\BPV6</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/BrokerageOnline.Presentation.dll">
+      <publishTime>04/27/2016 13:28:00</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>03/06/2015 15:38:29</publishTime>
+    </File>
+    <File Include="css/bootstrap-editable.css">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/bootstrap-multiselect.css">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/bootstrap-responsive.css">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/bootstrap.css">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/bootstrap2-toggle.css">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/datepicker.css">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/font-awesome.css">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/font-awesome.min.css">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/ie9_fix.css">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/images/date_tr_icon.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/images/ui-icons_d8e7f3_256x240.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/jquery-ui.css">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/jquery-ui.min.css">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/login.css">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>05/12/2015 16:05:15</publishTime>
+    </File>
+    <File Include="css/toastr.css">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/token-input-facebook.css">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="css/ui.jqgrid.css">
+      <publishTime>03/18/2015 19:21:13</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Handlers/ExportGridToExcel.ashx">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-bg_flat_55_5c9ccc_40x100.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-bg_glass_75_d0e5f5_1x400.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-bg_glass_85_dfeffc_1x400.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-bg_glass_85_eff5f9_1x400.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-bg_gloss-wave_55_006bb4_500x100.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-bg_gloss-wave_55_5c9ccc_500x100.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-bg_inset-hard_100_006bb4_1x100.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-bg_inset-hard_100_f5f8f9_1x100.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-bg_inset-hard_100_fcfdfd_1x100.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-icons_217bc0_256x240.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-icons_2e83ff_256x240.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-icons_469bdd_256x240.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-icons_6da8d5_256x240.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-icons_d8e7f3_256x240.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="images/ui-icons_f9bd01_256x240.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/add-btn.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/alert_icon.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/bottomtest_v3.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/cal-btn.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/close-btn1.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/cls-icon.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/comment-btn.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/copy-btn.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/date_tr_icon.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/drp_dwn_arrow.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/drp_dwn_arrow_red.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/file-btn.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/glyphicons-halflings-white.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/glyphicons-halflings.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/ie9_top_nav_bg.jpg">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/info-icon.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/main_logo.png">
+      <publishTime>06/05/2015 14:30:06</publishTime>
+    </File>
+    <File Include="img/nav_btm_icon01.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/nav_btm_icon02.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/nav_btm_icon03.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/nav_btm_icon04.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/nav_btm_icon05.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/nav_btm_icon06.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/nav_btm_icon07.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/nav_btm_icon08.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/Notes.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/Remarks.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/repeat-btn.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/repeat-btn1.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/reset.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/rr_add_button.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/search-btn.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/search-btn1.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/Sticky.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/toptest_v3.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/top_nav_icon01.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/top_nav_icon02.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/top_nav_icon03.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/top_nav_icon04.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/top_nav_icon05.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/top_nav_icon06.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/trash-btn.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="img/up-arrow-btn.png">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/bootstrap-datepicker.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/bootstrap-editable.min.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/bootstrap-multiselect.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/bootstrap.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/bootstrap2-toggle.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/grid.locale-en.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/jqGridExportToExcel.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/jquery-1.11.1.min.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/jquery-migrate-1.2.1.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/jquery-ui.js">
+      <publishTime>03/12/2015 14:11:02</publishTime>
+    </File>
+    <File Include="js/jquery.jqGrid.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/jquery.jqGrid.min.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/jquery.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/jquery.signalR-2.1.2.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/jquery.signalR-2.1.2.min.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/jquery.timer.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/jquery.tokeninput.js">
+      <publishTime>06/06/2016 10:59:35</publishTime>
+    </File>
+    <File Include="js/LoadSignalRHub.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/MasterQueue.js">
+      <publishTime>06/18/2015 12:56:49</publishTime>
+    </File>
+    <File Include="js/Menu.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/Navigation.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/site.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/tinymce.min.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/toastr.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="js/Utility.js">
+      <publishTime>06/13/2016 15:49:31</publishTime>
+    </File>
+    <File Include="js/Validate.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>07/01/2015 16:03:31</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Pages/AdHocPaymentSummaryReport.html">
+      <publishTime>06/05/2015 14:30:39</publishTime>
+    </File>
+    <File Include="Pages/ApplicationLock.html">
+      <publishTime>06/05/2015 14:30:39</publishTime>
+    </File>
+    <File Include="Pages/ARNWiseBrokerageReport.html">
+      <publishTime>06/05/2015 14:32:17</publishTime>
+    </File>
+    <File Include="Pages/AuditTrail.html">
+      <publishTime>06/05/2015 14:30:39</publishTime>
+    </File>
+    <File Include="Pages/BranchMaster.html">
+      <publishTime>06/05/2015 14:30:39</publishTime>
+    </File>
+    <File Include="Pages/BrokerageNotes.html">
+      <publishTime>06/05/2015 14:30:39</publishTime>
+    </File>
+    <File Include="Pages/ChannelWiseSummary.html">
+      <publishTime>06/05/2015 14:30:39</publishTime>
+    </File>
+    <File Include="Pages/CreateAdHoc.html">
+      <publishTime>06/05/2015 14:30:39</publishTime>
+    </File>
+    <File Include="Pages/CreateRackRate.html">
+      <publishTime>05/31/2016 12:58:11</publishTime>
+    </File>
+    <File Include="Pages/CreateSIP.html">
+      <publishTime>06/05/2015 14:30:40</publishTime>
+    </File>
+    <File Include="Pages/CreateTieUp.html">
+      <publishTime>06/05/2015 14:30:40</publishTime>
+    </File>
+    <File Include="Pages/Dashboard.html">
+      <publishTime>06/05/2015 14:30:40</publishTime>
+    </File>
+    <File Include="Pages/Default.aspx">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Pages/DistributorCategoryMaster.html">
+      <publishTime>06/05/2015 14:30:40</publishTime>
+    </File>
+    <File Include="Pages/DistributorWiseMemoReport.html">
+      <publishTime>06/05/2015 14:30:40</publishTime>
+    </File>
+    <File Include="Pages/ExitloadMaster.html">
+      <publishTime>06/05/2015 14:30:40</publishTime>
+    </File>
+    <File Include="Pages/LoginAdministration.html">
+      <publishTime>06/05/2015 14:30:40</publishTime>
+    </File>
+    <File Include="Pages/MailingListMaster.html">
+      <publishTime>06/05/2015 14:30:40</publishTime>
+    </File>
+    <File Include="Pages/MasterQueue.html">
+      <publishTime>06/05/2015 14:30:40</publishTime>
+    </File>
+    <File Include="Pages/Overview.html">
+      <publishTime>06/05/2015 14:30:40</publishTime>
+    </File>
+    <File Include="Pages/Passwordpolicy.html">
+      <publishTime>06/05/2015 14:30:40</publishTime>
+    </File>
+    <File Include="Pages/ProcessAdHoc.html">
+      <publishTime>06/05/2015 14:30:40</publishTime>
+    </File>
+    <File Include="Pages/RackRateInformation.html">
+      <publishTime>07/02/2015 15:49:45</publishTime>
+    </File>
+    <File Include="Pages/RackRateInitiate.html">
+      <publishTime>06/22/2015 19:18:17</publishTime>
+    </File>
+    <File Include="Pages/RackRateReview.html">
+      <publishTime>06/05/2015 14:30:40</publishTime>
+    </File>
+    <File Include="Pages/ReportViewer.html">
+      <publishTime>05/13/2015 18:08:10</publishTime>
+    </File>
+    <File Include="Pages/ResetPassword.aspx">
+      <publishTime>05/13/2015 16:01:31</publishTime>
+    </File>
+    <File Include="Pages/RoleMaster.html">
+      <publishTime>06/05/2015 14:30:46</publishTime>
+    </File>
+    <File Include="Pages/SchemeCategorywiseSummary.html">
+      <publishTime>06/05/2015 14:30:41</publishTime>
+    </File>
+    <File Include="Pages/SchemeSequence.html">
+      <publishTime>06/05/2015 14:30:41</publishTime>
+    </File>
+    <File Include="Pages/SchemeToModuleMaster.html">
+      <publishTime>06/05/2015 14:30:41</publishTime>
+    </File>
+    <File Include="Pages/SIPInformation.html">
+      <publishTime>06/05/2015 14:30:41</publishTime>
+    </File>
+    <File Include="Pages/SmartSearchScreen.html">
+      <publishTime>06/05/2015 14:30:41</publishTime>
+    </File>
+    <File Include="Pages/TieUpInformation.html">
+      <publishTime>12/23/2015 18:07:54</publishTime>
+    </File>
+    <File Include="Pages/UnlockUsers.html">
+      <publishTime>06/05/2015 14:30:41</publishTime>
+    </File>
+    <File Include="Pages/UserLog.html">
+      <publishTime>06/05/2015 14:30:41</publishTime>
+    </File>
+    <File Include="Pages/UserMaster.html">
+      <publishTime>06/05/2015 14:30:41</publishTime>
+    </File>
+    <File Include="Pages/ZoneBranchWiseReport.html">
+      <publishTime>06/05/2015 14:30:41</publishTime>
+    </File>
+    <File Include="Scripts/AdHoc/AdHocProcessScript.js">
+      <publishTime>05/13/2015 18:09:56</publishTime>
+    </File>
+    <File Include="Scripts/AdHoc/AdhocScript.js">
+      <publishTime>03/23/2015 19:32:36</publishTime>
+    </File>
+    <File Include="Scripts/BRR/CreateRackRate.js">
+      <publishTime>06/13/2016 11:42:26</publishTime>
+    </File>
+    <File Include="Scripts/BRR/RackRateDetail.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Scripts/BRR/RackRateInformation.js">
+      <publishTime>06/08/2016 12:22:27</publishTime>
+    </File>
+    <File Include="Scripts/BRR/RackRateReview.js">
+      <publishTime>07/25/2015 10:00:26</publishTime>
+    </File>
+    <File Include="Scripts/Master/ApplicationLock.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Scripts/Master/AuditTrail.js">
+      <publishTime>03/16/2015 18:38:48</publishTime>
+    </File>
+    <File Include="Scripts/Master/BranchMaster.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Scripts/Master/BrokerageNotes.js">
+      <publishTime>04/07/2015 17:39:58</publishTime>
+    </File>
+    <File Include="Scripts/Master/DistributorCategoryMaster.js">
+      <publishTime>05/08/2015 12:48:35</publishTime>
+    </File>
+    <File Include="Scripts/Master/ExitloadMaster.js">
+      <publishTime>04/07/2015 17:39:58</publishTime>
+    </File>
+    <File Include="Scripts/Master/Loginadministration.js">
+      <publishTime>03/16/2015 18:38:48</publishTime>
+    </File>
+    <File Include="Scripts/Master/MailingListMaster.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Scripts/Master/PasswordPolicy.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Scripts/Master/RoleMaster.js">
+      <publishTime>05/28/2015 14:57:18</publishTime>
+    </File>
+    <File Include="Scripts/Master/SchemeSequence.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Scripts/Master/SchemeToModule.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Scripts/Master/Unlockusers.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Scripts/Master/UserLogMaster.js">
+      <publishTime>03/16/2015 18:38:48</publishTime>
+    </File>
+    <File Include="Scripts/Master/UserMaster.js">
+      <publishTime>07/25/2015 10:00:26</publishTime>
+    </File>
+    <File Include="Scripts/Overview/Dashboard.js">
+      <publishTime>04/06/2015 16:44:45</publishTime>
+    </File>
+    <File Include="Scripts/Overview/Overview.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Scripts/Reports/AdHocPaymentSummaryReport.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Scripts/Reports/ARNWiseBrokerageReport.js">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Scripts/Reports/Channelwisesummary.js">
+      <publishTime>03/16/2015 15:41:17</publishTime>
+    </File>
+    <File Include="Scripts/Reports/DistributorWiseMemoReport.js">
+      <publishTime>03/16/2015 15:41:17</publishTime>
+    </File>
+    <File Include="Scripts/Reports/SchemeCategoryWiseSummary.js">
+      <publishTime>03/16/2015 15:41:17</publishTime>
+    </File>
+    <File Include="Scripts/Reports/ZoneBranchWiseReport.js">
+      <publishTime>03/16/2015 15:41:17</publishTime>
+    </File>
+    <File Include="Scripts/SIP/CreateSIP.js">
+      <publishTime>07/01/2015 17:14:14</publishTime>
+    </File>
+    <File Include="Scripts/SIP/SIPInformation.js">
+      <publishTime>07/01/2015 18:47:14</publishTime>
+    </File>
+    <File Include="Scripts/SmartSearch/SmartSearchScreen.js">
+      <publishTime>05/13/2015 18:11:13</publishTime>
+    </File>
+    <File Include="Scripts/TieUp/CreateTieUp.js">
+      <publishTime>06/30/2015 19:34:42</publishTime>
+    </File>
+    <File Include="Scripts/TieUp/Regenerate.js">
+      <publishTime>06/30/2015 19:34:51</publishTime>
+    </File>
+    <File Include="Scripts/TieUp/TieUpInformation.js">
+      <publishTime>12/23/2015 18:09:22</publishTime>
+    </File>
+    <File Include="Service References/SecurityServiceRef/BrokerageOnline.Presentation.SecurityServiceRef.AuthenticateUserResponse.datasource">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Service References/SecurityServiceRef/BrokerageOnline.Presentation.SecurityServiceRef.ForgetPasswordResponse.datasource">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Service References/SecurityServiceRef/BrokerageOnline.Presentation.SecurityServiceRef.InsertUpdateEmployeeLogsResponse.datasource">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Service References/SecurityServiceRef/BrokerageOnline.Presentation.SecurityServiceRef.ResetPasswordResponse.datasource">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="UserControl/ForgetPassword.ascx">
+      <publishTime>03/06/2015 15:36:39</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/13/2016 15:51:34</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

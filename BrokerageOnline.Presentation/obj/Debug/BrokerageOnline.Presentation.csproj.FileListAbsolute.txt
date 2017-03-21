@@ -1,0 +1,70 @@
+D:\Projects\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll.config
+D:\Projects\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll
+D:\Projects\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.pdb
+D:\Projects\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.dll
+D:\Projects\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.pdb
+D:\Projects\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.csprojResolveAssemblyReference.cache
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll.config
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll.config
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.csprojResolveAssemblyReference.cache
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll.config
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.csprojResolveAssemblyReference.cache
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll.config
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.csprojResolveAssemblyReference.cache
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll.config
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.csprojResolveAssemblyReference.cache
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll.config
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\DocumentFormat.OpenXml.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\itextsharp.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\itextsharp.xml
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.csprojResolveAssemblyReference.cache
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\itextsharp.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\itextsharp.xml
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll.config
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\itextsharp.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\itextsharp.xml
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.csprojResolveAssemblyReference.cache
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll.config
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\itextsharp.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\bin\itextsharp.xml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.csprojResolveAssemblyReference.cache
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll.config
+E:\DSP\Prod Copy\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.dll
+E:\DSP\Prod Copy\BrokerageOnline.Presentation\bin\BrokerageOnline.Presentation.pdb
+E:\DSP\Prod Copy\BrokerageOnline.Presentation\bin\itextsharp.dll
+E:\DSP\Prod Copy\BrokerageOnline.Presentation\bin\itextsharp.xml
+E:\DSP\Prod Copy\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.csprojResolveAssemblyReference.cache
+E:\DSP\Prod Copy\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.dll
+E:\DSP\Prod Copy\BrokerageOnline.Presentation\obj\Debug\BrokerageOnline.Presentation.pdb

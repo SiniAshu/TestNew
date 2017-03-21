@@ -1,0 +1,15 @@
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.TransferObjects\bin\Release\BrokerageOnline.TransferObjects.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.TransferObjects\bin\Release\BrokerageOnline.TransferObjects.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.TransferObjects\obj\Release\BrokerageOnline.TransferObjects.csprojResolveAssemblyReference.cache
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.TransferObjects\obj\Release\BrokerageOnline.TransferObjects.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.TransferObjects\obj\Release\BrokerageOnline.TransferObjects.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.TransferObjects\bin\Release\BrokerageOnline.TransferObjects.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.TransferObjects\bin\Release\BrokerageOnline.TransferObjects.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.TransferObjects\obj\Release\BrokerageOnline.TransferObjects.csprojResolveAssemblyReference.cache
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.TransferObjects\obj\Release\BrokerageOnline.TransferObjects.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.TransferObjects\obj\Release\BrokerageOnline.TransferObjects.pdb
+E:\DSP\Prod Copy\BrokerageOnline.TransferObjects\bin\Release\BrokerageOnline.TransferObjects.dll
+E:\DSP\Prod Copy\BrokerageOnline.TransferObjects\bin\Release\BrokerageOnline.TransferObjects.pdb
+E:\DSP\Prod Copy\BrokerageOnline.TransferObjects\obj\Release\BrokerageOnline.TransferObjects.csprojResolveAssemblyReference.cache
+E:\DSP\Prod Copy\BrokerageOnline.TransferObjects\obj\Release\BrokerageOnline.TransferObjects.dll
+E:\DSP\Prod Copy\BrokerageOnline.TransferObjects\obj\Release\BrokerageOnline.TransferObjects.pdb

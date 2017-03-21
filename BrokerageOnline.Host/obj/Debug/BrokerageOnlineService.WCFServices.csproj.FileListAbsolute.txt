@@ -1,0 +1,6 @@
+D:\Projects\BrokerageOnline\BrokerageOnlineService\bin\BrokerageOnlineService.WCFServices.dll.config
+D:\Projects\BrokerageOnline\BrokerageOnlineService\bin\BrokerageOnlineService.WCFServices.dll
+D:\Projects\BrokerageOnline\BrokerageOnlineService\bin\BrokerageOnlineService.WCFServices.pdb
+D:\Projects\BrokerageOnline\BrokerageOnlineService\obj\Debug\BrokerageOnlineService.WCFServices.csprojResolveAssemblyReference.cache
+D:\Projects\BrokerageOnline\BrokerageOnlineService\obj\Debug\BrokerageOnlineService.WCFServices.dll
+D:\Projects\BrokerageOnline\BrokerageOnlineService\obj\Debug\BrokerageOnlineService.WCFServices.pdb

@@ -1,0 +1,548 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brokerage Online Solution</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/ie9_fix.css" rel="stylesheet" />
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <link href="../css/ui.jqgrid.css" rel="stylesheet" />
+    <link href="../css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../css/token-input-facebook.css" rel="stylesheet" />
+    <link href="../css/bootstrap-multiselect.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link href="../css/toastr.css" rel="stylesheet" />
+    <script src="../js/jquery.js"></script>
+
+    <script>
+        $(window).scroll(function () {
+            var height = $(window).scrollTop();
+            if (height > 210) {
+                $('#fx-hdr').slideDown("slow");
+            }
+            else {
+                $('#fx-hdr').slideUp("slow");
+            }
+
+        });
+
+    </script>
+
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/jquery-migrate-1.2.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap-multiselect.js"></script>
+    <script src="../js/toastr.js"></script>
+    <script src="../js/site.js"></script>
+    <script src="../js/jquery.jqGrid.min.js"></script>
+    <script src="../js/tinymce.min.js"></script>
+    <script src="../js/grid.locale-en.js"></script>
+    <script src="../js/jquery.tokeninput.js"></script>
+    <script src="../js/jquery.timer.js"></script>
+    <script src="../js/Navigation.js"></script>
+    <script src="../js/Utility.js"></script>
+    <script src="../js/Menu.js"></script>
+    <script src="../Scripts/AdHoc/AdHocProcessScript.js"></script>
+    <!--<script src="../js/jquery.signalR-2.1.2.min.js"></script>
+    <script src="http://182.75.9.197/BrokerageOnlineService/signalr/hubs/" type="text/javascript"></script>-->
+    <style>
+        h4 {
+            color: #333;
+        }
+
+        h3 {
+            color: #333;
+        }
+    </style>
+    <!--<link rel="stylesheet" href="../css/jquery-ui.css">-->
+    <script>
+
+        if ((sessionStorage.CurrentMenuselected == "" || sessionStorage.CurrentMenuselected == undefined) && sessionStorage.idtag != "") {
+            $(document).ready(function () {
+                if (sessionStorage.UserName != "" && sessionStorage.UserName != undefined) {
+                    $("#spn_user_name").append(sessionStorage.UserName);
+                    $("#spn_role_name").append(sessionStorage.RoleName);
+                }
+            });
+        }
+        $(document).ready(function () {
+            if (sessionStorage.CurrentMenuselected == "nav_initiate")
+                AdHocProcess.ViewAdHocInitiate();
+            else if (sessionStorage.CurrentMenuselected == "nav_zonalProcessing")
+                AdHocProcess.ViewAdHocZonalProcessing();
+            else if (sessionStorage.CurrentMenuselected == "nav_stateProcessing")
+                AdHocProcess.ViewAdHocStateProcessing();
+            else if (sessionStorage.CurrentMenuselected == "nav_salesprocessing")
+                AdHocProcess.ViewAdHocSalesProcessing();
+            else if (sessionStorage.CurrentMenuselected == "nav_review")
+                AdHocProcess.ViewAdHocReview();
+            else if (sessionStorage.CurrentMenuselected == "nav_approve")
+                AdHocProcess.ViewAdHocApproval();
+            else if (sessionStorage.CurrentMenuselected == "nav_freeze")
+                AdHocProcess.ViewAdHocFreeze();
+
+            if (sessionStorage.UserName != "" && sessionStorage.UserName != undefined) {
+                $("#spn_user_name").append(sessionStorage.UserName);
+                $("#spn_role_name").append(sessionStorage.RoleName);
+            }
+
+            if (sessionStorage.ActiveMainMenu != undefined && sessionStorage.ActiveMainMenu != "") {
+                $("ul.secondary-nav-ul li").removeClass("active");
+                $('.secondary-nav-ul-li:eq(' + parseInt(sessionStorage.ActiveMainMenu) + ')').addClass("active");
+            }
+        });
+
+        function qs(search_for) {
+            var query = window.location.search.substring(1);
+            var parms = query.split('&');
+            for (var i = 0; i < parms.length; i++) {
+                var pos = parms[i].indexOf('=');
+                if (pos > 0 && search_for == parms[i].substring(0, pos)) {
+                    return parms[i].substring(pos + 1);
+                }
+            }
+            return "";
+        }
+        //var sessionId = qs("tokenkey");
+        //var userId = qs("user");
+        //sessionStorage.setItem("sessionId", sessionId);
+        //sessionStorage.setItem("userId", userId);
+    </script>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row top-hdr-otr ">
+            <div class="col-md-2 col-sm-4 fst-itm">
+                <div> <img class="img-responsive mr-top-02 mr-top-sm-nill" src="../img/main_logo.png"> </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <h2 class="title-tag-style-a mr-top-03 mr-top-sm-nill">Brokerage Online Solution</h2>
+            </div>
+
+            <div class="col-md-6 col-sm-4 lst-itm">
+                <div class="">
+                    <div class="col-md-12 lst-itm">
+                        <div class="clear mr-top-0001"></div>
+                        <nav role="navigation">
+                            <ul class="top-nav-set-a">
+                                <li id="li_Dashboard">
+                                    <a href="Dashboard.html" class="top-nav-btns">
+                                        <img title="Home" src="../img/nav_btm_icon08.png">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="has-menu" id="li_module">
+                                    <a href="#" class="top-nav-btns">
+                                        <img src="../img/nav_btm_icon01.png">
+                                        <span>Modules</span>
+                                    </a>
+                                    <ul class="sub-menu" id="ul_menu_body"></ul>
+                                </li>
+                                <li id="li_master_queue">
+                                    <a href="MasterQueue.html" id="anch_master_queue" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon02.png">
+                                        <span>Master Q</span>
+                                    </a>
+                                </li>
+                                <li id="li_discarded_queue">
+                                    <a href="Overview.html" id="anch_discarded_queue" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon03.png">
+                                        <span>Discarded Q</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./SmartSearchScreen.html" id="anch_smart_search" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon04.png">
+                                        <span>Smart Search</span>
+                                    </a>
+                                </li>
+                                <li class="has-menu" id="li_administrator">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon05.png">
+                                        <span>Administrator</span>
+                                    </a>
+                                    <ul class="sub-menu" id="ul_admin_menu_body"></ul>
+                                </li>
+                                <li class="has-menu" id="li_reports">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon06.png">
+                                        <span>Reports</span>
+                                    </a>
+                                    <ul class="sub-menu fl-wd flt-r" id="ul_report_menu_body"></ul>
+                                </li>
+                                <li class="has-menu">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon07.png">
+                                        <span>User Profile</span>
+                                    </a>
+                                    <ul class="sub-menu flt-r">
+                                        <li><a href="#">User Details</a></li>
+                                        <li><a href="#">Settings</a></li>
+                                        <li><a href="#">Reminders</a></li>
+                                        <li><a href="#" onclick="CommonValidate.LogOut();">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="clear mr-top-0001"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bottom-bnr">
+            <h2 class="fl" id="spn_user_name"></h2>
+            <h2 class="fl">:  [ </h2>
+            <h2 class="fl" id="spn_role_name"></h2>
+            <h2 class="fl"> ] </h2>
+            <span class="fr"><span class="time-date-box" id="spn_date"></span></span>
+            <!--<span class="fr"><span class="time-date-box">11:14 am</span><span class="time-date-box"> | </span><span class="time-date-box" id="spn_date">0/0/2015</span></span>-->
+        </div>
+        <div style="background-image: url(../img/toptest_v3.png), url(../img/bottomtest_v3.png); background-position: top left, bottom right; background-repeat: no-repeat; ">
+            <div class="row inner-bdy-sect">
+                <div class="col-md-6 col-sm-6">
+                    <h2 id="hdr_name" class="main-title-tag">Initiate Ad Hoc Payment</h2>
+                </div>
+            </div>
+
+            <div class="row mr-top-01">
+                <div class="col-md-7 col-sm-7 ">
+                    <h3 class="sub-title-btm-c col-md-3 col-sm-2" id="hdr_Main_dock">Payment Type</h3>
+                    <div class="col-md-4 col-sm-2 pd-left-00">
+                        <select class="select-bx-style c-round" id="dd_payment_type" onchange="AdHocProcess.PaymentTypeOnChange();"></select>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-9 txt-alg-rt" id="div_btn">
+                </div>
+            </div>
+
+
+            <div id="div_initate">
+                <div class="row mr-top-05">
+                    <div class="col-md-3 col-sm-7 ">
+                        <h3 class="sub-title-btm-c">Payment List View</h3>
+                        <div class="row col-md-4 col-sm-7">
+                            <button class="btn btn-warning sq-btn" data-toggle="modal" onclick="Utility.AdvanceSearchClick(3, 'VIEW_ADHOC_PAYMENT_BY_MEMOID');">Advance Search &nbsp; <img src="../img/search-btn.png"></button>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-5 txt-alg-rt mr-bottom-02">
+                        <button class="btn btn-warning sq-btn " onclick="AdHocProcess.RefreshAdHocInitiateGrid(); "><img src="../img/repeat-btn.png"></button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 ">
+                        <table id="grid_search_result"></table>
+                        <!--<div id="grid_search_pager"></div>-->
+                    </div>
+                </div>
+                <div class="row mr-top-50">
+                    <div class="col-md-12 col-sm-12 ">
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="div_processing">
+                <div class="row mr-top-02">
+                    <div class="col-md-3 col-sm-7 ">
+                        <h3 class="sub-title-btm-c" id="hdr_Main_dock">Memo List View</h3>
+                        <div class="row col-md-4 col-sm-7">
+                            <button class="btn btn-warning sq-btn" data-toggle="modal" onclick="AdHocProcess.AdvanceSearchClick();">Advance Search &nbsp; <img src="../img/search-btn.png"></button>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-5 txt-alg-rt mr-bottom-02">
+                        <button class="btn btn-warning sq-btn " onclick="AdHocProcess.RefreshAdHocMainGrid(); "><img src="../img/repeat-btn.png"></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 ">
+                        <table id="grid_main_processing"></table>
+                    </div>
+                </div>
+
+                <div class="row mr-top-02">
+                    <div class="col-md-3 col-sm-6">
+                        <h3 class="sub-title-btm-c" id="hdr_Sub_dock">Memo Number to be bind here</h3>
+                        <div class="row col-md-4 col-sm-7">
+                            <button class="btn btn-warning sq-btn" data-toggle="modal" onclick="AdHocProcess.Sub_AdvanceSearchClick(3, 'VIEW_ADHOC_PAYMENT_BY_MEMOID');">Advance Search &nbsp; <img src="../img/search-btn.png"></button>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-6 txt-alg-rt mr-bottom-01" id="div_Btn_Sub_Grid">
+                        <button class="btn btn-warning sq-btn " onclick="AdHocProcess.RefreshAdHocSubGrid(); "><img src="../img/repeat-btn.png"></button>
+                        <button class="btn btn-primary sq-btn fr" id="btn_Sub_Save" onclick="AdHocProcess.UpdateAdhocPaymentList();">Save</button>
+                        <button class="btn btn-warning sq-btn fr" id="btn_Sub_Cancel" onclick="AdHocProcess.CancelAdhocPaymentList();">Cancel</button>
+                        <button class="btn btn-danger sq-btn fr" id="btn_Sub_Delete" onclick="AdHocProcess.DeleteAdhocPaymentList();">Delete</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 " id="div_grid_sub_processing">
+                        <table id="grid_sub_processing"></table>
+                        <!--<div style="height:30px;" id="pager_sub"></div>-->
+                    </div>
+                </div>
+
+                <div class="modal fade" id="div_modal_view_remarks" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="row mr-top-05">
+                                    <div class="col-md-12 col-sm-12 ">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h3 class="sub-title-btm-c">View Payment Remarks</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row mr-top-01">
+                                    <div class="col-md-12 col-sm-12 ">
+                                        <div class="rrd-outer">
+                                            <div class="row mr-top-05">
+                                                <div class="col-md-12 col-sm-4 pd-left-00">
+                                                    <table id="grid_view_remarks"></table>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mr-top-05 pos-rel-common">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mr-top-02">
+                    <div class="col-md-12 col-sm-12 ">
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="modal fade" id="mdl_view_forward_to" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" aria-labelledby="lblmdl_view_forward_to" aria-hidden="true">
+                <div class="modal-dialog modal-title">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Assign to Role</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 ">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-5">
+                                            <label class="tt-chk-bx-label mr-top-desk-title-02">Assign to</label>
+                                        </div>
+                                        <div class="col-md-7 col-sm-7 pd-left-00">
+                                            <div class="styled-select">
+                                                <select class="select-bx-style c-round" id="dd_assign_to">
+                                                    <!--<option value="6">Business Head</option>-->
+                                                    <option value="7">Head Of Sales</option>
+                                                    <option value="8">President</option>
+                                                    <option value="9">Chief Administrative Officer</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row txt-alg-rt mr-top-02 sq-btn fr">
+                                        <button class="btn btn-success sq-btn fr" onclick="AdHocProcess.AssignAndForward();" id="btn_assign_to">Forward</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade c-modal-center" id="modal_Advance_Search" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color:#0c70be; color:#FFF; ">
+                            <button type="button" class="close" onclick="Utility.AdvanceSearch_Close();" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Filter Search</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <!--<div class="col-xs-10">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control " placeholder="Search for...">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button"><img src="../img/search-btn1.png"></button>
+                                            </span>
+
+                                        </div>
+                                    </div>-->
+                                    <!--<div class="col-xs-2">
+                                    <button class="btn btn-default fr" data-dismiss="modal"><img src="../img/close-btn1.png"></button>
+                                </div>-->
+
+                                </div><!-- mrow-->
+                                <div class="row c-pt1">
+                                    <div class="col-xs-6">
+                                        <select class="form-control" id="dd_column_names" onchange="Utility.AdvanceSearch_ColumnChange();"></select>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <select class="form-control" id="dd_operations"></select>
+                                    </div>
+                                </div>
+                                <div class="row c-pt1">
+                                    <div class="col-xs-10">
+                                        <input class="form-control " type="text" id="txt_Adv_input">
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <button class="btn btn-primary sq-btn fr" onclick="Utility.Add_AdvanceSearch();">Add</button>
+                                    </div>
+                                </div>
+                                <div class="row c-pt1">
+                                    <div class="col-xs-12">
+                                        <textarea class="form-control" rows="3" id="txt_Query_Text"></textarea>
+                                    </div>
+
+                                </div>
+                            </div><!-- modal body-->
+                        </div>
+                        <div class="modal-footer c-pt1">
+                            <button type="button" class="btn btn-primary sq-btn" onclick="AdHocProcess.Search_AdvanceSearchClick();">Search</button>
+                            <button type="button" class="btn btn-warning sq-btn" onclick="Utility.ClearAdvanceSearchClick();">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL END -->
+
+            <div class="modal fade" id="mdl_reject_remarks" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" aria-labelledby="lblmdl_reject_remarks" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalreject_remarks">Remarks</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 ">
+                                    <div class="row">
+                                        <div class="col-md-11 col-sm-11">
+                                            <textarea class="txt-area-style c-round" style="height:70px;" id="txt_reject_remarks"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row txt-alg-rt mr-top-02 sq-btn fr" id="div_Reject_to">
+                                        <button class="btn btn-warning sq-btn fr" onclick="AdHocProcess.RejectOrDiscardAdHocList();" id="btn_Reject_Discard_to">Reject</button>
+                                    </div>
+                                    <div class="row txt-alg-rt mr-top-02 sq-btn fr" id="div_Remarks">
+                                        <button class="btn btn-success sq-btn fr" onclick="AdHocProcess.RemarksClicked();" id="btn_Remarks_Ok">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            </div>
+
+            <footer>
+                <div class="row footer-main-black">
+                    <div class="col-md-12 col-sm-12 ">
+                        <div class="col-md-12 col-sm-12 pd-top-02 pd-bottom-02">
+
+                            <div class="col-md-12 col-sm-12 pd-left-00">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4"></div>
+                                    <div class="col-md-8 col-sm-8 pd-left-00">
+                                        <label style="color: white;" class="sq-btn fr">Copyright &copy 2014. All rights reserved in this software belong solely to <a style=" color:white;background:black;" href="http://www.hexagonglobal.in" target="_blank">Hexagon Global IT Services pvt ltd</a> </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--</div>-->
+        </div>
+    <div id="alertsection" class="alert-sect-outer" style="right:-450px;">
+        <div class="alert-head">
+            <img src="../img/alert_icon.png">
+            <span class="notif-count"><span class="notif-count-inner">8</span></span>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_select_to_cc" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="selecttocc" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row mr-top-05">
+                        <div class="col-md-12 col-sm-12 ">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h3 class="sub-title-btm-c">Select TO / CC Users</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mr-top-01">
+                        <div class="col-md-12 col-sm-12 ">
+                            <div class="rrd-outer">
+                                <div class="row" id="div_mailing_list">
+                                    <div class="col-md-3 col-sm-3"> <span class="sub-title-a mr-top-desk-title ">List Name</span> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <div class="styled-select">
+                                            <select class="select-bx-style c-round" id="dd_mailing_list" onchange="AdHocProcess.mailingListOnchange(this);"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br /><br />
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3"> <span class="sub-title-a mr-top-desk-title ">TO Users</span> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <!--<select class="multiselect select-bx-style" id="dd_To"></select>-->
+                                        <input type="text" id="txt_to" class="input-text-bx-style c-round" />
+                                    </div>
+
+                                </div>
+                                <br /><br />
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3"> <span class="sub-title-a mr-top-desk-title ">CC Users</span> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <!--<select class="multiselect select-bx-style" id="dd_CC" multiple="multiple"></select>-->
+                                        <input type="text" id="txt_cc" class="input-text-bx-style c-round" />
+                                    </div>
+
+                                </div>
+                                <br /><br />
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3"> <span class="sub-title-a mr-top-desk-title ">BCC Users</span> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <!--<select class="multiselect select-bx-style" id="dd_CC" multiple="multiple"></select>-->
+                                        <input type="text" id="txt_bcc" class="input-text-bx-style c-round" />
+                                    </div>
+
+                                </div>
+
+                                <div class="row mr-top-05 pos-rel-common">
+
+                                </div>
+
+                                <div class="row mr-top-05">
+
+                                    <div>
+                                        <button class="btn sq-btn fr btn-success" id="btn_send_email">Send Email</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

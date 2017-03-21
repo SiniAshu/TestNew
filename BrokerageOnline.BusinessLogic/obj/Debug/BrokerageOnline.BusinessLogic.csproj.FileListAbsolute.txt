@@ -1,0 +1,185 @@
+D:\Projects\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.dll
+D:\Projects\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\Projects\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.dll
+D:\Projects\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\Projects\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Projects\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\Projects\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.csprojResolveAssemblyReference.cache
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.csprojResolveAssemblyReference.cache
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.pdb
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.dll
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.BusinessLogic.pdb
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.dll
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.dll
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.dll
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.dll
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\Newtonsoft.Json.dll
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Common.pdb
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.DataAccess.pdb
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.TransferObjects.pdb
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\BrokerageOnline.Workflow.pdb
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.csprojResolveAssemblyReference.cache
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.dll
+E:\DSP\Prod Copy\BrokerageOnline.BusinessLogic\obj\Debug\BrokerageOnline.BusinessLogic.pdb

@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brokerage Online Solution</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/ie9_fix.css" rel="stylesheet" />
+    <link href="../css/font-awesome.css" rel="stylesheet" />
+    <link href="../css/ui.jqgrid.css" rel="stylesheet" />
+    <link href="../css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../css/token-input-facebook.css" rel="stylesheet" />
+    <link href="../css/bootstrap-multiselect.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link href="../css/toastr.css" rel="stylesheet" />
+    <script src="../js/jquery.js"></script>
+
+    <script>
+        $(window).scroll(function () {
+            var height = $(window).scrollTop();
+            if (height > 210) {
+                $('#fx-hdr').slideDown("slow");
+            }
+            else {
+                $('#fx-hdr').slideUp("slow");
+            }
+
+        });
+
+    </script>
+
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/jquery-migrate-1.2.1.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap-multiselect.js"></script>
+    <script src="../js/toastr.js"></script>
+    <script src="../js/site.js"></script>
+    <script src="../js/jquery.jqGrid.min.js"></script>
+    <script src="../js/tinymce.min.js"></script>
+    <script src="../js/grid.locale-en.js"></script>
+    <script src="../js/jquery.tokeninput.js"></script>
+    <script src="../js/jquery.timer.js"></script>
+    <script src="../js/Navigation.js"></script>
+    <script src="../js/Utility.js"></script>
+    <script src="../js/Menu.js"></script>
+    <script src="../Scripts/Master/DistributorCategoryMaster.js"></script>
+    <!--<script src="../js/jquery.signalR-2.1.2.min.js"></script>
+    <script src="http://182.75.9.197/BrokerageOnlineService/signalr/hubs/" type="text/javascript"></script>-->
+    <style>
+        h4 {
+            color: #333;
+        }
+
+        h3 {
+            color: #333;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            if ((sessionStorage.CurrentMenuselected == "" || sessionStorage.CurrentMenuselected == undefined) && sessionStorage.idtag != "") {
+                //$('#' + sessionStorage.idtag + '').trigger('click');
+                if (sessionStorage.UserName != "" && sessionStorage.UserName != undefined) {
+                    $("#spn_user_name").html("");
+                    $("#spn_role_name").html("");
+                    $("#spn_user_name").append(sessionStorage.UserName);
+                    $("#spn_role_name").append(sessionStorage.RoleName);
+                }
+            }
+        });
+
+        $(document).ready(function () {
+            if (sessionStorage.CurrentMenuselected == "nav_create")
+                CreateRackRate.ViewCreateRackRate();
+            if (sessionStorage.UserName != "" && sessionStorage.UserName != undefined) {
+                $("#spn_user_name").html("");
+                $("#spn_role_name").html("");
+                $("#spn_user_name").append(sessionStorage.UserName);
+                $("#spn_role_name").append(sessionStorage.RoleName);
+
+                if (sessionStorage.ActiveMainMenu != undefined && sessionStorage.ActiveMainMenu != "") {
+                    $("ul.secondary-nav-ul li").removeClass("active");
+                    $('.secondary-nav-ul-li:eq(' + parseInt(sessionStorage.ActiveMainMenu) + ')').addClass("active");
+                }
+            }
+        });
+
+        function qs(search_for) {
+            var query = window.location.search.substring(1);
+            var parms = query.split('&');
+            for (var i = 0; i < parms.length; i++) {
+                var pos = parms[i].indexOf('=');
+                if (pos > 0 && search_for == parms[i].substring(0, pos)) {
+                    return parms[i].substring(pos + 1);
+                }
+            }
+            return "";
+        }
+    </script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row top-hdr-otr ">
+            <div class="col-md-2 col-sm-4 fst-itm">
+                <div> <img class="img-responsive mr-top-02 mr-top-sm-nill" src="../img/main_logo.png"> </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <h2 class="title-tag-style-a mr-top-03 mr-top-sm-nill">Brokerage Online Solution</h2>
+            </div>
+
+            <div class="col-md-6 col-sm-4 lst-itm">
+                <div class="">
+                    <div class="col-md-12 lst-itm">
+                        <div class="clear mr-top-0001"></div>
+                        <nav role="navigation">
+                            <ul class="top-nav-set-a">
+                                <li id="li_Dashboard">
+                                    <a href="Dashboard.html" class="top-nav-btns">
+                                        <img title="Home" src="../img/nav_btm_icon08.png">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="has-menu" id="li_module">
+                                    <a href="#" class="top-nav-btns">
+                                        <img src="../img/nav_btm_icon01.png">
+                                        <span>Modules</span>
+                                    </a>
+                                    <ul class="sub-menu" id="ul_menu_body"></ul>
+                                </li>
+                                <li id="li_master_queue">
+                                    <a href="MasterQueue.html" id="anch_master_queue" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon02.png">
+                                        <span>Master Q</span>
+                                    </a>
+                                </li>
+                                <li id="li_discarded_queue">
+                                    <a href="Overview.html" id="anch_discarded_queue" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon03.png">
+                                        <span>Discarded Q</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./SmartSearchScreen.html" id="anch_smart_search" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon04.png">
+                                        <span>Smart Search</span>
+                                    </a>
+                                </li>
+                                <li class="has-menu" id="li_administrator">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon05.png">
+                                        <span>Administrator</span>
+                                    </a>
+                                    <ul class="sub-menu" id="ul_admin_menu_body"></ul>
+                                </li>
+                                <li class="has-menu" id="li_reports">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon06.png">
+                                        <span>Reports</span>
+                                    </a>
+                                    <ul class="sub-menu fl-wd flt-r" id="ul_report_menu_body"></ul>
+                                </li>
+                                <li class="has-menu">
+                                    <a href="#" class="top-nav-btns">
+                                        <img title="Search" src="../img/nav_btm_icon07.png">
+                                        <span>User Profile</span>
+                                    </a>
+                                    <ul class="sub-menu flt-r">
+                                        <li><a href="#">User Details</a></li>
+                                        <li><a href="#">Settings</a></li>
+                                        <li><a href="#">Reminders</a></li>
+                                        <li><a href="#" onclick="CommonValidate.LogOut();">Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="clear mr-top-0001"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bottom-bnr">
+            <h2 class="fl" id="spn_user_name"></h2>
+            <h2 class="fl">:  [ </h2>
+            <h2 class="fl" id="spn_role_name"></h2>
+            <h2 class="fl"> ] </h2>
+            <span class="fr"><span class="time-date-box" id="spn_date"></span></span>
+            <!--<span class="fr"><span class="time-date-box">11:14 am</span><span class="time-date-box"> | </span><span class="time-date-box" id="spn_date">0/0/2015</span></span>-->
+        </div>
+        <div style="background-image: url(../img/toptest_v3.png), url(../img/bottomtest_v3.png); background-position: top left, bottom right; background-repeat: no-repeat; ">
+            <div class="row inner-bdy-sect">
+                <div class="col-md-6 col-sm-6">
+                    <h3 id="hdr_name" class="sub-title-btm-c">Distributor Category & Slab Master</h3>
+                </div>
+                <div class="col-md-6 col-sm-6 txt-alg-rt mr-bottom-02" id="div_btn">
+                </div>
+            </div>
+
+            <div id="div_Role_Section">
+                <div class="row ">
+                    <div class="col-md-7 col-sm-7 ">
+
+                    </div>
+                    <div class="col-md-5 col-sm-5 txt-alg-rt mr-bottom-02">
+                        <button class="btn btn-warning sq-btn mr-right-01" onclick="DistributorCategoryMaster.LoadRoles();"><img src="../img/repeat-btn.png"></button>
+                        <button class="btn btn-primary sq-btn mr-right-01" onclick="DistributorCategoryMaster.AddNewRole();">Add New</button>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 ">
+                        <table id="grid_role"></table>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal fade" id="mdl_Edit_Role" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="lblmdl_view_modify_validity" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Add/Edit Distributor Category</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 ">
+                                    <div class="col-md-12 col-sm-12 bg-cl-a pd-top-02 pd-bottom-02">
+
+                                        <div class="col-md-6 col-sm-3 pd-left-00">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-4"> <span class="sub-title-a mr-top-desk-title flt-right-a">Category Name</span> </div>
+                                                <div class="col-md-8 col-sm-8 pd-left-00">
+                                                    <input type="text" id="txt_category_name" class="input-text-bx-style c-round  f-size" />
+                                                    <input type="hidden" id="hidden_category_id" class="input-text-bx-style" />
+                                                    <input type="hidden" id="hidden_rowid" class="input-text-bx-style" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-sm-3 pd-left-00">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-4"> <span class="sub-title-a mr-top-desk-title flt-right-a">Category Code</span> </div>
+                                                <div class="col-md-8 col-sm-8 pd-left-00">
+                                                    <input type="text" id="txt_category_code" class="input-text-bx-style c-round f-size" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 ">
+                                    <div class="col-md-12 col-sm-12 bg-cl-a pd-top-02 pd-bottom-02">
+
+                                        <div class="col-md-6 col-sm-3 pd-left-00">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-4"> <span class="sub-title-a mr-top-desk-title flt-right-a">Slab Amount For Lumpsum</span> </div>
+                                                <div class="col-md-8 col-sm-8 pd-left-00">
+                                                    <input type="text" id="txt_slab" class="input-text-bx-style c-round  f-size" />
+                                                    <!--<input type="text" id="txt_slab_amount" class="input-text-bx-style c-round numberonly f-size" maxlength="5" style="width: 26%; min-width: 50px;  margin-right: 4px;" />
+                                                    <div class="styled-select-cb" style="width:65%">
+                                                        <select class="select-bx-style c-round" id="dd_slab_amount_type">
+                                                            <option value="Lakhs">Lakhs</option>
+                                                            <option value="Crores">Crores</option>
+                                                        </select>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-sm-3 pd-left-00">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-4"> <span class="sub-title-a mr-top-desk-title flt-right-a">Slab Amount For SIP/STP</span> </div>
+                                                <div class="col-md-8 col-sm-8 pd-left-00">
+                                                    <input type="text" id="txt_sip_slab" class="input-text-bx-style number c-round f-size" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 ">
+                                    <div class="col-md-12 col-sm-12 bg-cl-a pd-top-02 pd-bottom-02">
+
+                                        <div class="col-md-6 col-sm-3 pd-left-00">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-4"> <span class="sub-title-a mr-top-desk-title flt-right-a">Status</span> </div>
+                                                <div class="col-md-8 col-sm-8 pd-left-00">
+                                                    <div class="styled-select">
+                                                        <select class="select-bx-style c-round" id="dd_status">
+                                                            <option value="1">Active</option>
+                                                            <option value="0">InActive</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 col-sm-3 pd-left-00">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-4"> <span class="sub-title-a mr-top-desk-title flt-right-a">Effective Date</span> </div>
+                                                <div class="col-md-8 col-sm-8 pd-left-00">
+                                                    <input type="text" id="dt_effective" class="input-text-date-bx-style c-round  f-size" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mr-top-05">
+
+                                <div>
+                                    <button class="btn mr-right-01 btn-danger sq-btn flt-right-a" id="btn_cancel" onclick="DistributorCategoryMaster.Cancel();">Cancel</button>
+                                    <button class="btn mr-right-01 btn-success sq-btn flt-right-a" id="btn_save_role" onclick="DistributorCategoryMaster.SaveRole();">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="alertsection" class="alert-sect-outer" style="right:-450px;">
+                <div class="alert-head">
+                    <img src="../img/alert_icon.png">
+                    <span class="notif-count"><span class="notif-count-inner">8</span></span>
+                </div>
+            </div>
+            </div>
+            <footer>
+                <div class="row footer-main-black">
+                    <div class="col-md-12 col-sm-12 ">
+                        <div class="col-md-12 col-sm-12 pd-top-02 pd-bottom-02">
+
+                            <div class="col-md-12 col-sm-12 pd-left-00">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4"></div>
+                                    <div class="col-md-8 col-sm-8 pd-left-00">
+                                        <label style="color: white;" class="mr-right-01">Copyright &copy 2014. All rights reserved in this software belong solely to <a style=" color:white;background:black;" href="http://www.hexagonglobal.in" target="_blank">Hexagon Global IT Services pvt ltd</a> </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+D:\Projects\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\Projects\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\Projects\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.dll
+D:\Projects\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.pdb
+D:\Projects\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.csprojResolveAssemblyReference.cache
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.pdb
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.csprojResolveAssemblyReference.cache
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.dll
+E:\DSP-Backup\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.pdb
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.csprojResolveAssemblyReference.cache
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.dll
+D:\Projects\DSP-Rock\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.pdb
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.csprojResolveAssemblyReference.cache
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.dll
+D:\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.pdb
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.csprojResolveAssemblyReference.cache
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.dll
+D:\Projects\Latest\25-11-2014\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.pdb
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.csprojResolveAssemblyReference.cache
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.dll
+D:\Selvakumar\Projects\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.pdb
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.csprojResolveAssemblyReference.cache
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.dll
+D:\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.pdb
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.csprojResolveAssemblyReference.cache
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.dll
+D:\DSP Prod Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.pdb
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.csprojResolveAssemblyReference.cache
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.dll
+D:\DSP Production Copy\DSP-Rock\BrokerageOnline\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.pdb
+E:\DSP\Prod Copy\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.dll
+E:\DSP\Prod Copy\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.DataAccess.pdb
+E:\DSP\Prod Copy\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.dll
+E:\DSP\Prod Copy\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\DSP\Prod Copy\BrokerageOnline.DataAccess\bin\Debug\BrokerageOnline.TransferObjects.pdb
+E:\DSP\Prod Copy\BrokerageOnline.DataAccess\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\DSP\Prod Copy\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.csprojResolveAssemblyReference.cache
+E:\DSP\Prod Copy\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.dll
+E:\DSP\Prod Copy\BrokerageOnline.DataAccess\obj\Debug\BrokerageOnline.DataAccess.pdb

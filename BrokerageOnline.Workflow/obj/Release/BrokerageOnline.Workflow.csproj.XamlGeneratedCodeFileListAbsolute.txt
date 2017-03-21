@@ -1,0 +1,21 @@
+obj\Release\_BrokerageOnline.Workflow.g.cs
+obj\Release\BaseRackRateView.g.cs
+obj\Release\RackRateStatus.g.cs
+obj\Release\Rules_CreateRackRate.g.cs
+obj\Release\Workflow_RackRate.g.cs
+obj\Release\AdHoc.g.cs
+obj\Release\RackRateValidation.g.cs
+obj\Release\BaseRackRate.g.cs
+obj\Release\BrokerageOnline.Workflow_BaseRackRateView_BeforeInitializeComponentHelper.cs
+obj\Release\BrokerageOnline.Workflow.Workflows_RackRateStatus_BeforeInitializeComponentHelper.cs
+obj\Release\BrokerageOnline.Workflow_Rules_CreateRackRate_BeforeInitializeComponentHelper.cs
+obj\Release\BrokerageOnline.Workflow_Workflow_RackRate_BeforeInitializeComponentHelper.cs
+obj\Release\BrokerageOnline.Workflow.Workflows.AdHoc_AdHoc_BeforeInitializeComponentHelper.cs
+obj\Release\BrokerageOnline.Workflow_RackRateValidation_BeforeInitializeComponentHelper.cs
+obj\Release\BrokerageOnline.Workflow_BaseRackRate_BeforeInitializeComponentHelper.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRateView_CompiledExpressionRoot.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows_RackRateStatus_CompiledExpressionRoot.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_Rules_CreateRackRate_CompiledExpressionRoot.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow.Workflows.AdHoc_AdHoc_CompiledExpressionRoot.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_RackRateValidation_CompiledExpressionRoot.cs
+E:\DSP\Prod Copy\BrokerageOnline.Workflow\obj\Release\BrokerageOnline.Workflow_BaseRackRate_CompiledExpressionRoot.cs

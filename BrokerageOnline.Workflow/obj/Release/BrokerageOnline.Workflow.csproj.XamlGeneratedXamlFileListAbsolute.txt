@@ -1,0 +1,14 @@
+obj\Release\BaseRackRateView.g.xaml
+obj\Release\RackRateStatus.g.xaml
+obj\Release\Rules_CreateRackRate.g.xaml
+obj\Release\Workflow_RackRate.g.xaml
+obj\Release\AdHoc.g.xaml
+obj\Release\RackRateValidation.g.xaml
+obj\Release\BaseRackRate.g.xaml
+obj\Release\BrokerageOnline.Workflow_BaseRackRateView_BeforeInitializeComponentHelper.txt
+obj\Release\BrokerageOnline.Workflow.Workflows_RackRateStatus_BeforeInitializeComponentHelper.txt
+obj\Release\BrokerageOnline.Workflow_Rules_CreateRackRate_BeforeInitializeComponentHelper.txt
+obj\Release\BrokerageOnline.Workflow_Workflow_RackRate_BeforeInitializeComponentHelper.txt
+obj\Release\BrokerageOnline.Workflow.Workflows.AdHoc_AdHoc_BeforeInitializeComponentHelper.txt
+obj\Release\BrokerageOnline.Workflow_RackRateValidation_BeforeInitializeComponentHelper.txt
+obj\Release\BrokerageOnline.Workflow_BaseRackRate_BeforeInitializeComponentHelper.txt

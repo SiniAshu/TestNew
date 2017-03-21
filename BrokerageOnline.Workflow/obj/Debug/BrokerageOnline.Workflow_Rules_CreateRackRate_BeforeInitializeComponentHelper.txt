@@ -1,0 +1,2 @@
+Rules_CreateRackRate.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

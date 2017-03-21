@@ -1,0 +1,1275 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brokerage Online Solution</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../css/ChatStyle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link href="../css/ie9_fix.css" rel="stylesheet" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/ui.jqgrid.min.css" rel="stylesheet" />
+    <!--<link href="../css/jquery-ui.min.css" rel="stylesheet" />-->
+    <link href="../css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../css/token-input-facebook.min.css" rel="stylesheet" />
+    <link href="../css/bootstrap-multiselect.css" rel="stylesheet" />
+    <link href="../css/toastr.min.css" rel="stylesheet" />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="../js/jquery.ui.core.min.js"></script>
+    <script src="../js/jquery.ui.dialog.min.js"></script>
+    <script src="../js/jquery.ui.draggable.min.js"></script>
+    <script src="../js/jquery.ui.mouse.min.js"></script>
+    <script src="../js/jquery.ui.resizable.min.js"></script>
+    <script src="../js/jquery.ui.widget.min.js"></script>
+    <script src="../js/jquery.signalR-2.2.0.min.js"></script>
+    <script src="../signalr/hubs/" type="text/javascript"></script>
+    <script src="../js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-multiselect.min.js"></script>
+    <script src="../js/toastr.min.js"></script>
+    <script src="../js/site.js"></script>
+    <script src="../js/jquery.jqGrid.min.js"></script>
+    <script src="../js/tinymce.min.js"></script>
+    <script src="../js/grid.locale-en.min.js"></script>
+    <script src="../js/jquery.tokeninput.min.js"></script>
+    <script src="../js/jquery.timer.min.js"></script>
+    <script src="../js/Navigation.js"></script>
+    <script src="../js/Utility.js"></script>
+    <script src="../js/Validate.js"></script>
+    <script src="../Scripts/BRR/RackRateInformation.js"></script>
+    <!--<script src="../js/jquery.signalR-2.1.2.min.js"></script>
+    <script src="http://182.75.9.197/BrokerageOnlineService/signalr/hubs/" type="text/javascript"></script>-->
+
+    <script>
+
+        //$(document).ready(function () {
+        //    $('#' + ((sessionStorage.CurrentMenuselected == "" || sessionStorage.CurrentMenuselected == undefined) ? sessionStorage.idtag : sessionStorage.CurrentMenuselected) + '').trigger('click');
+        //});
+        sessionStorage.ActiveMainMenu = "1";
+        if ((sessionStorage.CurrentMenuselected == "" || sessionStorage.CurrentMenuselected == undefined) && sessionStorage.idtag != "") {
+            $(document).ready(function () {
+                //$('#' + sessionStorage.idtag + '').trigger('click');
+                if (sessionStorage.UserName != "" && sessionStorage.UserName != undefined) {
+                    $("#spn_user_name").append(sessionStorage.UserName);
+                    $("#spn_role_name").append(sessionStorage.RoleName);
+                }
+            });
+        }
+        $(document).ready(function () {
+            if (sessionStorage.CurrentMenuselected == "nav_information") {
+                RackRate.ViewRackRateInformation();
+                RackRate.masterqueueedit();
+
+            }
+            else if (sessionStorage.CurrentMenuselected == "nav_initiate") {
+                RackRate.ViewInitiateRackRate();
+                RackRate.masterqueueedit();
+            }
+            else if (sessionStorage.CurrentMenuselected == "nav_review") {
+                RackRate.ViewRackRateReview();
+                RackRate.masterqueueedit();
+            }
+            else if (sessionStorage.CurrentMenuselected == "nav_approval") {
+                RackRate.ViewRackRateApproval();
+                RackRate.masterqueueedit();
+            }
+            else if (sessionStorage.CurrentMenuselected == "nav_freeze") {
+                RackRate.ViewFreezeRackRate();
+                RackRate.masterqueueedit();
+            }
+            else if (sessionStorage.CurrentMenuselected == "nav_manage") {
+                RackRate.ViewManageRackRate();
+                RackRate.masterqueueedit();
+            }
+            if (sessionStorage.UserName != "" && sessionStorage.UserName != undefined) {
+                $("#spn_user_name").append(sessionStorage.UserName);
+                $("#spn_role_name").append(sessionStorage.RoleName);
+            }
+
+            if (sessionStorage.ActiveMainMenu != undefined && sessionStorage.ActiveMainMenu != "") {
+                $("ul.secondary-nav-ul li").removeClass("active");
+                $('.secondary-nav-ul-li:eq(' + parseInt(sessionStorage.ActiveMainMenu) + ')').addClass("active");
+            }
+            //if (RackRate.DetailCount > 0) {
+            //    for (cnt = 0; cnt < RackRate.DetailCount; cnt++) {
+            //        RackRate.SlabTypeChangedUpdate($('#dd_slab_type' + cnt).val(), cnt);
+            //    }
+            //}
+        });
+
+        function qs(search_for) {
+            var query = window.location.search.substring(1);
+            var parms = query.split('&');
+            for (var i = 0; i < parms.length; i++) {
+                var pos = parms[i].indexOf('=');
+                if (pos > 0 && search_for == parms[i].substring(0, pos)) {
+                    return parms[i].substring(pos + 1);
+                }
+            }
+            return "";
+        }
+        //var sessionId = qs("tokenkey");
+        //var userId = qs("user");
+        //sessionStorage.setItem("sessionId", sessionId);
+        //sessionStorage.setItem("userId", userId);
+    </script>
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row top-hdr-otr pd-top-03 pd-bottom-03">
+            <input type="hidden" id="hidden_payment_memo_id" />
+            <input type="hidden" id="hidden_copied_payment_memo_id" />
+
+            <div class="col-md-3 col-sm-4">
+                <div> <img src="../img/main_logo.png" class="img-responsive mr-top-02 mr-top-sm-nill"> </div>
+            </div>
+            <div class="col-md-6 col-sm-4">
+                <h2 class="title-tag-style-a mr-top-03 mr-top-sm-nill">Brokerage Online Solution</h2>
+            </div>
+            <div class="col-md-3 col-sm-4">
+                <div class="row">
+                    <!--<div class="col-md-12 txt-alg-rt"> <span class="time-date-box">11:14 am</span><span class="time-date-box"> | </span><span id="spn_date" class="time-date-box"></span> </div>-->
+                    <div class="col-md-12 txt-alg-rt">
+                        <div class="clear mr-top-0001"></div>
+                        <span class="profile-name-box" id="spn_user_name"></span><span class="profile-dec"> - </span><span class="profile-dec" id="spn_role_name"></span>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="clear mr-top-0001"></div>
+                        <nav role="navigation">
+                            <ul class="top-nav-set-a">
+                                <li><a class="top-nav-btns" href="#"><img src="../img/top_nav_icon01.png"></a></li>
+                                <li class="mr-left-01"><a class="top-nav-btns" href="./SmartSearchScreen.html"><img src="../img/top_nav_icon02.png"></a></li>
+                                <li class="mr-left-01"><a class="top-nav-btns" href="#"><img src="../img/top_nav_icon03.png"></a></li>
+                                <li class="mr-left-01"><a class="top-nav-btns" href="#"><img src="../img/top_nav_icon04.png"></a></li>
+                                <li class="mr-left-01"><a class="top-nav-btns" href="#"><img src="../img/top_nav_icon05.png"></a></li>
+                                <li class="mr-left-01"> <a class="top-nav-btns" onclick="CommonValidate.LogOut();" href="#"><img src="../img/top_nav_icon06.png"></a></li>
+                            </ul>
+                        </nav>
+                        <div class="clear mr-top-0001"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row secondary-nav-outer">
+            <div class="col-md-12">
+                <nav class="secondary-nav" role="navigation">
+                    <ul class="secondary-nav-ul">
+                        <li class="secondary-nav-ul-li active" onclick="CommonValidate.GetUserOverviewMenu();">
+                            <div class="clear"></div>
+                            <a href="#">
+                                <img src="../img/nav_btm_icon01.png">
+                                <div class="clear"></div>
+                                Overview
+                            </a>
+                            <div class="clear"></div>
+                        </li>
+                        <li class="empty-bdr-li"></li>
+                        <li class="secondary-nav-ul-li" onclick="CommonValidate.GetUserBRRMenu();">
+                            <a href="#">
+                                <img src="../img/nav_btm_icon02.png">
+                                <div class="clear"></div>
+                                Base Rack Rate
+                            </a>
+                        </li>
+                        <li class="empty-bdr-li"></li>
+                        <li class="secondary-nav-ul-li" onclick="CommonValidate.GetUserTieUpMenu();">
+                            <a href="#">
+                                <img src="../img/nav_btm_icon03.png">
+                                <div class="clear"></div>
+                                Tie-Up
+                            </a>
+                        </li>
+                        <li class="empty-bdr-li"></li>
+                        <li class="secondary-nav-ul-li" onclick="CommonValidate.GetUserAdhocMenu();">
+                            <a href="#">
+                                <img src="../img/nav_btm_icon04.png">
+                                <div class="clear"></div>
+                                Adhoc Payment
+                            </a>
+                        </li>
+                        <li class="empty-bdr-li"></li>
+                        <li class="secondary-nav-ul-li" onclick="CommonValidate.GetUserSIPMenu();">
+                            <a href="#">
+                                <img src="../img/nav_btm_icon05.png">
+                                <div class="clear"></div>
+                                SIP Incentive
+                            </a>
+                        </li>
+                        <li class="empty-bdr-li"></li>
+                        <li class="secondary-nav-ul-li" onclick="CommonValidate.GetUserReportMenu();">
+                            <a href="#">
+                                <img src="../img/nav_btm_icon06.png">
+                                <div class="clear"></div>
+                                Reports
+                            </a>
+                        </li>
+                        <li class="empty-bdr-li"></li>
+                        <li class="secondary-nav-ul-li" onclick="CommonValidate.GetUserMasterMenu();">
+                            <a href="MasterQueue.html">
+                                <img src="../img/nav_btm_icon06.png">
+                                <div class="clear"></div>
+                                Master Queue
+                            </a>
+                        </li>
+                        <li class="empty-bdr-li"></li>
+                        <li class="secondary-nav-ul-li active" onclick="CommonValidate.GetMasterMenu();">
+                            <a href="#">
+                                <img src="../img/nav_btm_icon06.png">
+                                <div class="clear"></div>
+                                Master
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="div_main_content" style="background-image: url(../img/toptest_v3.png), url(../img/bottomtest_v3.png); background-position: top left, bottom right; background-repeat: no-repeat; ">
+            <div class="row secondary-nav-outer-btm">
+                <div class="col-md-12">
+                    <nav role="navigation">
+                        <ul class="btm-nav-ul"></ul>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="row inner-bdy-sect">
+                <div class="col-md-6 col-sm-6">
+                    <h3 id="hdr_name" class="sub-title-btm-c">Create Rack Rate</h3>
+
+                </div>
+                <div class="col-md-6 col-sm-6 txt-alg-rt mr-bottom-02 flt-right-a " id="div_btn">
+                </div>
+            </div>
+
+
+            <div id="div_content">
+                <div class="row mr-top-01">
+                    <div class="col-md-12 col-sm-12 ">
+                        <div class="col-md-3 col-sm-3 pd-left-00">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5"> <span class="sub-title-a mr-top-desk-title">Distributor Category</span> </div>
+                                <div class="col-md-7 col-sm-7 pd-left-00">
+                                    <select class="select-bx-style" id="dd_dist_category_info"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5"> <span class="sub-title-a mr-top-desk-title flt-right-a">ARN No</span> </div>
+                                <div class="col-md-7 col-sm-7 pd-left-00">
+                                    <input type="text" id="txt_arn_info" class="input-text-bx-style" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 pd-left-00">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5"> <span class="sub-title-a mr-top-desk-title flt-right-a">ARN Name</span> </div>
+                                <div class="col-md-7 col-sm-7 pd-left-00">
+                                    <input type="text" id="txt_arn_name_info" class="input-text-bx-style" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 pd-right-00">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5 pd-right-00"> <span class="sub-title-a mr-top-desk-title  flt-right-a">Date From</span> </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="date-outer-div">
+                                        <input type="text" id="dt_from" class="input-text-date-bx-style" /><!--onkeypress="RackRate.RemoveToDatePicker(this);"/>-->
+                                        <!--<a class="pos-date-tr" href="#"><img class="pos-date-tr-img" src="../img/date_tr_icon.png" /></a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2  pd-right-00">
+                            <div class="row">
+                                <div class="col-md-5 col-sm-5 pd-right-00"> <span class="sub-title-a mr-top-desk-title flt-right-a">Date To</span> </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="date-outer-div">
+                                        <input type="text" id="dt_to" class="input-text-date-bx-style" />
+                                        <!--<a class="pos-date-tr" href="#"><img class="pos-date-tr-img" src="../img/date_tr_icon.png" /></a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mr-top-01">
+                    <div class="col-md-12 col-sm-12 ">
+                            <div class="col-md-2 col-sm-2">
+                                <select class="multiselect select-bx-style" id="dd_scheme_category"></select><!--onchange="RackRate.SchemeCategoryChange();"></select>-->
+
+                            </div>
+
+                            <div class="col-md-2 col-sm-2">
+                                <select class="multiselect select-bx-style" id="dd_scheme" multiple="multiple"></select>
+
+                            </div>
+                            <div class="col-md-1 col-sm-1 pd-left-00">
+                                <label class="tt-chk-bx-label mr-top-desk-title-00 flt-right-a">Clawback</label>
+                            </div>
+                            <div class="col-md-1 col-sm-1 pd-left-00">
+                                <input type="text" class="input-text-bx-style numberonly converttoint" maxlength="2" id="txt_clawback" />
+                            </div>
+                            <div class="col-md-1 col-sm-1 pd-left-00">
+                                <div class="styled-select">
+                                    <select class="select-bx-style" id="dd_claw_type">
+                                        <option value="Months">Months</option>
+                                        <option value="Years">Years</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-1 col-sm-1 pd-left-00">
+                                <label class="tt-chk-bx-label mr-top-desk-title-00 flt-right-a">Slab</label>
+                            </div>
+                            <div class="col-md-1 col-sm-1 pd-left-00">
+                                <div class="styled-select">
+                                    <select class="select-bx-style" id="dd_slab_type">
+                                        <option value="Slab Amount">Slab Amount</option>
+                                        <option value="All Amounts">All Amounts(No Slab)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-1 col-sm-1 pd-left-00">
+                                <input type="text" class="input-text-bx-style numberonly converttoint" maxlength="2" id="txt_slab" />
+                            </div>
+                            <div class="col-md-1 col-sm-1 pd-left-00">
+                                <div class="styled-select">
+                                    <select class="select-bx-style" id="dd_claw_type">
+                                        <option value="Lacs">Lacs</option>
+                                        <option value="Crores">Crores</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+             
+                      </div>
+
+                        <div class="row mr-top-01">
+                            <div class="col-md-12 col-sm-12 ">
+                                <div class="rrd-outer">
+                                 
+
+                                    <div class="row mr-top-02  pd-top-02">
+                                        <div class="col-md-1 col-sm-1">
+                                            <label class="tt-chk-bx-label-bld mr-top-desk-title-00">Upfront Brokerage</label>
+                                        </div>
+                                        <div class="col-md-11 col-sm-11">
+                                            <div class="col-md-12 col-sm-12 ">
+                                                <table align="center" class="rrd-table" border="0" cellspacing="0" cellpadding="0">
+
+                                                    <tbody>
+                                                        <tr class="rrd-tbl-hdr">
+                                                            <th class="pd-cmn-side-5 pad-top-a pad-btm-a td-txt-algn-cent bt bl" colspan="2">Lump Sum</th>
+                                                            <th class="pd-cmn-side-5 pad-top-a pad-btm-a td-txt-algn-cent bt wbl" colspan="2">SIP/STP</th>
+                                                            <th class="pd-cmn-side-5 pad-top-a pad-btm-a td-txt-algn-cent bt wbl br">Additional Upfront in B15</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="20%" class="bt bl bb">
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="pd-cmn-side-5  pad-top-b  pad-btm-b v-algn-btm td-txt-algn-cent bb" colspan="3"><span class="rrd-tbl-label-bld">≤ Slab</span></td>
+                                                                        </tr>
+                                                                        <tr style="min-height:70px">
+                                                                            <td width="33.3%" class="pd-cmn-side-5 pad-btm-b v-algn-btm ">
+                                                                                <div class="cmn-otr-td">
+                                                                                    <span class="rrd-tbl-label">
+                                                                                        Base
+                                                                                    </span>
+                                                                                    <div class="clear"></div>
+                                                                                    <input class="input-text-bx-style" type="text" id="txt_base" value="0">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td width="33.3%" class="pd-cmn-side-5  pad-btm-b v-algn-btm  bl">
+                                                                                <div class="cmn-otr-td">
+                                                                                    <span class="rrd-tbl-label">
+                                                                                        Additional
+                                                                                    </span>
+                                                                                    <div class="clear"></div>
+                                                                                    <input class="input-text-bx-style" type="text" id="txt_additional" value="75">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td width="33.3%" class="pd-cmn-side-5  pad-btm-b v-algn-btm bl">
+                                                                                <div class="cmn-otr-td">
+                                                                                    <span class="rrd-tbl-label">Total</span>
+
+                                                                                    <div class="clear"></div>
+                                                                                    <input class="input-text-bx-style" type="text" id="txt_total" value="0">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+
+                                                            <td width="10%" class="bt bl bb">
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="pd-cmn-side-5  pad-top-b  pad-btm-b v-algn-btm td-txt-algn-cent"><span class="rrd-tbl-label-bld">> Slab</span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="33.3%" class="pd-cmn-side-5  pad-btm-b v-algn-btm bt">
+                                                                                <div class="cmn-otr-td">
+                                                                                    <br />
+                                                                                    <br />
+                                                                                    <div class="clear"></div>
+                                                                                    <input class="input-text-bx-style" type="text" id="txt_greater_slab" value="0">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+
+                                                            <td width="10%" class="bt bl bb">
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="pd-cmn-side-5  pad-top-b  pad-btm-b v-algn-btm td-txt-algn-cent bb" colspan="3">
+                                                                                <span class="rrd-tbl-label-bld" style="float: left; width: 20%">≤ </span>
+                                                                                <span style="width:80%" class="rrd-tbl-label-bld">5000</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="33.3%" class="pd-cmn-side-5 pad-btm-b v-algn-btm">
+                                                                                <div class="cmn-otr-td">
+                                                                                    <br />
+                                                                                    <br />
+                                                                                    <div class="clear"></div>
+                                                                                    <input class="input-text-bx-style" type="text" id="txt_sip_less_slab" value="0">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+
+                                                            <td width="10%" class="bt bl bb">
+                                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="pd-cmn-side-5  pad-top-b  pad-btm-b v-algn-btm td-txt-algn-cent bb" colspan="3">
+                                                                                <span class="rrd-tbl-label-bld" style="float: left; width: 20%">> </span>
+                                                                                <span style="width:80%" class="rrd-tbl-label-bld">5000</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="33.3%" class="pd-cmn-side-5 pad-btm-b v-algn-btm">
+                                                                                <div class="cmn-otr-td">
+                                                                                    <br />
+                                                                                    <br />
+                                                                                    <div class="clear"></div>
+                                                                                    <input class="input-text-bx-style" type="text" id="txt_sip_greater_slab" value="0">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                            <td width="10%" class="pd-cmn-side-5 v-algn-btm  pad-btm-b bt bl br bb"><input class="input-text-bx-style" type="text" id="txt_additional_upfront" value="0"></td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div class="row mr-top-02">
+                                        <div class="col-md-12 col-sm-12  bg-cl-a  pd-top-02 pd-bottom-02">
+                                            <div class="col-md-1 col-sm-1">
+                                                <label class="tt-chk-bx-label-bld mr-top-desk-title-00">Trail Brokerage</label>
+                                            </div>
+                                            <div class="col-md-11 col-sm-11">
+                                                <table id="grid_add_rack_rate"></table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 ">
+                                            <div class="col-md-6 col-sm-6">
+                                                <input type="checkbox" class="mr-top-desk-title-01 mr-right-01 inpt-chkbx" id="chk_onwards" />
+                                                <label class="tt-chk-bx-label-bld mr-top-desk-title-00">Onwards</label>
+                                            </div>
+                                            <div class="col-md-5 col-sm-5 ">
+                                                <a id="btn_add_new_rack" href="javascript:void(0)" class="mr-right-01 flt-right-a"><img src="../img/rr_add_button.png"></a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mr-top-01 ">
+
+                                        <div class="col-md-12 col-sm-12 txt-alg-rt mr-bottom-02">
+                                            <button class="btn mr-right-01 btn-success " id="btn_save_rack_rate_detail">Add</button>
+                                            <button class="btn mr-right-01 btn-warning " id="btn_save_rack_rate_detail">Clear</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 txt-alg-rt mr-bottom-02">
+                                        <a href="javascript:void(0)" class="tt-chk-bx-label flt-right-a mr-right-01" data-toggle="modal" data-target="#div_rack_rate_new_detail">View/Edit Scheme Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="div_rack_rate_new_detail" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="div_rack_rate_new_detail" aria-hidden="true">
+                            <div class="modal-dialog modal-lrg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="row mr-top-05">
+                                            <div class="col-md-12 col-sm-12 ">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h3 class="sub-title-btm-d">View/ Edit Scheme Details</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="col-md-12 col-sm-12 txt-alg-rt mr-bottom-02">
+                                            <button id="btn_delete" class="btn mr-right-01 btn-warning " data-dismiss="modal">Edit</button>
+                                            <button id="btn_s" class="btn mr-right-01 btn-success ">Save</button>
+                                            <button id="btn_delete" class="btn mr-right-01 btn-danger ">Delete</button>
+                                            <button id="btn_reorder" class="btn btn-warning flt-right-a" onclick="RackRate.Reorder();">Reorder</button>
+                                        </div>
+
+                                        <div id="div_detail_section">
+                                            <table width="100%" align="center" class="rrd-table" id="tbl_review_scheme0" border="0" cellspacing="0" cellpadding="0">
+                                                <thead>
+                                                    <tr class="rrd-tbl-hdr">
+                                                        <th class="pd-cmn-side-5 wbt wbl" id="th_action0" rowspan="6">Select </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="6">Category </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="6">Scheme</th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="6">Slab</th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="6">Clawback  </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" style="background-color: rgb(240, 173, 78);" colspan="6">UpFront </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" style="background-color: rgb(92, 184, 92);" colspan="51">Trail</th>
+                                                    </tr>
+                                                    <tr class="rrd-tbl-hdr">
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="3" colspan="3"> Lump Sum </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="4" colspan="2"> SIP/STP</th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="5"> B15 </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" colspan="5"> Year 1 </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="5"> Year 2 </th>
+                                                    </tr>
+                                                    <tr class="rrd-tbl-hdr">
+                                                        <th class="pd-cmn-side-5 wbt wbl" colspan="5"> 0-12 Months </th>
+                                                    </tr>
+                                                    <tr class="rrd-tbl-hdr">
+                                                        <th class="pd-cmn-side-5 wbt wbl" colspan="3"> Lump Sum </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" colspan="2" rowspan="2"> SIP/STP</th>
+                                                    </tr>
+
+                                                    <tr class="rrd-tbl-hdr">
+                                                        <th class="pd-cmn-side-5 wbt wbl" colspan="2"> ≤ Slab </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="2">&gt; Slab </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" colspan="2"> ≤ Slab </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="2">&gt; Slab </th>
+
+                                                    </tr>
+
+                                                    <tr class="rrd-tbl-hdr">
+                                                        <th class="pd-cmn-side-5 wbt wbl"> Base </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl"> Total </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl"> ≤ 5000 </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl"> > 5000 </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl">Base </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl">Total</th>
+                                                        <th class="pd-cmn-side-5 wbt wbl"> ≤ 5000 </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl"> &gt; 5000 </th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="rowdbl" id="row_1">
+                                                        <td align="center" class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl" id="td_action_0">  <input type="radio" name="test" /></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">Fund of Funds</span>            <input id="hid_category_id_0" type="hidden" value="2"></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl">
+                                                            <span class="rrd-tbl-label"> US Flexible Equity Fund</span> <input id="hid_scheme_id_0" type="hidden" value="280">
+                                                            <input id="hid_payment_list_id_0" type="hidden" value="0">
+                                                            <input id="hid_onwards_0" type="hidden" value="false">
+                                                            <input id="hid_slab_amount_0" type="hidden" value="">
+                                                            <input id="hid_payment_Type_0" type="hidden" value="1">
+                                                        </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">All Amt</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3 M</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">6</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">0</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">6</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2</span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">0</span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2</span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2</span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">8</span><input id="hidden_month_det_0" type="hidden" value="1" /></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2</span> <input id="hidden_year_det_0" type="hidden" value="2" /></td>
+                                                    </tr>
+                                                    <tr class="rowdbl" id="row_2">
+                                                        <td align="center" class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl" id="td_action_1"><input type="radio" name="test" /></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">Fund of Funds</span> <input id="hid_category_id_1" type="hidden" value="2"></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl">
+                                                            <span class="rrd-tbl-label"> World Agriculture Fund</span> <input id="hid_scheme_id_1" type="hidden" value="218">
+                                                            <input id="hid_payment_list_id_1" type="hidden" value="0" />
+                                                            <input id="hid_onwards_1" type="hidden" value="false" />
+                                                            <input id="hid_slab_amount_1" type="hidden" value="" />
+                                                            <input id="hid_payment_Type_1" type="hidden" value="1" />
+                                                        </td>
+
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">All Amt</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3 M</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">6</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">0</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">6</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">0 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">8 </span><input id="hidden_month_det_1" type="hidden" value="1"></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2</span> <input id="hidden_year_det_1" type="hidden" value="2"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <table width="100%" align="center" class="rrd-table" id="tbl_review_scheme1" border="0" cellspacing="0" cellpadding="0">
+                                                <thead>
+                                                    <tr class="rrd-tbl-hdr">
+                                                        <th class="pd-cmn-side-5 wbt wbl" id="th_action0" rowspan="6">Select </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="6">Category </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="6">Scheme</th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="6">Slab</th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="6">Clawback  </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" style="background-color: rgb(240, 173, 78);" colspan="6">UpFront </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" style="background-color: rgb(92, 184, 92);" colspan="51">Trail</th>
+                                                    </tr>
+                                                    <tr class="rrd-tbl-hdr">
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="3" colspan="3"> Lump Sum </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="4" colspan="2"> SIP/STP</th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="5"> B15 </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" colspan="5"> Year 1 & Onwards</th>
+                                                    </tr>
+                                                    <tr class="rrd-tbl-hdr">
+                                                        <th class="pd-cmn-side-5 wbt wbl" colspan="5"> 0-12 Months </th>
+                                                    </tr>
+                                                    <tr class="rrd-tbl-hdr">
+                                                        <th class="pd-cmn-side-5 wbt wbl" colspan="3"> Lump Sum </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" colspan="2" rowspan="2"> SIP/STP</th>
+                                                    </tr>
+
+                                                    <tr class="rrd-tbl-hdr">
+                                                        <th class="pd-cmn-side-5 wbt wbl" colspan="2"> ≤ Slab </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="2">&gt; Slab </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" colspan="2"> ≤ Slab </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl" rowspan="2">&gt; Slab </th>
+
+                                                    </tr>
+
+                                                    <tr class="rrd-tbl-hdr">
+                                                        <th class="pd-cmn-side-5 wbt wbl"> Base </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl"> Total </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl"> ≤ 5000 </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl"> > 5000 </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl">Base </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl">Total</th>
+                                                        <th class="pd-cmn-side-5 wbt wbl"> ≤ 5000 </th>
+                                                        <th class="pd-cmn-side-5 wbt wbl"> &gt; 5000 </th>
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="rowdbl">
+                                                        <td align="center" class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl" id="td_action_2"><input type="radio" name="test" /> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">Hybrid</span> <input id="hid_category_id_2" type="hidden" value="3"></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl">
+                                                            <span class="rrd-tbl-label"> Dual Advantage Fund Series 2-36M</span> <input id="hid_scheme_id_2" type="hidden" value="252"><input id="hid_payment_list_id_2" type="hidden" value="0">
+                                                            <input id="hid_onwards_2" type="hidden" value="true">
+                                                            <input id="hid_slab_amount_2" type="hidden" value="">
+                                                            <input id="hid_payment_Type_2" type="hidden" value="1">
+                                                        </td>
+
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">All Amt</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3 M</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">34</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">37</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">0</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">37</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">0 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">39 </span><input id="hidden_month_det_2" type="hidden" value="1"></td>
+                                                    </tr>
+                                                    <tr class="rowdbl">
+                                                        <td align="center" class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl" id="td_action_2"><input type="radio" name="test" /> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">Hybrid</span> <input id="hid_category_id_2" type="hidden" value="3"></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl">
+                                                            <span class="rrd-tbl-label"> Dual Advantage Fund Series 5-36M </span> <input id="hid_scheme_id_2" type="hidden" value="252"><input id="hid_payment_list_id_2" type="hidden" value="0">
+                                                            <input id="hid_onwards_2" type="hidden" value="true">
+                                                            <input id="hid_slab_amount_2" type="hidden" value="">
+                                                            <input id="hid_payment_Type_2" type="hidden" value="1">
+                                                        </td>
+
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">All Amt</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3 M</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">34</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">37</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">0</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">37</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">0 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">39 </span><input id="hidden_month_det_2" type="hidden" value="1"></td>
+                                                    </tr>
+                                                    <tr class="rowdbl">
+                                                        <td align="center" class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl" id="td_action_2"><input type="radio" name="test" /> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">Hybrid</span> <input id="hid_category_id_2" type="hidden" value="3"></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl">
+                                                            <span class="rrd-tbl-label"> Dual Advantage Fund Series 5-36M </span> <input id="hid_scheme_id_2" type="hidden" value="252"><input id="hid_payment_list_id_2" type="hidden" value="0">
+                                                            <input id="hid_onwards_2" type="hidden" value="true">
+                                                            <input id="hid_slab_amount_2" type="hidden" value="">
+                                                            <input id="hid_payment_Type_2" type="hidden" value="1">
+                                                        </td>
+
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">All Amt</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3 M</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">34</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">37</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">0</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">37</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">0 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">39 </span><input id="hidden_month_det_2" type="hidden" value="1"></td>
+                                                    </tr>
+                                                    <tr class="rowdbl">
+                                                        <td align="center" class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl" id="td_action_2"><input type="radio" name="test" /> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">Hybrid</span> <input id="hid_category_id_2" type="hidden" value="3"></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl">
+                                                            <span class="rrd-tbl-label"> Dual Advantage Fund - Series 19 - 36M </span> <input id="hid_scheme_id_2" type="hidden" value="252"><input id="hid_payment_list_id_2" type="hidden" value="0">
+                                                            <input id="hid_onwards_2" type="hidden" value="true">
+                                                            <input id="hid_slab_amount_2" type="hidden" value="">
+                                                            <input id="hid_payment_Type_2" type="hidden" value="1">
+                                                        </td>
+
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">All Amt</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3 M</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">34</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">37</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">0</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">37</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">3</span> </td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">0 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">2 </span></td>
+                                                        <td class="pd-cmn-side-5 pad-top-b pad-btm-b bt bl"><span class="rrd-tbl-label">39 </span><input id="hidden_month_det_2" type="hidden" value="1"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="modal fade" id="modal_add_rack_rate" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="row mr-top-05">
+                                            <div class="col-md-12 col-sm-12 ">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h3 class="sub-title-btm-c">Add Rack Rate Details</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div id="div_rack_rate_detail">
+
+                        </div>
+
+
+                        <div id="div_view_rate_trail"></div>
+
+                        <!--<div class="row mr-top-50">
+                    <div class="col-md-12 col-sm-12 ">
+                        <h3 class="sub-title-btm-d">Remarks</h3>
+                    </div>
+                </div>-->
+                        <div class="row mr-top-01">
+                            <!--<div id="div_remarks" class="col-md-12 col-sm-12 ">
+                        <div class="txt-area-style-outer">
+                            <textarea class="txt-area-style" id="txt_remarks"></textarea>
+
+                        </div>
+
+                    </div>-->
+                        </div>
+                        <!--<div class="row mr-top-05">
+                    <div class="col-md-12 col-sm-12 ">
+                        <h3 class="sub-title-btm-d">Additional Notes</h3>
+                    </div>
+                </div>
+                <div class="row mr-top-01 mr-bottom-50">
+                    <div class="col-md-12 col-sm-12 ">
+                        <div class="txt-area-style-outer">
+                            <textarea class="txt-area-style scroll-style" id="txt_additional_notes"></textarea>
+                        </div>
+                        <a href="#div_main_content" id="lnk_top" class="tt-chk-bx-label flt-right-a mr-right-01">Back To Top</a>
+                    </div>
+                </div>-->
+
+
+                    </div>
+
+                    <div id="div_landing_grid">
+                        <div id="div_create_rack_rate">
+                            <div class="row ">
+                                <div class="col-md-7 col-sm-7 ">
+
+                                </div>
+                                <div class="col-md-5 col-sm-5 txt-alg-rt mr-bottom-02">
+                                    <button class="btn btn-primary mr-right-01" onclick="RackRate.clearFields(); ">Reset</button>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 ">
+                                    <div class="col-md-12 col-sm-12 bg-cl-a pd-top-02 pd-bottom-02">
+                                        <div class="col-md-3 col-sm-3">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-4"> <span class="sub-title-a mr-top-desk-title ">Channel</span> </div>
+                                                <div class="col-md-8 col-sm-8 pd-left-00">
+                                                    <select class="multiselect select-bx-style" id="dd_channel"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 pd-left-00">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6"> <span class="sub-title-a mr-top-desk-title flt-right-a">Distributor Category</span> </div>
+                                                <div class="col-md-6 col-sm-6 pd-left-00">
+                                                    <select class="multiselect select-bx-style" id="dd_dist_category" multiple="multiple"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 pd-left-00">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-4"> <span class="sub-title-a mr-top-desk-title flt-right-a">ARN No</span> </div>
+                                                <div class="col-md-8 col-sm-8 pd-left-00">
+                                                    <input type="text" id="txt_arn" class="input-text-bx-style" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-3 pd-left-00">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-4"> <span class="sub-title-a mr-top-desk-title flt-right-a">ARN Name</span> </div>
+                                                <div class="col-md-8 col-sm-8 pd-left-00">
+                                                    <input type="text" id="txt_arn_name" class="input-text-bx-style" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mr-top-50">
+                                <div class="col-md-7 col-sm-7 ">
+                                    <h3 class="sub-title-btm-d">Memo List View</h3>
+                                </div>
+                                <div class="col-md-5 col-sm-5 txt-alg-rt mr-bottom-02">
+                                    <button class="btn btn-primary mr-right-01" onclick="RackRate.RefreshSearchGrid(); ">Refresh</button>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 ">
+                                    <table id="grid_search_result"></table>
+                                </div>
+                            </div>
+
+                            <div class="row mr-top-50">
+                                <div class="col-md-12 col-sm-12 ">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="div_freeze">
+                        <table id="tbl_freeze"></table>
+                        <div class="row mr-top-100"></div>
+                    </div>
+
+                    <div id="div_manage">
+                        <table id="tbl_manage"></table>
+                        <div class="row mr-top-100"></div>
+                    </div>
+
+                    <div id="div_masterqueue">
+                        <table id="tbl_masterqueue"></table>
+                        <div class="row mr-top-100"></div>
+                    </div>
+
+                    <div class="modal fade" id="mdl_view_remark_review" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" aria-labelledby="lblmdl_view_remark_review" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Remarks</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+                                        <textarea class="txt-area-style" id="txt_remarks"></textarea>
+
+                                        <div class="row txt-alg-rt mr-top-02 mr-right-01">
+                                            <button class="btn btn-success " data-dismiss="modal">Save</button>
+                                        </div>
+                                        <div class="row">
+                                            <h4 class="modal-title" id="myModalLabel">Remarks History</h4>
+                                        </div>
+
+                                        <div class=" row mr-top-01">
+                                            <table id="tbl_remarks"></table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="mdl_view_additional_notes" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" aria-labelledby="lblmdl_view_additional_notes" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Additional Notes</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div>
+
+                                        <textarea class="txt-area-style scroll-style" id="txt_additional_notes"></textarea>
+
+                                    </div>
+                                    <div class="row txt-alg-rt mr-top-02 mr-right-01">
+                                        <button class="btn btn-success " data-dismiss="modal">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="mdl_view_trail_review" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" aria-labelledby="lblmdl_view_trail_review" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Modified Rate History</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <table id="tbl_modified_rate_history"></table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="mdl_remarks_entry" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" aria-labelledby="lblmdl_remarks_entry" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Remarks</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <!--<div id="div_remarks" class="col-md-12 col-sm-12 ">-->
+                                    <!--<div class="txt-area-style-outer">-->
+                                    <textarea class="txt-area-style" id="txt_remarks_entry"></textarea>
+                                    <div class="row txt-alg-rt mr-top-02 mr-right-01">
+                                        <button class="btn btn-warning " onclick="RackRate.rejectdiscard();" id="btn_remarks"></button>
+                                    </div>
+                                    <input type="hidden" id="txt_selected_memos" />
+                                    <input type="hidden" id="txt_updated_status" />
+                                    <input type="hidden" id="txt_click_from" />
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="modal fade" id="mdl_remarks_info" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" aria-labelledby="lblmdl_remarks" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Remarks</h4>
+                        </div>
+                        <div class="modal-body">
+                            <textarea class="txt-area-style" id="txt_remarks_info"></textarea>
+                            <div class="row txt-alg-rt mr-top-02 mr-right-01">
+                                <button class="btn btn-warning " onclick="RackRate.ApplyRemarks();" id="btn_remarks_info"></button>
+                            </div>
+                        </div>
+                        <input type="hidden" id="txt_click_from_info" />
+                        <input type="hidden" id="txt_updated_status_info" />
+                    </div>
+                </div>
+            </div>-->
+
+                    <div class="modal fade" id="mdl_view_brokerage_detail" tabindex="-1" role="dialog" aria-labelledby="lblmdl_view_brokerage_detail" aria-hidden="true">
+                        <div class="modal-dialog modal-lrg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Modified Rate History</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <table id="tbl_view_brokerage_history"></table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="mdl_view_forward_to" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" aria-labelledby="lblmdl_view_forward_to" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Assign to Role</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 ">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-6">
+                                                    <label class="tt-chk-bx-label mr-top-desk-title-02">Assign to</label>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 pd-left-00">
+                                                    <div class="styled-select">
+                                                        <select class="select-bx-style" id="dd_assign_to" onchange="RackRate.AssignToChange(this);">
+                                                            <option value="6">Business Head</option>
+                                                            <option value="7">Head Of Sales</option>
+                                                            <option value="8">President</option>
+                                                            <option value="9">CAO</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="div_bh" class="row mr-top-02">
+                                                <div class="col-md-6 col-sm-6">
+                                                    <label class="tt-chk-bx-label mr-top-desk-title-02">Business Head</label>
+                                                </div>
+                                                <div class="col-md-6 col-sm-6 pd-left-00">
+
+                                                    <select class="select-bx-style" id="dd_business_head"></select>
+
+                                                </div>
+                                            </div>
+                                            <div class="row txt-alg-rt mr-top-02 mr-right-01">
+                                                <button class="btn btn-success " onclick="RackRate.AssignAndForward();" id="btn_assign_to">Forward</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal fade" id="modal_confirmation" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="ariaconfirmation" aria-hidden="true">
+
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="row mr-top-05">
+                                        <div class="col-md-12 col-sm-12 ">
+                                            <h3 class="sub-title-btm-c">Confirmation</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row mr-top-01">
+                                        <div class="col-md-12 col-sm-12 ">
+                                            <div class="rrd-outer">
+                                                <div class="row">
+                                                    <div> <span class="sub-title-a mr-top-desk-title ">Would you like to include Parent code as well?</span> </div>
+                                                </div>
+                                                <div class="row txt-alg-rt">
+                                                    <div class="row">
+                                                        <button class="btn mr-right-01 btn-success" onclick="RackRate.ConfirmARNOk();" id="btn_modal_ok">Yes</button>
+                                                        <button class="btn mr-right-02 btn-warning " onclick="RackRate.ConfirmARNCancel();" id="btn_modal_cancel">No</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="mdl_review_scheme" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static" aria-labelledby="lblmdl_review_scheme" aria-hidden="true">
+                        <div class="modal-dialog modal-lrg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title">Review Selected Schemes</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class='row mr-top-01' id='div_sch_detail'>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <footer>
+                    <div class="row footer-main-black">
+                        <div class="col-md-12 col-sm-12 ">
+                            <div class="col-md-12 col-sm-12 pd-top-02 pd-bottom-02">
+
+                                <div class="col-md-12 col-sm-12 pd-left-00">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4"></div>
+                                        <div class="col-md-8 col-sm-8 pd-left-00">
+                                            <label style="color: white;" class="mr-right-01">Copyright &copy 2014. All rights reserved in this software belong solely to <a style=" color:white;background:black;" href="http://www.hexagonglobal.in" target="_blank">Hexagon Global IT Services pvt ltd</a> </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </footer>
+            </div>
+    <div id="pleaseWaitDialog">
+    </div>
+
+    <div class="modal fade" id="modal_select_to_cc" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="selecttocc" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row mr-top-05">
+                        <div class="col-md-12 col-sm-12 ">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h3 class="sub-title-btm-c">Select TO / CC Users</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row mr-top-01">
+                        <div class="col-md-12 col-sm-12 ">
+                            <div class="rrd-outer">
+                                <div class="row" id="div_mailing_list">
+                                    <div class="col-md-3 col-sm-3"> <span class="sub-title-a mr-top-desk-title ">List Name</span> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <div class="styled-select">
+                                            <select class="select-bx-style" id="dd_mailing_list" onchange="RackRate.mailingListOnchange(this);"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br /><br />
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3"> <span class="sub-title-a mr-top-desk-title ">TO Users</span> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <!--<select class="multiselect select-bx-style" id="dd_To"></select>-->
+                                        <input type="text" id="txt_to" class="input-text-bx-style" />
+                                    </div>
+
+                                </div>
+                                <br /><br />
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3"> <span class="sub-title-a mr-top-desk-title ">CC Users</span> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <!--<select class="multiselect select-bx-style" id="dd_CC" multiple="multiple"></select>-->
+                                        <input type="text" id="txt_cc" class="input-text-bx-style" />
+                                    </div>
+
+                                </div>
+                                <br /><br />
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-3"> <span class="sub-title-a mr-top-desk-title ">BCC Users</span> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <!--<select class="multiselect select-bx-style" id="dd_CC" multiple="multiple"></select>-->
+                                        <input type="text" id="txt_bcc" class="input-text-bx-style" />
+                                    </div>
+
+                                </div>
+
+                                <div class="row mr-top-05 pos-rel-common">
+
+                                </div>
+
+                                <div class="row mr-top-05">
+
+                                    <div>
+                                        <button class="btn mr-right-01 btn-success flt-right-a" id="btn_send_email">Send Email</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="alertsection" class="alert-sect-outer" style="right:-450px;">
+        <div class="alert-head">
+            <img src="../img/alert_icon.png">
+            <span class="notif-count"><span class="notif-count-inner">8</span></span>
+        </div>
+    </div>
+    <div id="globalDiv"></div>
+    <div id="globalAdhocDiv"></div>
+</body>
+</html>

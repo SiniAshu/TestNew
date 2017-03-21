@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="BrokerageOnline.Services.OverviewService" Factory="System.ServiceModel.Activation.WebServiceHostFactory" %>
